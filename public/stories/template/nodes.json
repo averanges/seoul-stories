@@ -1,0 +1,18 @@
+[
+  {
+    "id": "start",
+    "scene": "main",
+    "speaker": "guide",
+    "text": "안녕하세요! 새로운 이야기를 시작해요.",
+    "next": "end"
+  },
+  {
+    "id": "end",
+    "scene": "main",
+    "text": "다음에 또 만나요!",
+    "ending": {
+      "title": "Конец",
+      "description": "Добавьте собственные экраны и переходы."
+    }
+  }
+]

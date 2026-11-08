@@ -1,0 +1,367 @@
+{
+  "schema": "seoul-stories-production-pack-v1",
+  "scene": {
+    "id": "SC04B_PHONE",
+    "display_name": "Сцена 4B — Ночной звонок",
+    "title_ko": "밤늦은 전화",
+    "kind": "confrontation alternate route",
+    "source_route": "SC02 → SC03A (полка) → SC03B (охранник) → SC04B_PHONE",
+    "location": "СТАРАЯ квартира Юны из SC01; только Юна физически в кадре",
+    "time": "Поздняя субботняя ночь, после разговора с охранником",
+    "entry_requires": {
+      "guard_reports_kiss": true,
+      "shelf_seen": true
+    },
+    "shots_count": 3,
+    "dialogue_count": 12,
+    "choice_count": 1,
+    "meaning": "Она поверила Минсу в SC03A, потом узнала об измене в SC03B; здесь главная эмоция — предательство уже восстановленного доверия.",
+    "visual_policy": "Only Yuna onscreen; Minsu as phone speaker text only; no flashback; no other woman; no new apartment shelf.",
+    "status": "PRODUCTION: images pending, source text ready"
+  },
+  "shots": [
+    {
+      "id": "SC04B_PHONE_SH01",
+      "short": "SH01",
+      "name": "Одна после охранника",
+      "nodes": [
+        "D01",
+        "D02"
+      ],
+      "priority": "P0",
+      "cam": "CAM-N1 / 28–35 mm, wide establishing",
+      "reason": "Новая обстановка и явный временной разрыв после 3B: Юна одна глубокой ночью.",
+      "composition": "Вид из дверного проёма старой гостиной SC01: Юна сидит на правом диване ближе к его дальнему краю, вокруг много свободного пространства. Напротив — журнальный стол с ЗАКРЫТЫМ фотоальбомом; за диваном стеллаж, далеко сзади окно с городом. У Юны телефон в руках, она смотрит на него, ещё не звонит. Ни одного другого человека.",
+      "emotion": "Юна вымотана после разговора с охранником; лицо напряжено, глаза слегка покрасневшие, но не плачет навзрыд. Не поворачивается к зрителю.",
+      "light": "Поздняя ночь, за окном почти чёрно-синий город. В комнате ОДНА лампа с мягким тёплым светом, без дневного солнца; не делать хоррор.",
+      "must": [
+        "Та же старая квартира из SC01: окно на дальней стене, диван справа, журнальный стол впереди дивана",
+        "Юна ОДНА и узнаваема по референсу лица",
+        "Телефон в руках или перед ней, альбом закрыт",
+        "Ночное время считывается сразу"
+      ],
+      "avoid": [
+        "Минсу/Сора/охранник в комнате",
+        "Новая квартира с полкой",
+        "Переизбыток слёз, театральный плач",
+        "Смартфон с читаемыми сообщениями или чужим именем",
+        "Случайно новые окна, второй диван, переставленная мебель"
+      ],
+      "safe": "Текст — в нижней четверти. Лицо, руки и телефон не перекрывать.",
+      "prompt": "Photorealistic Korean television drama still, cinematic 16:9. Late Saturday night, same OLD apartment living room as the attached original SC01 game frame. View from doorway, moderately wide 28–35mm: sofa on right, coffee table with CLOSED photo album in front, big window at far wall with dark city lights, one warm lamp, a few moving boxes. Yuna alone, exact same facial identity as Yuna_SC01_final_face reference, same cream cardigan from this Saturday, slightly tired and red-eyed, quietly looking at smartphone before placing a call. Reserved, everyday realism, restrained drama, dark blue night contrast with muted warm lamp, no other people, no new furniture, no shelf, no text or UI."
+    },
+    {
+      "id": "SC04B_PHONE_SH02",
+      "short": "SH02",
+      "name": "Звонок и короткое признание",
+      "nodes": [
+        "D03",
+        "D04",
+        "D05",
+        "D06"
+      ],
+      "priority": "P0",
+      "cam": "CAM-N2 / 70–85 mm, phone-hand detail",
+      "reason": "Юна совершает звонок. Внимание переносится с комнаты на саму связь и признание, без повторного плана лица.",
+      "composition": "Сильная смена масштаба: диагональный крупный план со стороны дивана на пальцы Юны, телефон около уха и лишь часть её щеки/волос или плеча; можно чуть видеть её профиль. Фон — мягкая размытая ткань дивана и тёплый ламповый боке, без архитектурных якорей. Никакой второй личности в кадре.",
+      "emotion": "Замершая рука и зажатые плечи; Юна с усилием задаёт прямой вопрос. Само признание Минсу происходит голосом за кадром.",
+      "light": "Холодный ночной контурный свет из окна, небольшой тёплый рефлекс лампы.",
+      "must": [
+        "Один телефон и только Юнина рука",
+        "Континуитет ткани кардигана, цвета волос, аксессуаров",
+        "Телефон на связи, но без разборчивых букв или интерфейса",
+        "Масштаб и камера существенно отличны от SH01"
+      ],
+      "avoid": [
+        "Портрет Минсу на экране телефона или отдельный видеоэкран",
+        "Второй человек, вставка-коллаж, экран с SMS",
+        "Дополнительные телефоны, необычные пальцы",
+        "Повтор SH01 с небольшой сменой выражения"
+      ],
+      "safe": "Нижний левый диалоговый блок поверх размытого нейтрального фона; рука и телефон выше него.",
+      "prompt": "Single cinematic film still, photoreal Korean drama, 16:9. Extreme diagonal close shot at sofa level of Yuna holding a smartphone to her ear during a difficult late-night phone conversation, exact same cream knit cardigan and recognizable dark hair as SC01 reference; only a sliver of her face/profile, one hand and one phone visible. 70–85mm shallow depth of field. Background dissolves to blurred warm lamp and sofa upholstery: do NOT reconstruct room architecture. No Minsu shown, no picture-in-picture, no readable phone screen, no text, no captions, no dramatic tears."
+    },
+    {
+      "id": "SC04B_PHONE_SH03",
+      "short": "SH03",
+      "name": "«А я ведь поверила» / ответ и выбор",
+      "nodes": [
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "priority": "P0",
+      "cam": "CAM-N3 / 50–65 mm, reverse 3/4 on Yuna",
+      "reason": "После признания резко меняется эмоциональное состояние Юны. Мы впервые полноценно видим её лицо в этой сцене.",
+      "composition": "Обратный средне-крупный план со стороны окна по направлению к дивану: Юна в три четверти, телефон у уха, свободное пространство слева/снизу для диалога и выбора. На дальнем размытном плане — лампа или часть стеллажа; геометрию комнаты НЕ раскрывать целиком. Смотрит в сторону, не прямо в камеру.",
+      "emotion": "Сильная, но сдержанная реакция: взгляд теряет фокус, нижняя губа слегка напряжена, возможна одна слеза. Затем собирается с силами спросить «Кто она?». Минсу слышен только по телефону. Не улыбаться и не истерить.",
+      "light": "Ночной сине-серый край света + слабый тёплый свет лампы; глаза хорошо видны.",
+      "must": [
+        "Очень точное узнаваемое лицо Юны из SC01",
+        "Та же одежда и волосы, что на SH01 и SH02",
+        "Реакция на повторное предательство доверия, не на первую новость об измене",
+        "Телефон у уха на D07–D11, выбор на этом же изображении"
+      ],
+      "avoid": [
+        "Минсу физически рядом или как силуэт в окне",
+        "Шок с раскрытым ртом, как в 3B, либо рекламная мимика",
+        "Читаемые телефонные экраны / явное имя другой женщины",
+        "Разнообразие камер ценой изменения лица",
+        "Повторное использование SH01/SH02 после перехода на SH03"
+      ],
+      "safe": "Выбор разместить в свободной части композиции, не закрывать лицо или телефон; разрешён сдвиг/маска под варианты.",
+      "prompt": "Cinematic realistic Korean melodrama still, 16:9, late night. Reverse-angle medium close portrait of Yuna from the window side facing sofa, 50–65mm lens, holding smartphone to ear, in same cream cardigan and with exactly identical distinctive facial features and hairstyle as attached original SC01 game still. She has just heard Minsu admit cheating: controlled devastation, glistening eyes, one very faint tear possible, unfocused gaze, strained lips, no crying fit or scream. Dim ordinary apartment light with cool midnight edging and a warm lamp gently out-of-focus behind, do not show full room geometry. Yuna ALONE, Minsu on telephone only and never depicted; no visible UI or lettering, leave room for a dialogue box and two choice buttons."
+    }
+  ],
+  "dialogue_nodes": [
+    {
+      "id": "SC04B_PHONE_D01",
+      "local_id": "D01",
+      "shot_id": "SC04B_PHONE_SH01",
+      "speaker": "Narrator",
+      "original": "밤늦게, 유나는 집에 혼자 있어요.",
+      "simple": "밤이에요. 유나는 혼자 있어요.",
+      "ru": "Поздно ночью Юна одна дома.",
+      "grammar": "N에; -아/어 있다",
+      "vocabulary": "밤늦게 — поздно ночью",
+      "teacher_notes": "Не уточнять время до полуночи; главное — прошло несколько часов после охранника."
+    },
+    {
+      "id": "SC04B_PHONE_D02",
+      "local_id": "D02",
+      "shot_id": "SC04B_PHONE_SH01",
+      "speaker": "Narrator",
+      "original": "한참 동안 휴대폰만 보다가 민수에게 전화해요.",
+      "simple": "유나는 휴대폰을 봐요. 그리고 민수에게 전화해요.",
+      "ru": "Она долго смотрит на телефон, затем звонит Минсу.",
+      "grammar": "-다가; N에게",
+      "vocabulary": "한참 동안 — долгое время; 전화하다 — звонить",
+      "teacher_notes": "Упрощение убирает -다가, но сохраняет оба действия."
+    },
+    {
+      "id": "SC04B_PHONE_D03",
+      "local_id": "D03",
+      "shot_id": "SC04B_PHONE_SH02",
+      "speaker": "Minsu (phone)",
+      "original": "유나? 이렇게 늦게 무슨 일이에요?",
+      "simple": "유나? 지금 무슨 일이에요?",
+      "ru": "Юна? Уже так поздно. Что случилось?",
+      "grammar": "이렇게 + A/V",
+      "vocabulary": "늦다 — поздно",
+      "teacher_notes": "Говорящий только по телефону, без портрета Минсу."
+    },
+    {
+      "id": "SC04B_PHONE_D04",
+      "local_id": "D04",
+      "shot_id": "SC04B_PHONE_SH02",
+      "speaker": "Yuna",
+      "original": "오늘 경비 아저씨를 만났어요.",
+      "simple": "오늘 경비 아저씨를 만났어요.",
+      "ru": "Сегодня я встретилась с охранником.",
+      "grammar": "past tense 았/었",
+      "vocabulary": "경비 아저씨 — охранник",
+      "teacher_notes": "На простейшей реплике кнопку «Проще» скрыть."
+    },
+    {
+      "id": "SC04B_PHONE_D05",
+      "local_id": "D05",
+      "shot_id": "SC04B_PHONE_SH02",
+      "speaker": "Yuna",
+      "original": "목요일에 다른 여자랑 키스했다는 얘기를 들었어요. 사실이에요?",
+      "simple": "목요일에 다른 여자하고 키스했어요? 정말이에요?",
+      "ru": "Я услышала, что в четверг ты целовался с другой женщиной. Это правда?",
+      "grammar": "-다는 얘기를 듣다 (косвенная речь)",
+      "vocabulary": "키스하다 — целоваться; 사실 — правда, факт",
+      "teacher_notes": "Не вводить имя женщины и не показывать свидетеля."
+    },
+    {
+      "id": "SC04B_PHONE_D06",
+      "local_id": "D06",
+      "shot_id": "SC04B_PHONE_SH02",
+      "speaker": "Minsu (phone)",
+      "original": "…맞아요. 정말 미안해요.",
+      "simple": "…네. 미안해요.",
+      "ru": "…Да. Прости.",
+      "grammar": "-아요/어요",
+      "vocabulary": "맞다 — быть верным",
+      "teacher_notes": "Первая полная правда от Минсу; краткое признание, без оправданий."
+    },
+    {
+      "id": "SC04B_PHONE_D07",
+      "local_id": "D07",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Yuna",
+      "original": "그런데 오늘은 정말 믿었는데요.",
+      "simple": "오늘은 정말 믿었어요.",
+      "ru": "А я ведь сегодня тебе поверила.",
+      "grammar": "-는데요 (контраст/незавершённая мысль)",
+      "vocabulary": "믿다 — верить",
+      "teacher_notes": "ЦЕНТР СЦЕНЫ. В интонации обида от повторно подаренного доверия."
+    },
+    {
+      "id": "SC04B_PHONE_D08",
+      "local_id": "D08",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Minsu (phone)",
+      "original": "헤어질까 봐 무서웠어요.",
+      "simple": "헤어지고 싶지 않았어요.",
+      "ru": "Я боялся, что мы расстанемся.",
+      "grammar": "-(으)ㄹ까 봐; -고 싶지 않다",
+      "vocabulary": "헤어지다 — расставаться",
+      "teacher_notes": "Упрощение меняет боязнь на нежелание расставания, сохраняя главную причину."
+    },
+    {
+      "id": "SC04B_PHONE_D09",
+      "local_id": "D09",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Yuna",
+      "original": "오늘 우리 사진 얘기까지 했잖아요.",
+      "simple": "오늘 우리 사진 이야기도 했어요.",
+      "ru": "Мы сегодня даже говорили о наших фотографиях…",
+      "grammar": "-잖아요",
+      "vocabulary": "사진 이야기 — разговор о фотографиях",
+      "teacher_notes": "Отсылка к полке и фото в SC03A; здесь без флешбека."
+    },
+    {
+      "id": "SC04B_PHONE_D10",
+      "local_id": "D10",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Yuna",
+      "original": "그 여자는 누구였어요?",
+      "simple": "그 여자 누구예요?",
+      "ru": "Кто была эта женщина?",
+      "grammar": "past copular 누구였어요",
+      "vocabulary": "누구 — кто",
+      "teacher_notes": "Вопрос задаётся ОБЯЗАТЕЛЬНО до выбора, независимо от будущей ветки."
+    },
+    {
+      "id": "SC04B_PHONE_D11",
+      "local_id": "D11",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Minsu (phone)",
+      "original": "…그게 중요해요?",
+      "simple": "…그게 중요해요?",
+      "ru": "…А это важно?",
+      "grammar": "N이/가 중요하다",
+      "vocabulary": "중요하다 — быть важным",
+      "teacher_notes": "Не отвечать «я давно её знаю», не выдавать Сору."
+    },
+    {
+      "id": "SC04B_PHONE_D12",
+      "local_id": "D12",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Narrator",
+      "original": "유나는 뭐라고 대답할까요?",
+      "simple": "유나는 뭐라고 대답할까요?",
+      "ru": "Что ответит Юна?",
+      "grammar": "-ㄹ까요?; 뭐라고",
+      "vocabulary": "대답하다 — отвечать",
+      "teacher_notes": "Игровые кнопки действий на русском; корейские образцы только в режиме преподавателя."
+    }
+  ],
+  "choices": [
+    {
+      "id": "SC04B_PHONE_CHOICE",
+      "shot_id": "SC04B_PHONE_SH03",
+      "node_id": "SC04B_PHONE_D12",
+      "question_ru": "Что ответит Юна на «А это важно?»",
+      "presentation": "student Russian actions / teacher Korean samples",
+      "options": [
+        {
+          "id": "SC04B_PHONE_R_KNOW",
+          "label_ru": "Да. Я хочу знать, кто она.",
+          "original": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+          "simple": "네. 알고 싶어요.",
+          "ru": "Да. Для меня это важно. Я хочу знать, кто она.",
+          "reaction_id": "SC04B_PHONE_REACT_KNOW",
+          "next_symbolic": "SC05_IDENTITY_START",
+          "sets": {
+            "identity_investigation_chosen": true,
+            "yuna_declines_identity": false
+          }
+        },
+        {
+          "id": "SC04B_PHONE_R_LEAVE",
+          "label_ru": "Нет. Какая теперь разница?",
+          "original": "아니요. 이제 상관없어요.",
+          "simple": "아니요. 이제 알고 싶지 않아요.",
+          "ru": "Нет. Теперь это неважно.",
+          "reaction_id": "SC04B_PHONE_REACT_LEAVE",
+          "next_symbolic": "ENDING_B_START",
+          "sets": {
+            "identity_investigation_chosen": false,
+            "yuna_declines_identity": true
+          }
+        }
+      ]
+    }
+  ],
+  "reaction_nodes": [
+    {
+      "id": "SC04B_PHONE_REACT_KNOW",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Yuna",
+      "original": "그럼 이름을 말해 줘요.",
+      "simple": "이름을 말해 주세요.",
+      "ru": "Тогда скажи её имя.",
+      "stage": "Минсу молчит в трубке. Переход к будущему поиску личности; имени не называть.",
+      "next_symbolic": "SC05_IDENTITY_START"
+    },
+    {
+      "id": "SC04B_PHONE_REACT_LEAVE",
+      "shot_id": "SC04B_PHONE_SH03",
+      "speaker": "Yuna",
+      "original": "이제 더 듣고 싶지 않아요.",
+      "simple": "이제 이야기하고 싶지 않아요.",
+      "ru": "Я больше не хочу ничего слушать.",
+      "stage": "Юна завершает звонок. Переход к финалу B, без раскрытия Соры.",
+      "next_symbolic": "ENDING_B_START"
+    }
+  ],
+  "transitions": {
+    "entry_from": "SC03B when shelf_seen=true",
+    "entry_symbolic": "SC04B_START",
+    "entry_real_target": "SC04B_PHONE_D01",
+    "choice_node": "SC04B_PHONE_CHOICE",
+    "outcomes": {
+      "SC04B_PHONE_R_KNOW": "SC05_IDENTITY_START (symbolic; real ID/stub to be resolved)",
+      "SC04B_PHONE_R_LEAVE": "ENDING_B_START (symbolic; real ID/stub to be resolved)"
+    },
+    "do_not_write_to": [
+      "SC04A_CONFESSION",
+      "existing happy ending A / SC04A if present"
+    ]
+  },
+  "flags_policy": {
+    "require": {
+      "guard_reports_kiss": true,
+      "shelf_seen": true
+    },
+    "set_on_entry": {
+      "sc04b_call_visited": true
+    },
+    "set_on_confession": {
+      "minsu_confessed": true
+    },
+    "do_not_set": [
+      "sora_identity_known",
+      "sora_involved",
+      "happy_ending_complete",
+      "ending_a_unlocked"
+    ],
+    "choice_flags": {
+      "SC04B_PHONE_R_KNOW": {
+        "identity_investigation_chosen": true,
+        "yuna_declines_identity": false
+      },
+      "SC04B_PHONE_R_LEAVE": {
+        "identity_investigation_chosen": false,
+        "yuna_declines_identity": true
+      }
+    },
+    "warning": "flag names are a symbolic contract. Codex must inspect existing engine flags and map as needed; avoid duplicate contradictory state"
+  }
+}

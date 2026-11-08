@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "defaultVolume": 0.28,
+  "fadeSeconds": 1.5,
+  "tracks": {
+    "slice_of_life": {
+      "label": "Тёплая повседневность · slice-of-life",
+      "kind": "loop",
+      "level": 0.8,
+      "sources": {
+        "full": "/stories/neoreul_mideo/assets/music/warm/full.mp3"
+      }
+    },
+    "ending_b_piano": {
+      "label": "Камерное фортепиано · Ending B",
+      "kind": "adaptive",
+      "level": 0.85,
+      "overlapSeconds": 1,
+      "sources": {
+        "full": "/stories/neoreul_mideo/assets/music/piano/full.mp3",
+        "intro": "/stories/neoreul_mideo/assets/music/piano/intro.wav",
+        "loop": "/stories/neoreul_mideo/assets/music/piano/loop.wav",
+        "outro": "/stories/neoreul_mideo/assets/music/piano/outro.wav"
+      }
+    },
+    "sora_confrontation": {
+      "label": "Напряжённый разговор · SC06",
+      "kind": "adaptive",
+      "level": 0.8,
+      "overlapSeconds": 1,
+      "sources": {
+        "full": "/stories/neoreul_mideo/assets/music/confrontation/full.mp3",
+        "intro": "/stories/neoreul_mideo/assets/music/confrontation/intro.wav",
+        "loop": "/stories/neoreul_mideo/assets/music/confrontation/loop.wav",
+        "outro": "/stories/neoreul_mideo/assets/music/confrontation/outro.wav"
+      }
+    },
+    "ending_c_tragic": {
+      "label": "Трагический финал · Ending C",
+      "kind": "adaptive",
+      "level": 1,
+      "overlapSeconds": 1,
+      "sources": {
+        "full": "/stories/neoreul_mideo/assets/ending_c/music/full.mp3",
+        "intro": "/stories/neoreul_mideo/assets/ending_c/music/intro.wav",
+        "loop": "/stories/neoreul_mideo/assets/ending_c/music/loop.wav",
+        "outro": "/stories/neoreul_mideo/assets/ending_c/music/outro.wav"
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": "SC06",
+      "story": "neoreul_mideo",
+      "nodePattern": "^SC06_D[0-9]+$",
+      "track": "sora_confrontation",
+      "outroNodes": [
+        "SC06_D26",
+        "SC06_D27",
+        "SC06_D28",
+        "SC06_D29",
+        "SC06_D30",
+        "SC06_D31",
+        "SC06_D32",
+        "SC06_D33"
+      ],
+      "silentNodes": [
+        "SC06_D34"
+      ],
+      "preload": [
+        "ending_c_tragic"
+      ],
+      "preloadOutroNodes": [
+        "SC06_D21",
+        "SC06_D22",
+        "SC06_D23",
+        "SC06_D24",
+        "SC06_D25"
+      ]
+    },
+    {
+      "id": "EndingB",
+      "story": "neoreul_mideo",
+      "nodePattern": "^ENDING_B_",
+      "track": "ending_b_piano"
+    },
+    {
+      "id": "EndingC",
+      "story": "neoreul_mideo",
+      "nodePattern": "^ENDING_C_(D0[1-6]|TERMINAL)$",
+      "track": "ending_c_tragic",
+      "outroNodes": [
+        "ENDING_C_D06",
+        "ENDING_C_TERMINAL"
+      ],
+      "preloadOutroNodes": [
+        "ENDING_C_D03",
+        "ENDING_C_D04",
+        "ENDING_C_D05"
+      ]
+    },
+    {
+      "id": "SC01",
+      "story": "neoreul_mideo",
+      "nodePattern": "^SC01_",
+      "track": "slice_of_life"
+    },
+    {
+      "id": "SC02",
+      "story": "neoreul_mideo",
+      "nodePattern": "^SC02_",
+      "track": "slice_of_life",
+      "preload": [
+        "ending_b_piano",
+        "sora_confrontation"
+      ]
+    },
+    {
+      "id": "SC03A",
+      "story": "neoreul_mideo",
+      "nodePattern": "^SC03A_",
+      "track": "slice_of_life"
+    },
+    {
+      "id": "EndingA",
+      "story": "neoreul_mideo",
+      "nodePattern": "^(SC04A_D[0-9]+|ENDING_A_FALSE_PEACE)$",
+      "track": "slice_of_life"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "schema_note": "Portable production contract; adapt fields to current story-engine schema rather than copying directly",
+  "scene_id": "ENDING_B_NOT_ALONE",
+  "title_ru": "Не одна",
+  "title_ko": "혼자가 아니에요",
+  "story": "neoreul_mideo",
+  "scene_kind": "ending",
+  "ending_code": "B",
+  "entry": "After either confession scene only if player chooses \"Нет. Какая теперь разница?\"; the identity of the woman remains unknown to Yuna",
+  "facts": {
+    "minsu_infidelity": true,
+    "other_woman_is_sora": true,
+    "yuna_knows_infidelity": true,
+    "yuna_knows_sora_involved": false,
+    "romantic_relationship_ended": true
+  },
+  "shot_order": [
+    "ENDING_B_SH01",
+    "ENDING_B_SH02",
+    "ENDING_B_SH03"
+  ],
+  "shots": [
+    {
+      "id": "ENDING_B_SH01",
+      "image": "ENDING_B_SH01.webp",
+      "node_ids": [
+        "ENDING_B_D01",
+        "ENDING_B_D02",
+        "ENDING_B_D03",
+        "ENDING_B_D04"
+      ],
+      "purpose": "Doorbell and food bag: everyday support breaks the isolation",
+      "camera": "Medium wide 3/4 from INSIDE the flat looking toward the front door; doorway occupies one side, Sora in threshold holding paper bag, Yuna at door in house clothes, neither centered posing. Crop background to wall and hall to avoid inventing the room floorplan.",
+      "emotion": "Yuna drained, Sora casually concerned, small deadpan joke",
+      "must_show": [
+        "Sora with shopping bag (beer and food); she does not have to display both cans yet",
+        "Same Yuna and Sora faces as gameplay refs",
+        "Sunday night, indoor warm practical lighting"
+      ],
+      "forbidden": [
+        "mystery third person",
+        "villain-coded Sora",
+        "bright shop daylight",
+        "large new living-room reconstruction",
+        "captions baked into art"
+      ]
+    },
+    {
+      "id": "ENDING_B_SH02",
+      "image": "ENDING_B_SH02.webp",
+      "node_ids": [
+        "ENDING_B_D05",
+        "ENDING_B_D06",
+        "ENDING_B_D07",
+        "ENDING_B_D08",
+        "ENDING_B_D09"
+      ],
+      "purpose": "Breakup confession and packing boxes",
+      "camera": "Medium side-on two-shot near coffee table, BOTH women seated on the rug. Sofa/coffee table are visible; avoid full view of windows / door. Strong compositional difference from doorway SH01.",
+      "emotion": "Yuna low and weary, Sora quietly empathetic, no grin",
+      "must_show": [
+        "TWO cans of beer and simple snacks on coffee table, not a celebratory toast",
+        "Closed old photo album and a few moving boxes as memory of planned move",
+        "Sora listens while Yuna gestures vaguely to boxes"
+      ],
+      "forbidden": [
+        "Sora gloating",
+        "crying hysterically",
+        "alcohol bottle brands/logos",
+        "new apartment or shelf",
+        "furniture moved to a new location"
+      ]
+    },
+    {
+      "id": "ENDING_B_SH03",
+      "image": "ENDING_B_SH03.webp",
+      "node_ids": [
+        "ENDING_B_D10",
+        "ENDING_B_D11",
+        "ENDING_B_D12",
+        "ENDING_B_D13",
+        "ENDING_B_D14"
+      ],
+      "purpose": "Quiet companionship, the final emotional image",
+      "camera": "Clearly different wide shot from WINDOW SIDE, looking toward sofa and the women on floor; mostly sofa/rug/table area, NO need to show full window, bookshelf or hallway. Hold on the still image for D10-D14.",
+      "emotion": "Quiet sorrow less isolated, not happiness, no big smiles",
+      "must_show": [
+        "Two women side-by-side near the same sofa and coffee table",
+        "A couple of partly emptied cans / untouched snacks, boxes in back",
+        "Sora and Yuna looking forward or slightly down; minimal physical gesture"
+      ],
+      "forbidden": [
+        "hands clinking drinks",
+        "sudden daylight/time jump",
+        "ominous message/phone",
+        "Sora guilty or celebrating",
+        "tearful theatrical hug"
+      ]
+    }
+  ],
+  "dialogue_nodes": [
+    {
+      "id": "ENDING_B_D01",
+      "shot_id": "ENDING_B_SH01",
+      "speaker": "narrator",
+      "original": "일요일 저녁, 유나의 집에 초인종이 울려요.",
+      "simple": "일요일 저녁이에요. 소라가 왔어요.",
+      "ru": "В воскресенье вечером в квартире Юны раздаётся звонок в дверь.",
+      "vocabulary": [
+        "초인종 — дверной звонок",
+        "울리다 — звенеть"
+      ],
+      "grammar_teacher_notes": [
+        "Narrator scene-setting. Keep the image with Sora at the threshold."
+      ],
+      "next": "ENDING_B_D02"
+    },
+    {
+      "id": "ENDING_B_D02",
+      "shot_id": "ENDING_B_SH01",
+      "speaker": "sora",
+      "original": "맥주랑 안주 조금 사 왔어요.",
+      "simple": "맥주하고 먹을 것 조금 샀어요.",
+      "ru": "Я принесла пиво и немного закусок.",
+      "vocabulary": [
+        "맥주 — пиво",
+        "안주 — закуски к алкоголю",
+        "-아/어 오다 — сделать и прийти"
+      ],
+      "grammar_teacher_notes": [
+        "Sora says this casually, without exaggerated cheerfulness."
+      ],
+      "next": "ENDING_B_D03"
+    },
+    {
+      "id": "ENDING_B_D03",
+      "shot_id": "ENDING_B_SH01",
+      "speaker": "yuna",
+      "original": "조금이요? 너무 많이 사 왔잖아요.",
+      "simple": "조금이요? 너무 많아요.",
+      "ru": "Немного? Ты же купила слишком много.",
+      "vocabulary": [
+        "-잖아요 — ведь, же",
+        "너무 — слишком"
+      ],
+      "grammar_teacher_notes": [
+        "A faint tired smile is permissible. This is not a sitcom joke."
+      ],
+      "next": "ENDING_B_D04"
+    },
+    {
+      "id": "ENDING_B_D04",
+      "shot_id": "ENDING_B_SH01",
+      "speaker": "sora",
+      "original": "저도 배고프거든요.",
+      "simple": "저도 배고파요.",
+      "ru": "Ну я ведь тоже хочу есть.",
+      "vocabulary": [
+        "배고프다 — быть голодным",
+        "-거든요 — объяснительное «ведь»"
+      ],
+      "grammar_teacher_notes": [
+        "Sora offers a tiny warm joke; no artificial dramatic reaction."
+      ],
+      "next": "ENDING_B_D05"
+    },
+    {
+      "id": "ENDING_B_D05",
+      "shot_id": "ENDING_B_SH02",
+      "speaker": "sora",
+      "original": "오늘은 좀 어때요?",
+      "simple": "오늘 어때요?",
+      "ru": "Как ты сегодня?",
+      "vocabulary": [
+        "좀 — немного / смягчение"
+      ],
+      "grammar_teacher_notes": [
+        "The two women sit beside a low table; Sora asks gently while unpacking."
+      ],
+      "next": "ENDING_B_D06"
+    },
+    {
+      "id": "ENDING_B_D06",
+      "shot_id": "ENDING_B_SH02",
+      "speaker": "yuna",
+      "original": "솔직히 별로예요. 민수랑 헤어졌어요.",
+      "simple": "안 좋아요. 민수랑 헤어졌어요.",
+      "ru": "Если честно, не очень. Мы с Минсу расстались.",
+      "vocabulary": [
+        "헤어지다 — расставаться",
+        "솔직히 — если честно"
+      ],
+      "grammar_teacher_notes": [
+        "Yuna tells Sora about the breakup for the first time in this ending. No sudden crying or dramatic hand gestures."
+      ],
+      "next": "ENDING_B_D07"
+    },
+    {
+      "id": "ENDING_B_D07",
+      "shot_id": "ENDING_B_SH02",
+      "speaker": "sora",
+      "original": "…그랬군요. 정말 힘들겠어요.",
+      "simple": "…많이 힘들겠어요.",
+      "ru": "…Понимаю. Тебе, наверное, очень тяжело.",
+      "vocabulary": [
+        "-군요 — осознание новой информации",
+        "-겠어요 — предположение, сочувствие"
+      ],
+      "grammar_teacher_notes": [
+        "Empathy, not triumph. Do NOT show a villain-like, satisfied or sly expression."
+      ],
+      "next": "ENDING_B_D08"
+    },
+    {
+      "id": "ENDING_B_D08",
+      "shot_id": "ENDING_B_SH02",
+      "speaker": "yuna",
+      "original": "같이 이사하려고 했는데, 이제 이 상자들을 어떻게 해야 할지 모르겠어요.",
+      "simple": "같이 이사하려고 했어요. 그런데 이 상자들은 어떻게 해요?",
+      "ru": "Мы собирались переехать вместе, а теперь я даже не знаю, что делать с этими коробками.",
+      "vocabulary": [
+        "이사하다 — переезжать (повтор)",
+        "상자 — коробка",
+        "-아/어야 할지 모르다 — не знать, что делать"
+      ],
+      "grammar_teacher_notes": [
+        "Show packing boxes in the old flat. The album remains closed."
+      ],
+      "next": "ENDING_B_D09"
+    },
+    {
+      "id": "ENDING_B_D09",
+      "shot_id": "ENDING_B_SH02",
+      "speaker": "sora",
+      "original": "상자는 내일 정리해요. 오늘은 아무것도 안 해도 돼요.",
+      "simple": "오늘은 그냥 쉬어요. 상자는 내일 해요.",
+      "ru": "С коробками разберёмся завтра. Сегодня можешь ничего не делать.",
+      "vocabulary": [
+        "아무것도 — ничего",
+        "-아/어도 되다 — можно"
+      ],
+      "grammar_teacher_notes": [
+        "Sora gives immediate practical support, not a sermon. No grand promise about a new future."
+      ],
+      "next": "ENDING_B_D10"
+    },
+    {
+      "id": "ENDING_B_D10",
+      "shot_id": "ENDING_B_SH03",
+      "speaker": "yuna",
+      "original": "우리 그냥 잠깐 말없이 있어도 될까요?",
+      "simple": "우리 잠깐 조용히 있을까요?",
+      "ru": "Можем мы просто немного посидеть молча?",
+      "vocabulary": [
+        "말없이 — молча",
+        "조용히 — тихо",
+        "-아/어도 될까요? — можно ли?"
+      ],
+      "grammar_teacher_notes": [
+        "Transition to a longer quiet shared frame. The reply does not require visual action."
+      ],
+      "next": "ENDING_B_D11"
+    },
+    {
+      "id": "ENDING_B_D11",
+      "shot_id": "ENDING_B_SH03",
+      "speaker": "sora",
+      "original": "그럼요. 우리 그냥 이렇게 있어요.",
+      "simple": "네, 그냥 같이 있어요.",
+      "ru": "Конечно. Давай просто побудем вместе.",
+      "vocabulary": [
+        "그럼요 — конечно",
+        "같이 — вместе"
+      ],
+      "grammar_teacher_notes": [
+        "Minimal, non-performative comfort."
+      ],
+      "next": "ENDING_B_D12"
+    },
+    {
+      "id": "ENDING_B_D12",
+      "shot_id": "ENDING_B_SH03",
+      "speaker": "narrator",
+      "original": "한동안 두 사람은 아무 말도 하지 않아요.",
+      "simple": "두 사람은 조용히 앉아 있어요.",
+      "ru": "Некоторое время обе молча сидят рядом.",
+      "vocabulary": [
+        "한동안 — некоторое время",
+        "아무 말도 — ни слова"
+      ],
+      "grammar_teacher_notes": [
+        "Use a quiet hold on the same image, no artificial new angle."
+      ],
+      "next": "ENDING_B_D13"
+    },
+    {
+      "id": "ENDING_B_D13",
+      "shot_id": "ENDING_B_SH03",
+      "speaker": "yuna",
+      "original": "와 줘서 고마워요.",
+      "simple": "와 줘서 고마워요.",
+      "ru": "Спасибо, что пришла.",
+      "vocabulary": [
+        "-아/어 주다 — действие ради другого"
+      ],
+      "grammar_teacher_notes": [
+        "Yuna is still sad, just a little steadier."
+      ],
+      "next": "ENDING_B_D14"
+    },
+    {
+      "id": "ENDING_B_D14",
+      "shot_id": "ENDING_B_SH03",
+      "speaker": "sora",
+      "original": "오늘은 제가 옆에 있을게요.",
+      "simple": "저 여기 있을게요.",
+      "ru": "Я сегодня побуду рядом.",
+      "vocabulary": [
+        "옆 — рядом",
+        "-(으)ㄹ게요 — намерение/обещание"
+      ],
+      "grammar_teacher_notes": [
+        "Sora stays seated. No overly sentimental embrace, dramatic toast or suspicious glance."
+      ],
+      "next": "ENDING_B_COMPLETE"
+    }
+  ],
+  "completion": {
+    "target_symbolic": "ENDING_B_COMPLETE",
+    "required_behavior": "show ending title and offer game existing replay/library options without automatically routing to identity reveal"
+  },
+  "teacher_mode": {
+    "language_toggle_reset": "reset on next/back/teacher navigation and scene switches",
+    "ru_text": true,
+    "lexicon": true,
+    "grammar": true
+  },
+  "unapproved_illustrations": true
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "SC04A_CONFESSION_R_KNOW",
+    "scene": "SC04A_CONFESSION_SH06",
+    "speaker": "yuna",
+    "text": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+    "original": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+    "simple": "네. 알고 싶어요.",
+    "position": "auto",
+    "teacher": {
+      "translation": "Да. Для меня важно. Я хочу знать, кто она.",
+      "note": "Косвенный вопрос 누군지 알고 싶어요; simple сохраняет решение.",
+      "grammar": [
+        "-는지 알다/모르다"
+      ],
+      "vocab": [
+        "알고 싶다 — хотеть знать"
+      ]
+    },
+    "next": "SC04A_CONFESSION_TO_IDENTITY"
+  },
+  {
+    "id": "SC04A_CONFESSION_TO_IDENTITY",
+    "scene": "SC04A_CONFESSION_SH06",
+    "text": "",
+    "position": "narrator",
+    "next": "SC04A_REVEAL_R02",
+    "when": {
+      "variable": "identity_investigation_chosen",
+      "op": "eq",
+      "value": false
+    },
+    "skipTo": "SC04A_REVEAL_R02"
+  },
+  {
+    "id": "SC04B_PHONE_D12",
+    "scene": "SC04B_PHONE_SH03",
+    "text": "유나는 뭐라고 대답할까요?",
+    "original": "유나는 뭐라고 대답할까요?",
+    "simple": "유나는 뭐라고 대답할까요?",
+    "position": "narrator",
+    "teacher": {
+      "translation": "Что ответит Юна?",
+      "note": "Игровые кнопки действий на русском; корейские образцы только в режиме преподавателя.",
+      "grammar": [
+        "-ㄹ까요?",
+        "뭐라고"
+      ],
+      "vocab": [
+        "대답하다 — отвечать"
+      ]
+    },
+    "choiceLanguage": "ru",
+    "choices": [
+      {
+        "id": "SC04B_PHONE_R_KNOW",
+        "label": "Да. Я хочу знать, кто она.",
+        "task": "Что ответит Юна на «А это важно?»",
+        "answer": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+        "answerSimple": "네. 알고 싶어요.",
+        "reaction": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+        "speaker": "yuna",
+        "reactionNode": "SC04B_PHONE_REACT_KNOW",
+        "next": "SC04B_PHONE_REACT_KNOW",
+        "effects": [
+          {
+            "variable": "identity_investigation_chosen",
+            "set": true
+          },
+          {
+            "variable": "yuna_declines_identity",
+            "set": false
+          }
+        ]
+      },
+      {
+        "id": "SC04B_PHONE_R_LEAVE",
+        "label": "Нет. Какая теперь разница?",
+        "task": "Что ответит Юна на «А это важно?»",
+        "answer": "아니요. 이제 상관없어요.",
+        "answerSimple": "아니요. 이제 알고 싶지 않아요.",
+        "reaction": "이제 더 듣고 싶지 않아요.",
+        "speaker": "yuna",
+        "reactionNode": "SC04B_PHONE_REACT_LEAVE",
+        "next": "SC04B_PHONE_REACT_LEAVE",
+        "effects": [
+          {
+            "variable": "identity_investigation_chosen",
+            "set": false
+          },
+          {
+            "variable": "yuna_declines_identity",
+            "set": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "SC04B_PHONE_REACT_KNOW",
+    "scene": "SC04B_PHONE_SH03",
+    "speaker": "yuna",
+    "text": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+    "original": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+    "simple": "네. 알고 싶어요.",
+    "position": "auto",
+    "teacher": {
+      "translation": "Да. Для меня важно. Я хочу знать, кто она.",
+      "note": "Косвенный вопрос 누군지 알고 싶어요; simple сохраняет решение.",
+      "grammar": [
+        "-는지 알다/모르다"
+      ],
+      "vocab": [
+        "알고 싶다 — хотеть знать"
+      ]
+    },
+    "next": "SC04B_PHONE_TO_IDENTITY"
+  },
+  {
+    "id": "SC04B_PHONE_TO_IDENTITY",
+    "scene": "SC04B_PHONE_SH03",
+    "text": "",
+    "position": "narrator",
+    "next": "SC04B_REVEAL_R02",
+    "when": {
+      "variable": "identity_investigation_chosen",
+      "op": "eq",
+      "value": false
+    },
+    "skipTo": "SC04B_REVEAL_R02"
+  }
+]

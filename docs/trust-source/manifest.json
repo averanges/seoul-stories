@@ -1,0 +1,12 @@
+{
+  "story_id": "neoreul_mideo",
+  "node_count": 43,
+  "scene01_nodes": 20,
+  "scene02_nodes": 23,
+  "temporary_image_count": 25,
+  "reference_storyboards": [
+    "references/scene_01_storyboard.png",
+    "references/scene_02_storyboard.png"
+  ],
+  "status": "Codex integration pending"
+}

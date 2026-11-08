@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+playwright-report/
+test-results/
+test-results-audio-final/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,15 @@
+export type Value = number | boolean | string | null;
+export type Variables = Record<string, Value>;
+export type Condition = { variable: string; op: 'eq' | 'ne' | 'gt' | 'gte' | 'lt' | 'lte'; value: Value } | { all: Condition[] } | { any: Condition[] } | { not: Condition };
+export type Route = string | { cases: { when: Condition; target: string }[]; fallback: string };
+export type Position = 'auto' | 'left' | 'right' | 'bottom' | 'center' | 'narrator';
+export type Rect = { x: number; y: number; width: number; height: number };
+export type Effect = { variable: string; set: Value } | { variable: string; add: number };
+export type Choice = { id: string; label: string; labelKo?: string; task: string; answer: string; answerSimple?: string; reaction: string; reactionNode?: string; speaker?: string; effects?: Effect[]; next: Route; when?: Condition };
+export type Scene = { src: string; transition?: 'cut'; frame?: { top: number; bottom: number; aspect: number }; label: string; title?: string; teacherTitle?: string; fit?: 'contain' | 'cover'; temporary?: boolean; characters: { id: string; x: number; y: number }[]; faces: Rect[]; safeArea?: Exclude<Position, 'auto' | 'narrator'>; focus: { x: number; y: number } };
+export type TeacherMaterials = { translation: string; note?: string; direction?: string; grammar?: string[]; vocab?: string[] };
+export type StoryVariant = { when: Condition; text: string; original?: string; simple?: string; teacher?: Partial<TeacherMaterials> };
+export type StoryNode = { id: string; scene: string; visual?: string; speaker?: string; text: string; original?: string; simple?: string; choiceLanguage?: 'ru'; teacher?: TeacherMaterials; variants?: StoryVariant[]; onEnterEffects?: Effect[]; textDelayMs?: number; transitionAfter?: { original: string; simple: string; ru: string; durationMs: number; manual?: boolean }; position?: Position; when?: Condition; skipTo?: Route; next?: Route; choices?: Choice[]; ending?: { title: string; description: string; kind?: 'continuation'; descriptionKo?: string } };
+export type Story = { version: 1; id: string; studentLanguage?: 'ko'; saveMigration?: { nodes: Record<string,string>; defaults: Variables }; title: string; subtitle: string; description: string; level: string; duration: string; cover: string; start: string; variables: Variables; characters: Record<string, { name: string; role: string; color: string }>; scenes: Record<string, Scene>; nodes: StoryNode[] };
+export type Entry = { nodeId: string; variables: Variables; choiceId?: string };
+export type Save = { version: 1; storyId: string; entries: Entry[]; updatedAt: string };

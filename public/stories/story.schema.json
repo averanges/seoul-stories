@@ -1,0 +1,832 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Seoul Stories v1",
+  "description": "Story manifest; characters, scenes and nodes may be inline or reference files in the same folder.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "type": "string",
+      "minLength": 1
+    },
+    "duration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cover": {
+      "type": "string",
+      "minLength": 1
+    },
+    "start": {
+      "type": "string",
+      "minLength": 1
+    },
+    "variables": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/value"
+      }
+    },
+    "characters": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[\\w-]+\\.json$"
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/character"
+          }
+        }
+      ]
+    },
+    "scenes": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[\\w-]+\\.json$"
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/scene"
+          }
+        }
+      ]
+    },
+    "nodes": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[\\w-]+\\.json$"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1
+        }
+      ]
+    },
+    "studentLanguage": {
+      "const": "ko"
+    },
+    "saveMigration": {
+      "type": "object",
+      "required": [
+        "nodes",
+        "defaults"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "nodes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "defaults": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/value"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "version",
+    "id",
+    "title",
+    "subtitle",
+    "description",
+    "level",
+    "duration",
+    "cover",
+    "start",
+    "variables",
+    "characters",
+    "scenes",
+    "nodes"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "value": {
+      "type": [
+        "number",
+        "boolean",
+        "string",
+        "null"
+      ]
+    },
+    "position": {
+      "enum": [
+        "auto",
+        "left",
+        "right",
+        "bottom",
+        "center",
+        "narrator"
+      ]
+    },
+    "condition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "variable": {
+              "type": "string",
+              "minLength": 1
+            },
+            "op": {
+              "enum": [
+                "eq",
+                "ne",
+                "gt",
+                "gte",
+                "lt",
+                "lte"
+              ]
+            },
+            "value": {
+              "$ref": "#/$defs/value"
+            }
+          },
+          "required": [
+            "variable",
+            "op",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "all": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/condition"
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "all"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "any": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/condition"
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "any"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "not": {
+              "$ref": "#/$defs/condition"
+            }
+          },
+          "required": [
+            "not"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "route": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "object",
+          "properties": {
+            "cases": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "when": {
+                    "$ref": "#/$defs/condition"
+                  },
+                  "target": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "when",
+                  "target"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0
+            },
+            "fallback": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "cases",
+            "fallback"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "effect": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "variable": {
+              "type": "string",
+              "minLength": 1
+            },
+            "set": {
+              "$ref": "#/$defs/value"
+            }
+          },
+          "required": [
+            "variable",
+            "set"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "variable": {
+              "type": "string",
+              "minLength": 1
+            },
+            "add": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "variable",
+            "add"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "character": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "color": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "color"
+      ],
+      "additionalProperties": false
+    },
+    "scene": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "characters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "x": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "y": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "id",
+              "x",
+              "y"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "faces": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "y": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "width": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "height": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "width",
+              "height"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "safeArea": {
+          "enum": [
+            "left",
+            "right",
+            "bottom",
+            "center"
+          ]
+        },
+        "focus": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "x",
+            "y"
+          ],
+          "additionalProperties": false
+        },
+        "title": {
+          "type": "string"
+        },
+        "teacherTitle": {
+          "type": "string"
+        },
+        "fit": {
+          "enum": [
+            "contain",
+            "cover"
+          ]
+        },
+        "temporary": {
+          "type": "boolean"
+        },
+        "frame": {
+          "type": "object",
+          "required": [
+            "top",
+            "bottom",
+            "aspect"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "top": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.45
+            },
+            "bottom": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.45
+            },
+            "aspect": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "transition": {
+          "const": "cut"
+        }
+      },
+      "required": [
+        "src",
+        "label",
+        "characters",
+        "faces",
+        "focus"
+      ],
+      "additionalProperties": false
+    },
+    "choice": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reaction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaker": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/effect"
+          },
+          "minItems": 0
+        },
+        "next": {
+          "$ref": "#/$defs/route"
+        },
+        "when": {
+          "$ref": "#/$defs/condition"
+        },
+        "labelKo": {
+          "type": "string"
+        },
+        "reactionNode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answerSimple": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "task",
+        "answer",
+        "reaction",
+        "next"
+      ],
+      "additionalProperties": false
+    },
+    "node": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scene": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaker": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string"
+        },
+        "position": {
+          "$ref": "#/$defs/position"
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "when": {
+                "$ref": "#/$defs/condition"
+              },
+              "text": {
+                "type": "string"
+              },
+              "original": {
+                "type": "string"
+              },
+              "simple": {
+                "type": "string"
+              },
+              "teacher": {
+                "type": "object",
+                "required": [],
+                "additionalProperties": false,
+                "properties": {
+                  "translation": {
+                    "type": "string"
+                  },
+                  "note": {
+                    "type": "string"
+                  },
+                  "direction": {
+                    "type": "string"
+                  },
+                  "grammar": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "vocab": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "when",
+              "text"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "when": {
+          "$ref": "#/$defs/condition"
+        },
+        "skipTo": {
+          "$ref": "#/$defs/route"
+        },
+        "next": {
+          "$ref": "#/$defs/route"
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/choice"
+          },
+          "minItems": 2,
+          "maxItems": 4
+        },
+        "ending": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "const": "continuation"
+            },
+            "descriptionKo": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "teacher": {
+          "type": "object",
+          "required": [
+            "translation"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "translation": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            },
+            "direction": {
+              "type": "string"
+            },
+            "grammar": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "vocab": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "visual": {
+          "type": "string"
+        },
+        "original": {
+          "type": "string",
+          "minLength": 1
+        },
+        "simple": {
+          "type": "string",
+          "minLength": 1
+        },
+        "choiceLanguage": {
+          "const": "ru"
+        },
+        "onEnterEffects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/effect"
+          }
+        },
+        "textDelayMs": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3000
+        },
+        "transitionAfter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "original",
+            "simple",
+            "ru",
+            "durationMs"
+          ],
+          "properties": {
+            "original": {
+              "type": "string",
+              "minLength": 1
+            },
+            "simple": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ru": {
+              "type": "string",
+              "minLength": 1
+            },
+            "durationMs": {
+              "type": "number",
+              "minimum": 500,
+              "maximum": 3000
+            },
+            "manual": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "required": [
+        "id",
+        "scene",
+        "text"
+      ],
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "required": [
+            "next"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "choices"
+                ]
+              },
+              {
+                "required": [
+                  "ending"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "required": [
+            "choices"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "next"
+                ]
+              },
+              {
+                "required": [
+                  "ending"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "required": [
+            "ending"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "next"
+                ]
+              },
+              {
+                "required": [
+                  "choices"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "dependentRequired": {
+        "when": [
+          "skipTo"
+        ]
+      }
+    }
+  }
+}

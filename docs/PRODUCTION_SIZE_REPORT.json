@@ -1,0 +1,34 @@
+{
+  "fileCount": 92,
+  "totalMiB": 51.8,
+  "audioMiB": 25.79,
+  "largest": [
+    {
+      "file": "stories/neoreul_mideo/assets/music/piano/outro.wav",
+      "bytes": 4939244
+    },
+    {
+      "file": "stories/neoreul_mideo/assets/ending_c/music/outro.wav",
+      "bytes": 4762844
+    },
+    {
+      "file": "stories/neoreul_mideo/assets/music/confrontation/outro.wav",
+      "bytes": 4586444
+    },
+    {
+      "file": "stories/neoreul_mideo/assets/scene_04a/SC04A_SH02.png",
+      "bytes": 2293243
+    },
+    {
+      "file": "stories/neoreul_mideo/assets/scene_03a/SC03A_BRIDGE_SH01.png",
+      "bytes": 2274556
+    },
+    {
+      "file": "stories/neoreul_mideo/assets/scene_04a/SC04A_SH04.png",
+      "bytes": 2252786
+    }
+  ],
+  "referencedAssets": 73,
+  "secretsFound": 0,
+  "caseSensitivePaths": "OK"
+}

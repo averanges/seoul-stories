@@ -1,0 +1,531 @@
+{
+  "id": "neoreul_mideo",
+  "titleRu": "Ты мне веришь?",
+  "titleKo": "정말 믿어?",
+  "edition": "two-scene vertical slice, draft artwork",
+  "level": "Seoul National University Korean 1A to early 1B; occasional higher-level line marked in teacherNote",
+  "languageMode": "Korean displayed; Russian translations teacher-mode only",
+  "start": "SC01_01",
+  "cast": {
+    "yuna": "Юна",
+    "minsu": "Минсу",
+    "sora": "Сора",
+    "narrator": "Рассказчик"
+  },
+  "scenes": [
+    {
+      "id": "SC01",
+      "titleRu": "Старые фотографии",
+      "setting": "Квартира Юны / пятница вечером",
+      "start": "SC01_01"
+    },
+    {
+      "id": "SC02",
+      "titleRu": "Покупки с Сорой",
+      "setting": "Магазин товаров для дома / суббота днём",
+      "start": "SC02_01"
+    }
+  ],
+  "variables": {
+    "first_question": null,
+    "route": null
+  },
+  "nodes": [
+    {
+      "id": "SC01_01",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_01.jpg",
+      "speaker": "narrator",
+      "ko": "금요일 저녁이에요. 유나는 이사 준비를 해요.",
+      "ru": "Вечер пятницы. Юна готовится к переезду.",
+      "next": "SC01_02",
+      "directorNote": "Пустая часть квартиры, коробки: установить ситуацию"
+    },
+    {
+      "id": "SC01_02",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_02.jpg",
+      "speaker": "narrator",
+      "ko": "유나는 오래된 사진첩을 찾았어요.",
+      "ru": "Юна нашла старый фотоальбом.",
+      "next": "SC01_03",
+      "directorNote": "Юна опускается на пол, листает фото"
+    },
+    {
+      "id": "SC01_03",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_03.jpg",
+      "speaker": "narrator",
+      "ko": "여기에 옛날 사진이 있어요.",
+      "ru": "Здесь старые фотографии.",
+      "next": "SC01_04",
+      "directorNote": "Предмет крупно; повторяемый мотив"
+    },
+    {
+      "id": "SC01_04",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_04.jpg",
+      "speaker": "yuna",
+      "ko": "이 사진 기억나요?",
+      "ru": "Помнишь эту фотографию?",
+      "next": "SC01_05"
+    },
+    {
+      "id": "SC01_05",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_05.jpg",
+      "speaker": "minsu",
+      "ko": "네! 우리 첫 데이트 사진이에요.",
+      "ru": "Да! Фото с нашего первого свидания.",
+      "next": "SC01_06"
+    },
+    {
+      "id": "SC01_06",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_06.jpg",
+      "speaker": "yuna",
+      "ko": "그때 화장실을 먼저 찾았어요!",
+      "ru": "Тогда ты первым делом искал туалет!",
+      "next": "SC01_07",
+      "directorNote": "Шутка, тёплая эмоция без нового сюжетного факта"
+    },
+    {
+      "id": "SC01_07",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_07.jpg",
+      "speaker": "narrator",
+      "ko": "두 사람은 사진을 보고 웃어요.",
+      "ru": "Они смеются, глядя на фотографии.",
+      "next": "SC01_08"
+    },
+    {
+      "id": "SC01_08",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_08.jpg",
+      "speaker": "yuna",
+      "ko": "다음 주에 같이 이사해요. 정말 좋아요.",
+      "ru": "На следующей неделе мы переезжаем вместе. Я очень рада.",
+      "next": "SC01_09"
+    },
+    {
+      "id": "SC01_09",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_09.jpg",
+      "speaker": "minsu",
+      "ko": "네. 저도 빨리 이사하고 싶어요.",
+      "ru": "Да. Я тоже хочу поскорее переехать.",
+      "next": "SC01_10"
+    },
+    {
+      "id": "SC01_10",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_10.jpg",
+      "speaker": "yuna",
+      "ko": "그런데 어제 새 집에 갔어요?",
+      "ru": "Кстати, ты вчера был в новой квартире?",
+      "next": "SC01_11",
+      "directorNote": "Смена регистра без внезапной тревожной музыки"
+    },
+    {
+      "id": "SC01_11",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_11.jpg",
+      "speaker": "minsu",
+      "ko": "아니요. 왜요?",
+      "ru": "Нет. А что?",
+      "next": "SC01_12"
+    },
+    {
+      "id": "SC01_12",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_12.jpg",
+      "speaker": "yuna",
+      "ko": "오늘 관리인이 전화했어요. 어제 새 집에서 큰 소리가 났어요.",
+      "ru": "Сегодня звонил управляющий. Вчера в новой квартире был сильный шум.",
+      "next": "SC01_12B"
+    },
+    {
+      "id": "SC01_12B",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_12.jpg",
+      "speaker": "yuna",
+      "ko": "그리고 어제 거기에서 민수를 봤어요.",
+      "ru": "И вчера там видели тебя.",
+      "next": "SC01_13",
+      "teacherNote": "В диалоге обращение по имени слегка условное ради уровня. Можно заменить на более естественную разговорную фразу с -대요 после согласования с преподавателем."
+    },
+    {
+      "id": "SC01_13",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_13.jpg",
+      "speaker": "minsu",
+      "ko": "아, 맞아요. 잠깐 갔어요. 미안해요.",
+      "ru": "А, точно. Я ненадолго заходил. Извини.",
+      "next": "SC01_C1",
+      "directorNote": "Не делать злодейского вида: обычная неловкость"
+    },
+    {
+      "id": "SC01_C1",
+      "sceneId": "SC01",
+      "type": "choice",
+      "image": "images/scene_01/s1_10.jpg",
+      "speaker": "narrator",
+      "ko": "유나는 뭐라고 말할까요?",
+      "ru": "Что скажет Юна?",
+      "directorNote": "Ученик сначала формулирует ответ устно; преподаватель нажимает выбранный вариант",
+      "choices": [
+        {
+          "id": "ask_what",
+          "labelRu": "Спросить, что он делал",
+          "oralRu": "Спроси: «Что ты там делал?»",
+          "exampleKo": "거기에서 뭐 했어요?",
+          "next": "SC01_R1",
+          "set": {
+            "first_question": "what"
+          }
+        },
+        {
+          "id": "ask_noise",
+          "labelRu": "Спросить о шуме",
+          "oralRu": "Спроси: «Почему там был шум?»",
+          "exampleKo": "거기에서 왜 시끄러웠어요?",
+          "next": "SC01_R2",
+          "set": {
+            "first_question": "noise"
+          }
+        },
+        {
+          "id": "let_go",
+          "labelRu": "Не продолжать разговор",
+          "oralRu": "Скажи: «Ладно. Давай продолжим собирать вещи».",
+          "exampleKo": "알겠어요. 이사 준비를 계속해요.",
+          "next": "SC01_R3",
+          "set": {
+            "first_question": "none"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SC01_R1",
+      "sceneId": "SC01",
+      "type": "reaction",
+      "image": "images/scene_01/s1_13.jpg",
+      "speaker": "minsu",
+      "ko": "그냥 집을 좀 봤어요.",
+      "ru": "Просто немного осмотрел квартиру.",
+      "next": "SC01_15"
+    },
+    {
+      "id": "SC01_R2",
+      "sceneId": "SC01",
+      "type": "reaction",
+      "image": "images/scene_01/s1_13.jpg",
+      "speaker": "minsu",
+      "ko": "잘 모르겠어요. 저는 잠깐 있었어요.",
+      "ru": "Не знаю. Я был там совсем недолго.",
+      "next": "SC01_15"
+    },
+    {
+      "id": "SC01_R3",
+      "sceneId": "SC01",
+      "type": "reaction",
+      "image": "images/scene_01/s1_07.jpg",
+      "speaker": "minsu",
+      "ko": "네, 좋아요. 제가 도와줄게요.",
+      "ru": "Да, давай. Я помогу.",
+      "next": "SC01_15"
+    },
+    {
+      "id": "SC01_15",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_15.jpg",
+      "speaker": "minsu",
+      "ko": "이제 가야 돼요. 내일 봐요!",
+      "ru": "Мне уже нужно идти. Увидимся завтра!",
+      "next": "SC01_16"
+    },
+    {
+      "id": "SC01_16",
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "image": "images/scene_01/s1_16.jpg",
+      "speaker": "narrator",
+      "ko": "민수가 집에 갔어요. 유나는 다시 사진을 봐요.",
+      "ru": "Минсу ушёл. Юна снова смотрит на фотографию.",
+      "next": "SC02_01",
+      "directorNote": "Пауза на фото, переход к светлому дневному магазину"
+    },
+    {
+      "id": "SC02_01",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_01.jpg",
+      "speaker": "narrator",
+      "ko": "토요일 낮이에요. 유나와 소라는 가구 가게에 왔어요.",
+      "ru": "Суббота, день. Юна и Сора пришли в магазин мебели.",
+      "next": "SC02_02"
+    },
+    {
+      "id": "SC02_02",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_02.jpg",
+      "speaker": "sora",
+      "ko": "우와! 이 소파 정말 좋아요.",
+      "ru": "Ух ты! Какой хороший диван!",
+      "next": "SC02_03"
+    },
+    {
+      "id": "SC02_03",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_03.jpg",
+      "speaker": "yuna",
+      "ko": "너무 커요. 우리 집은 작아요.",
+      "ru": "Он слишком большой. Наша квартира маленькая.",
+      "next": "SC02_04"
+    },
+    {
+      "id": "SC02_04",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_04.jpg",
+      "speaker": "sora",
+      "ko": "세 명이 같이 앉으면 돼요!",
+      "ru": "Трое могут сесть вместе!",
+      "next": "SC02_05"
+    },
+    {
+      "id": "SC02_05",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_03.jpg",
+      "speaker": "yuna",
+      "ko": "세 명이요? 누가 또 있어요?",
+      "ru": "Трое? Кто ещё?",
+      "next": "SC02_06"
+    },
+    {
+      "id": "SC02_06",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_02.jpg",
+      "speaker": "sora",
+      "ko": "유나, 민수, 그리고 저요!",
+      "ru": "Юна, Минсу и я!",
+      "next": "SC02_07"
+    },
+    {
+      "id": "SC02_07",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_04.jpg",
+      "speaker": "yuna",
+      "ko": "그럼 돈도 내세요!",
+      "ru": "Тогда и ты плати!",
+      "next": "SC02_08"
+    },
+    {
+      "id": "SC02_08",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_05.jpg",
+      "speaker": "yuna",
+      "ko": "이 컵이 예뻐요. 두 개 살 거예요.",
+      "ru": "Эти чашки красивые. Куплю две.",
+      "next": "SC02_09"
+    },
+    {
+      "id": "SC02_09",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_06.jpg",
+      "speaker": "sora",
+      "ko": "세 개 사세요. 제 컵도 필요해요!",
+      "ru": "Купи три. Мне тоже нужна чашка!",
+      "next": "SC02_10"
+    },
+    {
+      "id": "SC02_10",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_04.jpg",
+      "speaker": "yuna",
+      "ko": "매주 우리 집에 올 거예요?",
+      "ru": "Будешь каждую неделю к нам приходить?",
+      "next": "SC02_11"
+    },
+    {
+      "id": "SC02_11",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_06.jpg",
+      "speaker": "sora",
+      "ko": "물론이죠!",
+      "ru": "Ну конечно!",
+      "next": "SC02_12"
+    },
+    {
+      "id": "SC02_12",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_07.jpg",
+      "speaker": "sora",
+      "ko": "그런데 오늘 왜 이렇게 조용해요?",
+      "ru": "Но почему ты сегодня такая тихая?",
+      "next": "SC02_13"
+    },
+    {
+      "id": "SC02_13",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_08.jpg",
+      "speaker": "yuna",
+      "ko": "어제 민수가 조금 이상했어요.",
+      "ru": "Вчера Минсу вёл себя немного странно.",
+      "next": "SC02_14"
+    },
+    {
+      "id": "SC02_14",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_08.jpg",
+      "speaker": "yuna",
+      "ko": "새 집에 안 갔어요. 처음에는 이렇게 말했어요.",
+      "ru": "«Я не ходил в новую квартиру». Сначала он так сказал.",
+      "next": "SC02_15"
+    },
+    {
+      "id": "SC02_15",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_07.jpg",
+      "speaker": "sora",
+      "ko": "그런데 정말 갔어요?",
+      "ru": "А он всё-таки туда ходил?",
+      "next": "SC02_16"
+    },
+    {
+      "id": "SC02_16",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_08.jpg",
+      "speaker": "yuna",
+      "ko": "네. 관리인이 어제 거기에서 민수를 봤어요.",
+      "ru": "Да. Управляющий видел там Минсу вчера.",
+      "next": "SC02_17"
+    },
+    {
+      "id": "SC02_17",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_09.jpg",
+      "speaker": "sora",
+      "ko": "그냥 잠깐 갔을 수도 있어요. 다시 물어보세요.",
+      "ru": "Может быть, он просто ненадолго заходил. Спроси ещё раз.",
+      "next": "SC02_18",
+      "teacherNote": "-을 수도 있어요 немного выше целевого уровня, можно заменить на «그냥 잠깐 갔어요? 다시 물어보세요.»"
+    },
+    {
+      "id": "SC02_18",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_09.jpg",
+      "speaker": "sora",
+      "ko": "아니면 관리인에게 물어보세요. 누가 있었어요?",
+      "ru": "Или спроси управляющего. Кто там был?",
+      "next": "SC02_19"
+    },
+    {
+      "id": "SC02_19",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_10.jpg",
+      "speaker": "yuna",
+      "ko": "음… 어떻게 해야 돼요?",
+      "ru": "Хм… Что же мне делать?",
+      "next": "SC02_20"
+    },
+    {
+      "id": "SC02_20",
+      "sceneId": "SC02",
+      "type": "dialogue",
+      "image": "images/scene_02/s2_10.jpg",
+      "speaker": "sora",
+      "ko": "너무 걱정하지 마세요. 먼저 컵부터 사요.",
+      "ru": "Не переживай слишком сильно. Сначала купим чашки.",
+      "next": "SC02_C1"
+    },
+    {
+      "id": "SC02_C1",
+      "sceneId": "SC02",
+      "type": "choice",
+      "image": "images/scene_02/s2_10.jpg",
+      "speaker": "narrator",
+      "ko": "유나는 어떻게 할까요?",
+      "ru": "Что Юна решит сделать?",
+      "directorNote": "Ключевая развилка. Перед выбором возможна устная формулировка по-русски → по-корейски.",
+      "choices": [
+        {
+          "id": "direct",
+          "labelRu": "Поговорить с Минсу",
+          "oralRu": "Скажи: «Я ещё раз поговорю с Минсу».",
+          "exampleKo": "민수하고 다시 이야기할 거예요.",
+          "next": "SC02_END_A",
+          "set": {
+            "route": "talk"
+          }
+        },
+        {
+          "id": "check",
+          "labelRu": "Спросить управляющего",
+          "oralRu": "Скажи: «Сначала спрошу управляющего».",
+          "exampleKo": "먼저 관리인에게 물어볼 거예요.",
+          "next": "SC02_END_B",
+          "set": {
+            "route": "investigate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SC02_END_A",
+      "sceneId": "SC02",
+      "type": "route_end",
+      "image": "images/scene_02/s2_10.jpg",
+      "speaker": "yuna",
+      "ko": "민수하고 다시 이야기할 거예요.",
+      "ru": "Я ещё раз поговорю с Минсу.",
+      "routeName": "SC03A — открытый разговор",
+      "teacherNote": "Это выход из демо после двух сцен. Не показывать счастливый конец заранее."
+    },
+    {
+      "id": "SC02_END_B",
+      "sceneId": "SC02",
+      "type": "route_end",
+      "image": "images/scene_02/s2_10.jpg",
+      "speaker": "yuna",
+      "ko": "먼저 관리인에게 물어볼 거예요.",
+      "ru": "Сначала спрошу управляющего.",
+      "routeName": "SC03B — проверка квартиры",
+      "teacherNote": "Это выход из демо после двух сцен. Не показывать обнаружение измены заранее."
+    }
+  ],
+  "readMe": "Content-model example. Codex should adapt it to current player schema rather than rebuilding the application."
+}

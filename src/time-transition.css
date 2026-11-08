@@ -1,0 +1,17 @@
+.time-transition-active { background: #070909; }
+.time-transition-active .illustration,
+.time-transition-active .scene-overlay { visibility: hidden; }
+.time-transition { position: absolute; inset: 0; z-index: 8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; background: #070909; color: #f1eee6; text-align: center; animation: time-card-in 180ms ease-out; }
+.time-transition > p { margin: 0; font-size: clamp(1.4rem, 3vw, 2.6rem); letter-spacing: .06em; }
+.time-transition > .time-transition-translation { font-size: 1rem; letter-spacing: normal; color: #c2beb6; }
+.playing .time-transition > .simplify-button { align-self: center; }
+@keyframes time-card-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .time-transition { animation: none; } }
+
+.manual-time-transition { background: #000; animation-duration: 450ms; }
+.manual-time-transition > p { animation: time-card-in 650ms 250ms both; }
+.manual-time-transition .time-transition-next { position:absolute; bottom:12%; padding:12px 22px; border:1px solid #8b806b; border-radius:6px; background:#000; color:#f1eee6; cursor:pointer; }
+@media(prefers-reduced-motion:reduce){.manual-time-transition > p {animation:none}}
+
+.manual-time-transition-active .illustration { visibility:visible; }
+.manual-time-transition-active {background:#000}

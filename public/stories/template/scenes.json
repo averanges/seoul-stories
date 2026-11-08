@@ -1,0 +1,13 @@
+{
+  "main": {
+    "src": "cover.svg",
+    "label": "Начальная сцена",
+    "characters": [],
+    "faces": [],
+    "focus": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "safeArea": "left"
+  }
+}

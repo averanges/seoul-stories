@@ -1,0 +1,39 @@
+/* Audit fixes: safe areas, touch targets, short landscape and tablet portrait. */
+.playing .player-heading{padding-top:env(safe-area-inset-top,0px);height:calc(82px + env(safe-area-inset-top,0px));padding-left:max(3.5%,env(safe-area-inset-left,0px));padding-right:max(3.5%,env(safe-area-inset-right,0px))}
+.playing .player-bottom{bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(3.5%,env(safe-area-inset-left,0px));padding-right:max(3.5%,env(safe-area-inset-right,0px))}
+.playing .scene-overlay{bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+.playing .dialogue{min-width:0;display:flex;flex-direction:column}.playing .dialogue p{min-height:0;overflow:auto;overflow-wrap:anywhere}.playing .dialogue-label,.playing .dialogue-controls{flex-shrink:0}
+.playing .dialogue-next,.playing .simplify-button,.playing .previous,.playing .icon-button,.playing .teacher-toggle,.playing .back-library{min-height:44px;min-width:44px}
+.playing .dialogue-next{padding:8px 10px}.playing .simplify-button{padding:8px 14px}.playing .dialogue-controls{flex-wrap:wrap;gap:6px}
+.playing .dialogue-controls .dialogue-next{margin-inline-start:auto}
+.playing .teacher-panel{top:calc(82px + env(safe-area-inset-top,0px));bottom:calc(65px + env(safe-area-inset-bottom,0px));overflow-wrap:anywhere}
+.playing .teacher-panel>.drawer-close{position:sticky;float:right;top:0;right:0;width:44px;height:44px;margin:-12px -12px 0 0;z-index:2;border-radius:50%;background:#12201e}
+.menu-popover{width:min(280px,calc(100vw - 24px));max-height:calc(100dvh - 100px);overflow:auto}.music-menu-settings{min-width:0}.music-volume input{min-height:44px}
+.playing .teacher-panel select,.playing .teacher-panel button,.playing .teacher-panel input{min-height:44px}.playing .teacher-panel select{max-width:100%}
+.playing .time-transition-next{min-height:44px;min-width:100px}
+@media(max-width:900px){
+ .playing .player-heading{height:calc(62px + env(safe-area-inset-top,0px));padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px));gap:6px}
+ .playing .player-heading>div:first-child{flex:1;gap:4px;min-width:0}.playing .player-heading h1{font-size:14px;min-width:0}.playing .player-heading h1>span{display:none}
+ .playing .back-library{font-size:0;display:grid;place-items:center;margin:0;padding:0}.playing .back-library:before{content:'←';font-size:20px}
+ .playing .player-tools{gap:3px}.playing .player-tools>.icon-button[aria-label="Справка"]{display:none}.playing .teacher-toggle{width:44px;height:44px;padding:0;justify-content:center}.playing .teacher-toggle span{display:none}
+ .playing .teacher-panel{top:calc(64px + env(safe-area-inset-top,0px));bottom:calc(58px + env(safe-area-inset-bottom,0px));padding:18px}
+ .playing .player-bottom{bottom:calc(8px + env(safe-area-inset-bottom,0px));height:44px;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+}
+@media(max-width:900px) and (orientation:portrait){
+ .playing .illustration{top:calc(62px + env(safe-area-inset-top,0px));bottom:auto;height:48dvh}
+ .playing .frame-window{width:100%;top:42%}.playing .image-layer>img{object-fit:contain!important;object-position:50% 30%!important}
+ .playing .scene-overlay,.playing.teaching .scene-overlay{left:5%;right:5%;bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+ .playing .has-choices .scene-overlay,.playing.teaching .has-choices .scene-overlay{grid-template-columns:1fr;gap:10px}
+ .playing .dialogue{width:100%;max-height:34dvh;padding:10px 14px}.playing .dialogue p{font-size:18px;line-height:1.55}
+ .playing .choice-card,.playing.teaching .choice-card{min-height:52px;padding:10px 13px}.playing .choice-card strong{font-size:14px}
+ .playing .teacher-panel{left:4%;right:4%;width:auto}.playing .has-ending .scene-overlay{bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+}
+@media(orientation:landscape) and (max-height:600px){
+ .playing .player-heading{height:calc(54px + env(safe-area-inset-top,0px));padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+ .playing .scene-overlay,.playing.teaching .scene-overlay{left:max(3%,env(safe-area-inset-left,0px));right:max(3%,env(safe-area-inset-right,0px));bottom:calc(54px + env(safe-area-inset-bottom,0px));max-height:calc(100dvh - 112px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+ .playing .has-choices .scene-overlay,.playing.teaching .has-choices .scene-overlay{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px;align-items:end}
+ .playing .dialogue{width:100%;max-height:calc(100dvh - 116px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));padding:8px 12px}.playing .dialogue p{font-size:17px;line-height:1.45;margin:4px 0}.playing .dialogue-label{font-size:13px}
+ .playing .choice-card,.playing.teaching .choice-card{min-height:44px;padding:7px 10px}.playing .choices{gap:6px}.playing .choice-card strong{font-size:13px;line-height:1.4}
+ .playing .teacher-panel{top:calc(56px + env(safe-area-inset-top,0px));left:auto;right:max(12px,env(safe-area-inset-right,0px));width:min(390px,60vw);bottom:calc(54px + env(safe-area-inset-bottom,0px))}
+ .playing .has-ending .scene-overlay{bottom:calc(54px + env(safe-area-inset-bottom,0px))}.playing .ending{padding:10px 15px}.playing .ending h2{margin:4px 0;font-size:22px}.playing .ending p{margin-bottom:8px}
+}

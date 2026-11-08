@@ -1,0 +1,662 @@
+{
+  "nodes": [
+    {
+      "id": "SC01_D01",
+      "scene": "SC01_SH01",
+      "text": "금요일 저녁, 유나와 민수는 이사 준비로 바빠요.",
+      "original": "금요일 저녁, 유나와 민수는 이사 준비로 바빠요.",
+      "simple": "오늘은 금요일 저녁이에요. 두 사람은 이사 준비를 해요.",
+      "position": "narrator",
+      "teacher": {
+        "translation": "Пятничный вечер. Юна и Минсу заняты подготовкой к переезду.",
+        "note": "Учебная цель — сразу установить переезд; на иллюстрации видны коробки.",
+        "grammar": [
+          "N(으)로",
+          "N을/를 하다"
+        ],
+        "vocab": [
+          "이사 준비"
+        ]
+      },
+      "next": "SC01_D02"
+    },
+    {
+      "id": "SC01_D02",
+      "scene": "SC01_SH02",
+      "text": "유나는 상자 안에서 오래된 사진 앨범을 발견해요.",
+      "original": "유나는 상자 안에서 오래된 사진 앨범을 발견해요.",
+      "simple": "유나는 상자에서 옛날 앨범을 찾아요.",
+      "position": "narrator",
+      "teacher": {
+        "translation": "Юна находит в коробке старый фотоальбом.",
+        "note": "В простой версии остаётся альбом; подробность с фото видна на следующем кадре.",
+        "grammar": [
+          "N에서",
+          "-아/어요"
+        ],
+        "vocab": [
+          "앨범",
+          "발견하다 (оригинал)"
+        ]
+      },
+      "next": "SC01_D03"
+    },
+    {
+      "id": "SC01_D03",
+      "scene": "SC01_SH03",
+      "speaker": "yuna",
+      "text": "어? 이 사진 기억나요?",
+      "original": "어? 이 사진 기억나요?",
+      "simple": "어? 이 사진 기억나요?",
+      "position": "auto",
+      "teacher": {
+        "translation": "О! Помнишь эту фотографию?",
+        "note": "Фото обязательно показывает серьёзного Минсу. Без этого шутка из следующих реплик не работает.",
+        "grammar": [
+          "-아요/어요"
+        ],
+        "vocab": [
+          "기억나다"
+        ]
+      },
+      "next": "SC01_D04"
+    },
+    {
+      "id": "SC01_D04",
+      "scene": "SC01_SH03",
+      "text": "사진 속 민수는 전혀 웃고 있지 않아요.",
+      "original": "사진 속 민수는 전혀 웃고 있지 않아요.",
+      "simple": "사진에서 민수는 안 웃어요.",
+      "position": "narrator",
+      "teacher": {
+        "translation": "На фотографии Минсу стоит и не улыбается.",
+        "note": "Ключевое визуальное подтверждение шутки: Минсу на фотографии серьёзен; не дублировать информацию о первом свидании из следующей реплики.",
+        "grammar": [
+          "-고 있지 않다 (оригинал)",
+          "안 + V (простая)"
+        ],
+        "vocab": [
+          "사진 속 (оригинал)",
+          "전혀 (оригинал)"
+        ]
+      },
+      "next": "SC01_D05"
+    },
+    {
+      "id": "SC01_D05",
+      "scene": "SC01_SH04",
+      "speaker": "minsu",
+      "text": "그럼요. 우리 첫 데이트 사진이잖아요.",
+      "original": "그럼요. 우리 첫 데이트 사진이잖아요.",
+      "simple": "네. 우리 첫 데이트 사진이에요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Конечно. Это же наша фотография с первого свидания.",
+        "note": "Сдержанная улыбка, он вспоминает.",
+        "grammar": [
+          "-잖아요 (оригинал)",
+          "N이에요/예요"
+        ],
+        "vocab": []
+      },
+      "next": "SC01_D06"
+    },
+    {
+      "id": "SC01_D06",
+      "scene": "SC01_SH04",
+      "speaker": "yuna",
+      "text": "그때 왜 그렇게 심각해 보였어요?",
+      "original": "그때 왜 그렇게 심각해 보였어요?",
+      "simple": "그때 왜 안 웃었어요?",
+      "position": "auto",
+      "teacher": {
+        "translation": "Почему ты на той фотографии такой серьёзный?",
+        "note": "Проверка «реплика ↔ фото»: лицо Минсу на фото должно быть серьёзным.",
+        "grammar": [
+          "-아/어 보이다 (оригинал)",
+          "안 + V (простая)"
+        ],
+        "vocab": [
+          "심각하다 (оригинал)"
+        ]
+      },
+      "next": "SC01_D07"
+    },
+    {
+      "id": "SC01_D07",
+      "scene": "SC01_SH04",
+      "speaker": "minsu",
+      "text": "너무 긴장해서 웃을 수도 없었어요.",
+      "original": "너무 긴장해서 웃을 수도 없었어요.",
+      "simple": "그날 너무 떨렸어요. 그래서 못 웃었어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Я так волновался, что даже улыбнуться не мог.",
+        "note": "Смысл обеих версий: волновался и не улыбался; фотография это подтверждает.",
+        "grammar": [
+          "-아서/어서",
+          "-(으)ㄹ 수 없다 (оригинал)",
+          "못 + V (простая)"
+        ],
+        "vocab": [
+          "긴장하다 (оригинал)",
+          "떨리다 (простая версия)"
+        ]
+      },
+      "next": "SC01_D08"
+    },
+    {
+      "id": "SC01_D08",
+      "scene": "SC01_SH04",
+      "speaker": "yuna",
+      "text": "이제 곧 같이 살겠네요.",
+      "original": "이제 곧 같이 살겠네요.",
+      "simple": "이제 곧 같이 살 거예요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Скоро мы будем жить вместе.",
+        "note": "Тёплый эмоциональный переход от прошлого к будущему.",
+        "grammar": [
+          "-겠네요 (оригинал)",
+          "-(으)ㄹ 거예요 (простая)"
+        ],
+        "vocab": [
+          "곧"
+        ]
+      },
+      "next": "SC01_D09"
+    },
+    {
+      "id": "SC01_D09",
+      "scene": "SC01_SH04",
+      "speaker": "minsu",
+      "text": "맞아요. 새집에서도 사진 많이 찍어요.",
+      "original": "맞아요. 새집에서도 사진 많이 찍어요.",
+      "simple": "네. 새집에서도 사진 많이 찍어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Да. И в новом доме будем много фотографироваться.",
+        "note": "Не обещание конкретного события, а общий мотив новых фотографий.",
+        "grammar": [
+          "-에서도"
+        ],
+        "vocab": [
+          "찍다"
+        ]
+      },
+      "next": "SC01_D10"
+    },
+    {
+      "id": "SC01_D10",
+      "scene": "SC01_SH04",
+      "speaker": "yuna",
+      "text": "내일 소라랑 새집에 필요한 물건을 보러 가요.",
+      "original": "내일 소라랑 새집에 필요한 물건을 보러 가요.",
+      "simple": "내일 소라하고 가게에 가요. 컵하고 접시를 살 거예요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Завтра пойду с Сорой посмотреть вещи для новой квартиры.",
+        "note": "Обязательная связка со SC02: Юна и Сора идут за вещами для будущего дома. В простой версии конкретизированы чашки и тарелки, смысл сохранён.",
+        "grammar": [
+          "-러 가다 (оригинал)",
+          "-(으)ㄹ 거예요 (простая)"
+        ],
+        "vocab": [
+          "필요하다 (оригинал)",
+          "접시 (простая версия, если новое)"
+        ]
+      },
+      "next": "SC01_D11"
+    },
+    {
+      "id": "SC01_D11",
+      "scene": "SC01_SH05",
+      "speaker": "yuna",
+      "text": "아, 맞다. 어제 새집에 다녀왔어요?",
+      "original": "아, 맞다. 어제 새집에 다녀왔어요?",
+      "simple": "어제 새집에 갔어요?",
+      "position": "auto",
+      "teacher": {
+        "translation": "Кстати, ты вчера был в новой квартире?",
+        "note": "Внутренний календарь: SC01 пятница, «вчера» = четверг. Это ненавязчивый бытовой вопрос.",
+        "grammar": [
+          "-았/었어요"
+        ],
+        "vocab": [
+          "다녀오다 (оригинал)"
+        ]
+      },
+      "next": "SC01_D12"
+    },
+    {
+      "id": "SC01_D12",
+      "scene": "SC01_SH05",
+      "speaker": "minsu",
+      "text": "아니요. 어제는 안 갔는데요. 왜요?",
+      "original": "아니요. 어제는 안 갔는데요. 왜요?",
+      "simple": "아니요. 어제는 안 갔어요. 왜요?",
+      "position": "auto",
+      "teacher": {
+        "translation": "Нет. Вчера не ходил. А что?",
+        "note": "Произносится просто, без намеренно злодейского оттенка. Это объективная ложь относительно визита.",
+        "grammar": [
+          "-는데요 (оригинал)",
+          "안 + V"
+        ],
+        "vocab": []
+      },
+      "next": "SC01_D13"
+    },
+    {
+      "id": "SC01_D13",
+      "scene": "SC01_SH05",
+      "speaker": "yuna",
+      "text": "오늘 경비 아저씨한테 전화가 왔어요. 어제 새집에서 큰 소리가 났대요.",
+      "original": "오늘 경비 아저씨한테 전화가 왔어요. 어제 새집에서 큰 소리가 났대요.",
+      "simple": "오늘 경비 아저씨가 전화했어요. 어제 새집에서 소리가 많이 났어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Сегодня звонил охранник. Сказал, что вчера в новой квартире было шумно.",
+        "note": "Упрощение не должно добавлять очевидцев шума. Подпись «охранник» без жёсткого формального должностного тона.",
+        "grammar": [
+          "-한테",
+          "-대요 (оригинал)",
+          "-에서 (простая)"
+        ],
+        "vocab": [
+          "경비 아저씨",
+          "소리가 나다"
+        ]
+      },
+      "next": "SC01_D14"
+    },
+    {
+      "id": "SC01_D14",
+      "scene": "SC01_SH05",
+      "speaker": "yuna",
+      "text": "그리고 민수 씨도 봤대요.",
+      "original": "그리고 민수 씨도 봤대요.",
+      "simple": "아저씨가 민수 씨도 봤어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "И охранник сказал, что видел тебя.",
+        "note": "Обязательно: охранник лично видел Минсу. Это причина, почему парень вынужден исправить ответ.",
+        "grammar": [
+          "-대요 (оригинал)",
+          "-도"
+        ],
+        "vocab": []
+      },
+      "next": "SC01_D15"
+    },
+    {
+      "id": "SC01_D15",
+      "scene": "SC01_SH06",
+      "speaker": "minsu",
+      "text": "아… 맞아요. 잠깐 들렀어요. 확인할 게 좀 있었어요.",
+      "original": "아… 맞아요. 잠깐 들렀어요. 확인할 게 좀 있었어요.",
+      "simple": "아, 맞아요. 잠깐 갔어요. 일이 좀 있었어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "А… точно. Я ненадолго заходил. Нужно было кое-что проверить.",
+        "note": "Подтверждает визит, НЕ объясняет шум или присутствие других людей. Лицо слегка смущено, но не «виновное».",
+        "grammar": [
+          "-(으)ㄹ 게 있다 (оригинал)",
+          "-았/었어요"
+        ],
+        "vocab": [
+          "들르다 (оригинал)",
+          "확인하다 (оригинал)",
+          "잠깐"
+        ]
+      },
+      "next": "SC01_D16"
+    },
+    {
+      "id": "SC01_D16",
+      "scene": "SC01_SH07",
+      "text": "유나는 잠시 생각해요. 뭐라고 말할까요?",
+      "original": "유나는 잠시 생각해요. 뭐라고 말할까요?",
+      "simple": "유나는 생각해요. 뭐라고 말할까요?",
+      "position": "narrator",
+      "teacher": {
+        "translation": "Юна задумывается. Что она скажет?",
+        "note": "Текстовый prompt можно показывать на русском как учебное действие; готовые корейские ответы скрыты от ученика в выборе.",
+        "grammar": [
+          "-(으)ㄹ까요?"
+        ],
+        "vocab": [
+          "잠시 (оригинал)"
+        ]
+      },
+      "choiceLanguage": "ru",
+      "choices": [
+        {
+          "id": "ask_what",
+          "label": "Спросить, что он делал в квартире",
+          "task": "Спросить, что он делал в квартире",
+          "answer": "그럼 거기에서 뭘 확인하러 갔어요?",
+          "answerSimple": "거기에서 뭐 했어요?",
+          "reaction": "이사 준비가 잘되고 있는지 보러 갔어요. 아직 다 안 끝났어요.",
+          "speaker": "minsu",
+          "reactionNode": "SC01_R_A",
+          "next": "SC01_R_A",
+          "effects": [
+            {
+              "variable": "first_question",
+              "set": "what"
+            },
+            {
+              "variable": "minsu_said_he_went_to_check_move_preparation",
+              "set": true
+            }
+          ]
+        },
+        {
+          "id": "ask_noise",
+          "label": "Спросить, откуда был шум",
+          "task": "Спросить, откуда был шум",
+          "answer": "그런데 왜 그렇게 시끄러웠어요?",
+          "answerSimple": "왜 소리가 많이 났어요?",
+          "reaction": "물건을 옮기다가 소리가 좀 났어요. 큰일은 아니에요.",
+          "speaker": "minsu",
+          "reactionNode": "SC01_R_B",
+          "next": "SC01_R_B",
+          "effects": [
+            {
+              "variable": "first_question",
+              "set": "noise"
+            },
+            {
+              "variable": "minsu_said_an_object_fell_or_moved",
+              "set": true
+            }
+          ]
+        },
+        {
+          "id": "let_go",
+          "label": "Пока не продолжать этот разговор",
+          "task": "Пока не продолжать этот разговор",
+          "answer": "알겠어요. 일단 같이 이사 준비를 해요.",
+          "answerSimple": "알겠어요. 같이 준비해요.",
+          "reaction": "알겠어요. 이 상자는 제가 정리할게요.",
+          "speaker": "minsu",
+          "reactionNode": "SC01_R_C",
+          "next": "SC01_R_C",
+          "effects": [
+            {
+              "variable": "first_question",
+              "set": "none"
+            },
+            {
+              "variable": "yuna_avoided_further_questions",
+              "set": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SC01_R_A",
+      "scene": "SC01_SH07",
+      "speaker": "minsu",
+      "text": "이사 준비가 잘되고 있는지 보러 갔어요. 아직 다 안 끝났어요.",
+      "original": "이사 준비가 잘되고 있는지 보러 갔어요. 아직 다 안 끝났어요.",
+      "simple": "새집을 보러 갔어요. 아직 할 일이 있어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Пошёл посмотреть, как идёт подготовка к переезду. Ещё не всё закончил.",
+        "note": "Ответ уклончивый, но совместим с будущей реальной полкой. Не выдаёт точного сюрприза.",
+        "grammar": [
+          "-는지 (оригинал)",
+          "-러 가다"
+        ],
+        "vocab": [
+          "잘되다 (оригинал)"
+        ]
+      },
+      "next": "SC01_D17"
+    },
+    {
+      "id": "SC01_R_B",
+      "scene": "SC01_SH07",
+      "speaker": "minsu",
+      "text": "물건을 옮기다가 소리가 좀 났어요. 큰일은 아니에요.",
+      "original": "물건을 옮기다가 소리가 좀 났어요. 큰일은 아니에요.",
+      "simple": "물건을 옮겼어요. 그래서 소리가 났어요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Я что-то переносил, и был шум. Ничего серьёзного.",
+        "note": "Обе версии говорят о перемещении вещей и шуме, но не раскрывают полку или присутствие других людей.",
+        "grammar": [
+          "-다가 (оригинал)",
+          "그래서 (простая)"
+        ],
+        "vocab": [
+          "옮기다"
+        ]
+      },
+      "next": "SC01_D17"
+    },
+    {
+      "id": "SC01_R_C",
+      "scene": "SC01_SH07",
+      "speaker": "minsu",
+      "text": "알겠어요. 이 상자는 제가 정리할게요.",
+      "original": "알겠어요. 이 상자는 제가 정리할게요.",
+      "simple": "좋아요. 제가 도와줄게요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Ладно. Я займусь этой коробкой / помогу тебе.",
+        "note": "Юна переводит разговор обратно к коробкам и пока не получает новых сведений.",
+        "grammar": [
+          "-(으)ㄹ게요"
+        ],
+        "vocab": [
+          "정리하다 (оригинал)"
+        ]
+      },
+      "next": "SC01_D17"
+    },
+    {
+      "id": "SC01_D17",
+      "scene": "SC01_SH07",
+      "speaker": "minsu",
+      "text": "벌써 늦었네요. 이제 가야겠어요. 내일 봐요.",
+      "original": "벌써 늦었네요. 이제 가야겠어요. 내일 봐요.",
+      "simple": "늦었어요. 이제 가요. 내일 봐요.",
+      "position": "auto",
+      "teacher": {
+        "translation": "Уже поздно. Мне пора. Увидимся завтра.",
+        "note": "Произносится за кадром при удержании SH07. Не нужна отдельная иллюстрация ради его реплики.",
+        "grammar": [
+          "-아/어야겠다 (оригинал)",
+          "-네요 (оригинал)"
+        ],
+        "vocab": [
+          "벌써"
+        ]
+      },
+      "next": "SC01_D18"
+    },
+    {
+      "id": "SC01_D18",
+      "scene": "SC01_SH08",
+      "text": "민수가 집에 간 뒤, 유나는 앨범을 다시 펼쳐 봐요.",
+      "original": "민수가 집에 간 뒤, 유나는 앨범을 다시 펼쳐 봐요.",
+      "simple": "민수는 집에 갔어요. 유나는 앨범을 다시 봐요.",
+      "position": "narrator",
+      "teacher": {
+        "translation": "После ухода Минсу Юна снова открывает альбом.",
+        "note": "В визуале Минсу отсутствует, пустое место рядом заметно.",
+        "grammar": [
+          "-(으)ㄴ 뒤 (оригинал)",
+          "-았/었어요 (простая)"
+        ],
+        "vocab": [
+          "펼치다 (оригинал)"
+        ]
+      },
+      "next": "SC01_D19"
+    },
+    {
+      "id": "SC01_D19",
+      "scene": "SC01_SH08",
+      "text": "조금 전에는 웃고 있었지만, 이제는 웃음이 나오지 않아요.",
+      "original": "조금 전에는 웃고 있었지만, 이제는 웃음이 나오지 않아요.",
+      "simple": "아까는 웃었어요. 지금은 웃지 않아요.",
+      "position": "narrator",
+      "teacher": {
+        "translation": "Ещё недавно она смеялась. Теперь улыбка исчезла.",
+        "note": "Завершающая смысловая точка. После неё автоматический переход к SC02 по кнопке.",
+        "grammar": [
+          "-고 있다 (оригинал)",
+          "-지만 (оригинал)",
+          "-지 않다 (простая)"
+        ],
+        "vocab": [
+          "조금 전 (оригинал)",
+          "아까 (простая)"
+        ]
+      },
+      "next": "SC02_01"
+    }
+  ],
+  "scenes": {
+    "SC01_SH01": {
+      "src": "assets/scene_01/SC01_SH01.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Квартира перед переездом",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH02": {
+      "src": "assets/scene_01/SC01_SH02.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Юна находит альбом",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH03": {
+      "src": "assets/scene_01/SC01_SH03.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Фотография первого свидания",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH04": {
+      "src": "assets/scene_01/SC01_SH04.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Общее воспоминание и планы",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH05": {
+      "src": "assets/scene_01/SC01_SH05.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Юна задаёт бытовой вопрос и замечает нестыковку",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH06": {
+      "src": "assets/scene_01/SC01_SH06.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Минсу меняет ответ",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH07": {
+      "src": "assets/scene_01/SC01_SH07.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Юна решает, продолжать ли разговор",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    "SC01_SH08": {
+      "src": "assets/scene_01/SC01_SH08.webp",
+      "label": "오래된 사진",
+      "title": "오래된 사진",
+      "teacherTitle": "SC01 · Юна остаётся с альбомом",
+      "fit": "contain",
+      "temporary": false,
+      "characters": [],
+      "faces": [],
+      "safeArea": "bottom",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    }
+  },
+  "hashes": {
+    "src/main.tsx": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+    "src/cinematic.css": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+    "src/SceneImage.tsx": "b56ce688c62c34e06d1991feae9dd8b79961b5ecde91b0597b1cd2cd0ad2c324",
+    "src/engine.ts": "73393b8aad5d0966b714feac98dd6f078e1af44d86c0f24f5fab3efa6188471f",
+    "src/storage.ts": "ffb9a5ffb92072f02b31900e68401f16b2f0b561ecb7277b89c1e58d6c151ea5",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH01.webp": "6f075b23fe1b0c2f2467fcd5cc91b4964011fa058da17ab0bf79fdda8e74f1d1",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH02.webp": "4d545ef816fa7eaff1522c27a626a2c5ea95ab578fa901613b8302a640b4ea07",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH03.webp": "475017d4654e2f6b318b8685e8ad0a1459fad07a3a208d52044cc2a61ed4eaef",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH04.webp": "e52fb36ee3022ed580fa3690792a79821cf625623bb4e011c4fd526e63172dbb",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH05.webp": "a0f9b6708f5686ac35323b4c6627eea95f66dc808a8e607254294a27f7b4edf9",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH06.webp": "8c43824b5a91dfffb52ba4ddb71568f2f57008abc1d704cc4b24a553fb7637c2",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH07.webp": "b2dbc6a934790f35f87c1867d28730c594370979459dd241507632ac4878174e",
+    "public/stories/neoreul_mideo/assets/scene_01/SC01_SH08.webp": "d1cee600c61267b03117abb5f0b0adb662c6e33730b479964a680167346dd1f0"
+  }
+}

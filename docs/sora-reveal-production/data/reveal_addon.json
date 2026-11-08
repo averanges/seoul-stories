@@ -1,0 +1,151 @@
+{
+  "schema": "seoul-stories-additive-reveal-v1",
+  "purpose": "patch two pre-existing scenes after KNOW action, not independent scene",
+  "source_scene_ids": {
+    "face_to_face": "SC04A_CONFESSION",
+    "phone": "SC04B_PHONE"
+  },
+  "entry_choices": {
+    "face_to_face": "SC04A_CONFESSION_R_KNOW",
+    "phone": "SC04B_PHONE_R_KNOW"
+  },
+  "entry_flag_policy": {
+    "must_have": [
+      "minsu_confessed",
+      "identity_investigation_chosen"
+    ],
+    "do_not_set_identity_before": "R04"
+  },
+  "common_dialogue": [
+    {
+      "id": "R01",
+      "speaker": "Yuna",
+      "original": "네. 저한테는 중요해요. 누군지 알고 싶어요.",
+      "simple": "네. 알고 싶어요.",
+      "ru": "Да. Для меня важно. Я хочу знать, кто она.",
+      "notes": "Existing KNOW choice reaction; do not duplicate."
+    },
+    {
+      "id": "R02",
+      "speaker": "Minsu",
+      "original": "유나, 제발…",
+      "simple": "유나, 제발…",
+      "ru": "Юна, пожалуйста…",
+      "notes": "On existing last shot."
+    },
+    {
+      "id": "R03",
+      "speaker": "Yuna",
+      "original": "이제 숨기지 말고 이름을 말해 줘요.",
+      "simple": "이름을 말해 주세요.",
+      "ru": "Хватит скрывать. Скажи её имя.",
+      "notes": "On existing last shot."
+    },
+    {
+      "id": "R04",
+      "speaker": "Minsu",
+      "original": "…소라예요.",
+      "simple": "…소라예요.",
+      "ru": "…Сора.",
+      "sets": {
+        "sora_identity_known": true,
+        "sora_involved": true
+      },
+      "notes": "REVEAL, on existing last shot; at next dialogue switch image."
+    },
+    {
+      "id": "R05",
+      "speaker": "Yuna",
+      "original": "…소라요? 제 친구 소라요?",
+      "simple": "…제 친구 소라요?",
+      "ru": "…Сора? Моя подруга Сора?",
+      "notes": "First text on added SH07/SH04."
+    },
+    {
+      "id": "R06",
+      "speaker": "Minsu",
+      "original": "…네. 정말 미안해요.",
+      "simple": "…네. 미안해요.",
+      "ru": "…Да. Мне очень жаль."
+    },
+    {
+      "id": "R07",
+      "speaker": "Yuna",
+      "original": "됐어요. 더는 듣고 싶지 않아요.",
+      "simple": "그만해요. 이제 듣기 싫어요.",
+      "ru": "Хватит. Я больше ничего не хочу слышать."
+    }
+  ],
+  "routes": {
+    "face_to_face": {
+      "existing_shot": "SC04A_CONFESSION_SH06",
+      "existing_shot_dialogue": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "added_shots": [
+        {
+          "id": "SC04A_REVEAL_SH07",
+          "file": "SC04A_REVEAL_SH07.webp",
+          "dialogue": [
+            "R05",
+            "R06",
+            "R07"
+          ]
+        },
+        {
+          "id": "SC04A_REVEAL_SH08",
+          "file": "SC04A_REVEAL_SH08.webp",
+          "dialogue": [
+            "OUT_A"
+          ]
+        }
+      ],
+      "outro": {
+        "id": "OUT_A",
+        "speaker": "narrator",
+        "original": "민수는 조용히 나가요. 유나는 혼자 남아요.",
+        "simple": "민수는 나가요. 유나는 혼자 있어요.",
+        "ru": "Минсу тихо уходит. Юна остаётся одна."
+      },
+      "next_symbolic": "SC06_SORA_CONFRONT_START"
+    },
+    "phone": {
+      "existing_shot": "SC04B_PHONE_SH03",
+      "existing_shot_dialogue": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "added_shots": [
+        {
+          "id": "SC04B_REVEAL_SH04",
+          "file": "SC04B_REVEAL_SH04.webp",
+          "dialogue": [
+            "R05",
+            "R06",
+            "R07",
+            "OUT_B"
+          ]
+        }
+      ],
+      "outro": {
+        "id": "OUT_B",
+        "speaker": "narrator",
+        "original": "유나는 전화를 끊어요.",
+        "simple": "유나는 전화를 끊어요.",
+        "ru": "Юна завершает звонок."
+      },
+      "next_symbolic": "SC06_SORA_CONFRONT_START"
+    }
+  },
+  "unmodified_leave_route": "ENDING_B_START",
+  "additional_assets_count": {
+    "face_to_face": 2,
+    "phone": 1
+  },
+  "integration_warning": "Codex must map symbolic IDs to real engine nodes, preserve migration/save graph, and avoid duplicating old KNOW reaction."
+}

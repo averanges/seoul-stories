@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "template",
+  "title": "Новая история",
+  "subtitle": "새로운 이야기",
+  "description": "Замените метаданные и добавьте свою историю.",
+  "level": "A2 · 초급",
+  "duration": "10–15 минут",
+  "cover": "cover.svg",
+  "start": "start",
+  "variables": {
+    "trust": 0,
+    "clue": false
+  },
+  "characters": "characters.json",
+  "scenes": "scenes.json",
+  "nodes": "nodes.json"
+}

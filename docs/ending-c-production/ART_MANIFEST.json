@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ENDING_C_SH01",
+    "width": 1672,
+    "height": 941,
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\ending-c-originals\\ENDING_C_SH01.png",
+    "gameAsset": "outputs/novel-engine/public/stories/neoreul_mideo/assets/ending_c/ENDING_C_SH01.webp",
+    "sha256": "47238ac0647d16f42d340601e234de1af06a4452f7583c65c7c6d5e2c4a50de5"
+  },
+  {
+    "id": "ENDING_C_SH02",
+    "width": 1672,
+    "height": 941,
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\ending-c-originals\\ENDING_C_SH02.png",
+    "gameAsset": "outputs/novel-engine/public/stories/neoreul_mideo/assets/ending_c/ENDING_C_SH02.webp",
+    "sha256": "b55f9c3bccb270e6855bdc71bd7849b6890d5104bbf1d55ed562c79c19804e10"
+  },
+  {
+    "id": "ENDING_C_SH03",
+    "width": 1672,
+    "height": 941,
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\ending-c-originals\\ENDING_C_SH03.png",
+    "gameAsset": "outputs/novel-engine/public/stories/neoreul_mideo/assets/ending_c/ENDING_C_SH03.webp",
+    "sha256": "8744470e076269527343839f138d9173f81da48df698b73fd8291bdfdc8b1425"
+  }
+]

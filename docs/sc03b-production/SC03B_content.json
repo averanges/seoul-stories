@@ -1,0 +1,568 @@
+{
+  "schema": "seoul-stories-production-pack-v1",
+  "scene": {
+    "id": "SC03B",
+    "title_ru": "Охранник",
+    "title_ko": "경비실",
+    "status": "production packet for Codex — content baseline",
+    "day": "Суббота вечером",
+    "location": "Пост охраны жилого комплекса и двор рядом",
+    "characters": [
+      "Yuna",
+      "Guard"
+    ],
+    "shot_count": 5,
+    "common_nodes": 16,
+    "per_playthrough_nodes": 16,
+    "branch_specific_rewrites": 1,
+    "art_status": "PENDING: five standalone 16:9 gameplay images",
+    "entry_conditions": [
+      {
+        "name": "direct",
+        "source": "SC02_R_CHECK",
+        "route": "investigate",
+        "require_not": {
+          "shelf_seen": true
+        }
+      },
+      {
+        "name": "after_shelf",
+        "source": "SC03A_R_CHECK",
+        "route": "talk",
+        "guard_visit_context": "after_shelf",
+        "shelf_seen": true
+      }
+    ],
+    "time_logic": {
+      "Thursday": "Минсу в квартире с девушкой; свидетель видел их выход и поцелуй у входа",
+      "Friday": "Охранник звонил Юне, и Минсу сначала отрицал посещение новой квартиры",
+      "Saturday": "SC02 покупки, SC03A при выборе, SC03B вечером"
+    },
+    "immutable_facts": [
+      "Охранник видел лица, но раньше не встречал вторую женщину и не знает, что это Сора",
+      "Первоначально охранник принял неизвестную женщину за Юну (знал имя, но не внешность)",
+      "На каждой ветке 3B есть одно и то же сообщение о поцелуе",
+      "Полка действительно существует, хотя в прямой ветке Юна ещё не видела её"
+    ],
+    "constraints": [
+      "Не показывать поцелуй или Сору",
+      "Юна сохраняет узнаваемые черты лица из финальных SC01/SC02",
+      "Видеоряд 5 кадров 1→2→3→4→5 без повтора",
+      "Сильный шок только после D09, не раньше"
+    ],
+    "arc": [
+      "Приход к охраннику",
+      "Обычный вопрос",
+      "Неизвестная девушка — невинное объяснение — свидетельство поцелуя",
+      "Шок и проверка слов свидетеля",
+      "Одинокое решение снова поговорить с Минсу"
+    ]
+  },
+  "shots": [
+    {
+      "id": "SC03B_SH01",
+      "title": "У поста охраны",
+      "stage": "Прибытие",
+      "type": "P0 — обязательный",
+      "nodes": [
+        "SC03B_D01"
+      ],
+      "purpose": "Показать новую локацию и собранность Юны до неприятной новости.",
+      "trigger": "Новая локация — пост охраны жилого комплекса.",
+      "composition": "Широкий 16:9 вечерний план небольшого поста охраны у жилого комплекса. Юна с сумкой и пакетом покупок подходит со стороны двора; из окна виден сидящий охранник. Камера чуть позади/в три четверти, лицо Юны хотя бы частично узнаваемо. На заднем плане обычные жилые корпуса и фонари.",
+      "characters": "Юна: ТО ЖЕ ЛИЦО, что в SC01/SC02. Одежда в обоих маршрутах — точно как в конце SC02: светлая футболка, кремовый кардиган, сумка через плечо, полусобранные волосы. Охранник 55–70 лет, простой форменный тёмный верх, без зловещей мимики.",
+      "props": "Небольшая будка охраны, настольная лампа, монитор, пакет с тремя купленными кружками (внутри пакета).",
+      "must_show": [
+        "Реальный пост охраны — не огромное полицейское управление",
+        "Юна идёт к окну, собрана и не плачет",
+        "Вечер, мягкое бытовое освещение"
+      ],
+      "must_not": [
+        "Постер с женщиной, поцелуй, CCTV с раскрытием личности",
+        "Новая внешность Юны",
+        "Текстовые облака и игровая UI на иллюстрации"
+      ],
+      "safe": "Нижние 25–30% использовать под диалоговую панель; не ставить лицо внизу слева.",
+      "prompt": "Photorealistic South Korean drama film still, wide 16:9, Saturday evening at a modest apartment complex security booth, warm window light and calm courtyard. Yuna from the provided approved final SC01/SC02 game references, EXACT same facial anatomy, wearing the SAME cream cardigan and cream tee, same half-up hairstyle, crossbody shoulder bag, holding a paper shopping bag. Yuna approaches the security booth with restrained resolve. Elderly security guard visible inside. Everyday lifelike setting, natural film lighting, spacious lower-left area for text overlay. NO text, no speech bubbles, no storyboard grid, no on-image UI."
+    },
+    {
+      "id": "SC03B_SH02",
+      "title": "Вежливый разговор",
+      "stage": "Обычный вопрос",
+      "type": "P0 — обязательный",
+      "nodes": [
+        "SC03B_D02",
+        "SC03B_D03",
+        "SC03B_D04"
+      ],
+      "purpose": "Дать спокойную двухперсонажную мизансцену, на которой естественно проходят первые вопросы.",
+      "trigger": "Юна останавливается и обращается к охраннику.",
+      "composition": "Средний боковой двухперсонажный план через открытое служебное окно: Юна стоит снаружи слева, охранник внутри справа за небольшим столом. Оба видны в пространстве, никакого чрезмерного крупного плана. Журнал, кружка, неразборчивые мониторы. С точки зрения улицы.",
+      "characters": "Юна вежливая, чуть напряжённая; охранник обычный, доброжелательный и спокойный. Костюм и лицо как SH01.",
+      "props": "Окошко, стол, ручка, журнал, монитор безопасности с НЕРАЗЛИЧИМЫМИ силуэтами пустых общих зон.",
+      "must_show": [
+        "Юна и охранник одновременно видимы",
+        "Натуральный диалог на расстоянии через окно",
+        "Сохранение положения поста и одежды"
+      ],
+      "must_not": [
+        "Охранник выглядит испуганно или как сыщик",
+        "Кадр «два лица крупно»",
+        "Скриншот CCTV с Сорой или парой"
+      ],
+      "safe": "Нижняя левая четверть преимущественно у одежды/стойки; лица выше панели.",
+      "prompt": "Photoreal cinematic two-shot at a modest Seoul apartment security booth window, side angle, Yuna outside on left and elderly uniformed guard at desk inside on right. Same Yuna facial features, same cream cardigan and half-up hairstyle from attached actual game references. Polite quiet everyday conversation, gentle evening light. Faint interior desk details: logbook, mug, monitor. Room geography as establishing shot. Safe lower-left composition for subtitles. Film still 16:9, no captions or logos."
+    },
+    {
+      "id": "SC03B_SH03",
+      "title": "Свидетельство охранника",
+      "stage": "Девушка и поцелуй",
+      "type": "P0 — обязательный",
+      "nodes": [
+        "SC03B_D05",
+        "SC03B_D06",
+        "SC03B_D07",
+        "SC03B_D08",
+        "SC03B_D09"
+      ],
+      "purpose": "Перевести внимание на источник информации, сохранить будничный тон свидетельства о женщине и поцелуе.",
+      "trigger": "Охранник впервые сообщает, что Минсу выходил с другой женщиной.",
+      "composition": "Средний фронтальный план охранника с позиции Юны через окно. Охранник занимает центральную правую часть кадра; край плеча Юны может быть расфокусирован у бокового края, но её лица крупно здесь нет. Не повторять ракурс SH02. Важно: реплика про ПОЦЕЛУЙ проговаривается на ЭТОМ кадре.",
+      "characters": "Охранник говорит просто и прямо, без шёпота, угрозы, улыбки и театрального выражения. Юна может быть лишь частично, вне фокуса.",
+      "props": "Небольшой служебный стол, блокнот, тёплая лампа. НИКАКИХ фотографий/записей поцелуя.",
+      "must_show": [
+        "Главный говорящий — охранник",
+        "Удобный фронтальный ракурс на него",
+        "Спокойная будничная реакция"
+      ],
+      "must_not": [
+        "Показывать поцелуй, девушку или Сору",
+        "Злодейские эмоции охранника",
+        "Снова крупный план Юны через плечо охранника"
+      ],
+      "safe": "Охранник выше линии субтитров; свободнее нижняя левая часть.",
+      "prompt": "Photoreal cinematic medium frontal POV shot of an ordinary older Korean male apartment security guard behind his security booth window, viewed from Yuna standing in front of him. Guard wears modest navy cap and jacket, speaks calmly matter-of-factly, not theatrically. Soft evening light, tidy small desk and soft background. Slight blurred edge of Yuna shoulder only if needed, DO NOT show her close-up here. This shot carries both his report of another woman and his shocking statement that he saw a kiss, but DO NOT visually show the kiss, the other woman, or CCTV evidence. Wide 16:9 film still without captions or interface."
+    },
+    {
+      "id": "SC03B_SH04",
+      "title": "Юна замирает",
+      "stage": "Главный эмоциональный перелом",
+      "type": "P0 — обязательный, наивысший приоритет",
+      "nodes": [
+        "SC03B_D10",
+        "SC03B_D11",
+        "SC03B_D12",
+        "SC03B_D13",
+        "SC03B_D14"
+      ],
+      "purpose": "После слов о поцелуе показать качественно новое эмоциональное состояние: сильный шок без истерики.",
+      "trigger": "Сразу ПОСЛЕ произнесённой на SH03 фразы «…키스하는 걸 봤어요» — смена кадра на реакцию.",
+      "composition": "Фронтальный крупный план Юны, заметно отличающийся от всех прошлых ракурсов. Лицо занимает примерно центральную часть, глаза расширены, губы чуть разомкнуты, взгляд расфокусирован, тело почти неподвижно. Охранник НЕ показан даже плечом. За ней размытый свет вечернего двора/окна, не полное чёрное пространство. Специально оставить нижнюю левую зону под интерфейс.",
+      "characters": "Юна — то же лицо и возрастной облик, что в SC01_SH05 и SC02; те же глаза, нос, пропорции скул и нижней челюсти. Выражение: сильный внезапный шок и неверие; НЕ просто легкое удивление, НЕ слёзы/крик, НЕ новая «другая» героиня.",
+      "props": "Край воротника кремового кардигана и сумка, если видно; никаких новых предметов.",
+      "must_show": [
+        "Узнаваемое лицо Юны — главный контроль качества",
+        "Сильный момент застывшего неверия после новости о поцелуе",
+        "Резкая смена оси/масштаба с плана охранника"
+      ],
+      "must_not": [
+        "Охранник на переднем плане или через плечо",
+        "Лицо, не похожее на SC01/SC02; волосы радикально меняются",
+        "Слёзы, истерика, лицо закрыто руками",
+        "Изображение поцелуя"
+      ],
+      "safe": "Глаза и губы Юны в верхних 60%; нижние 25% доступны под текст.",
+      "prompt": "Emotionally devastating photoreal Korean drama extreme close-up reaction shot, 16:9. Yuna (match her EXACT facial identity from approved game stills SC01 and SC02, not just generic Korean woman) has just heard that her boyfriend kissed another woman. She freezes, eyes widened in real disbelief, mouth slightly parted, a stunned arrested breath; NO screaming, NO tears. Same soft facial proportions and eyes as references, cream cardigan collar and same hairstyle from SC02. Camera facing her head-on, no guard visible, heavily blurred evening security booth courtyard lights behind. Clear dramatic shift from preceding guard shot. Reserve lower-left negative space for game subtitles; absolutely no embedded text, speech bubbles or UI."
+    },
+    {
+      "id": "SC03B_SH05",
+      "title": "После разговора — одна",
+      "stage": "Решение",
+      "type": "P0 — обязательный",
+      "nodes": [
+        "SC03B_D15",
+        "SC03B_D16"
+      ],
+      "purpose": "Смена масштаба обратно на расстояние: шок переходит в тяжёлое осознание и решение говорить с Минсу.",
+      "trigger": "Юна вышла от поста охраны; прямой разговор завершён.",
+      "composition": "Широкий 16:9 средне-дальний план двора у поста охраны, Юна в одиночестве на переднем плане справа или по центру со свободным пространством. Позади из окон поста виден охранник за работой. Юна смотрит вниз, медленно осмысляя услышанное, не плачет. Другая перспектива и больше воздуха, чем в SH04.",
+      "characters": "Юна — внешность и одежда без изменений, потрясение теперь сдержанное и тяжёлое, не паника. Охранник на фоне не следит за ней.",
+      "props": "Бытовой двор, тёплые фонари, пост охраны, сумка Юны и пакет из магазина.",
+      "must_show": [
+        "Юна одна в большом пространстве",
+        "Пост охраны остается позади и меньше",
+        "Последствие новости и движение к следующей сцене"
+      ],
+      "must_not": [
+        "Сора рядом, подозрительная фигура за углом",
+        "Охранник следует за Юной",
+        "Лицо Юны сильно меняется",
+        "Телефон с сообщением раскрывающим личность"
+      ],
+      "safe": "Сохранить композиционное место для текста, не перекрывая лицо/сумку.",
+      "prompt": "Photoreal wide cinematic South Korean drama film still, Saturday early night outside a modest apartment security booth. Yuna, facial identity EXACTLY matching attached final SC01/SC02 game screenshots, same cream cardigan, same half-up hair, crossbody bag and shopping bag, stands alone a few steps away from the booth in a quiet lit residential courtyard, looking down in devastated restrained silence. Guard working in background behind lit window. Strong negative space around Yuna; aftermath, not active crying or panic. Different wider shot after extreme close-up. Horizontal 16:9, no captions, no UI, no other woman."
+    }
+  ],
+  "dialogue_nodes": [
+    {
+      "id": "SC03B_D01",
+      "shot": "SC03B_SH01",
+      "speaker": "narrator",
+      "original": "유나는 경비실 앞에 섰어요.",
+      "simple": "유나는 경비실에 왔어요.",
+      "ru": "Юна остановилась перед постом охраны.",
+      "vocab": [
+        "경비실"
+      ],
+      "grammar": [
+        "N 앞에",
+        "N에 오다"
+      ],
+      "teacher_note": "Обе ветки происходят в субботу вечером.",
+      "next": "SC03B_D02"
+    },
+    {
+      "id": "SC03B_D02",
+      "shot": "SC03B_SH02",
+      "speaker": "Yuna",
+      "original": "안녕하세요. 어제 새집에서 소리가 났다고 전화하셨죠?",
+      "simple": "안녕하세요. 어제 전화하셨죠? 새집에서 소리가 많이 났어요.",
+      "ru": "Здравствуйте. Вы вчера звонили по поводу шума в новой квартире, верно?",
+      "vocab": [
+        "소리가 나다"
+      ],
+      "grammar": [
+        "-다고",
+        "-(으)셨죠?"
+      ],
+      "teacher_note": "Вчера = пятница, день звонка. Отдельно отделять от события в четверг.",
+      "next": "SC03B_D03"
+    },
+    {
+      "id": "SC03B_D03",
+      "shot": "SC03B_SH02",
+      "speaker": "Guard",
+      "original": "네, 기억해요. 무슨 일 있으세요?",
+      "simple": "네, 기억해요. 무슨 일이에요?",
+      "ru": "Да, помню. Что-то случилось?",
+      "vocab": [
+        "기억하다"
+      ],
+      "grammar": [
+        "-(으)세요?"
+      ],
+      "teacher_note": "Не удивлён и не драматизирует.",
+      "next": "SC03B_D04"
+    },
+    {
+      "id": "SC03B_D04",
+      "shot": "SC03B_SH02",
+      "speaker": "Yuna",
+      "original": "목요일 저녁에 제 남자 친구 보셨어요?",
+      "simple": "목요일 저녁에 민수 씨 봤어요?",
+      "ru": "Вы видели моего парня в четверг вечером?",
+      "vocab": [
+        "목요일",
+        "남자 친구"
+      ],
+      "grammar": [
+        "-았/었어요?"
+      ],
+      "teacher_note": "После 3A не повторять этот вопрос; заменить на контекстную версию.",
+      "next": "SC03B_D05",
+      "variants": {
+        "direct": {
+          "when": {
+            "route": "investigate",
+            "shelf_visited": false
+          },
+          "original": "목요일 저녁에 제 남자 친구 보셨어요?",
+          "simple": "목요일 저녁에 민수 씨 봤어요?",
+          "ru": "Вы видели моего парня в четверг вечером?"
+        },
+        "after_shelf": {
+          "when": {
+            "guard_visit_context": "after_shelf",
+            "shelf_seen": true
+          },
+          "original": "민수가 목요일에 새집에서 선반을 만들었다고 했어요. 혹시 그날 혼자 있었는지 아세요?",
+          "simple": "민수가 목요일에 새집에서 선반을 만들었어요. 그날 혼자 있었어요?",
+          "ru": "Минсу сказал, что делал в четверг полку в нашей новой квартире. Вы не знаете, был ли он один?",
+          "teacher_note": "Важно: именно 새집에서, не 여기서 — разговор идёт возле поста охраны, а не внутри квартиры."
+        }
+      }
+    },
+    {
+      "id": "SC03B_D05",
+      "shot": "SC03B_SH03",
+      "speaker": "Guard",
+      "original": "네. 어떤 여자분이랑 같이 나가는 걸 봤어요.",
+      "simple": "네. 민수 씨가 여자 한 명이랑 같이 나갔어요.",
+      "ru": "Да. Я видел, как он выходил с какой-то женщиной.",
+      "vocab": [
+        "어떤",
+        "여자분"
+      ],
+      "grammar": [
+        "-는 걸 봤어요"
+      ],
+      "teacher_note": "Первая новая информация; говорит спокойно.",
+      "next": "SC03B_D06",
+      "set_on_view": {
+        "guard_reports_other_woman": true
+      }
+    },
+    {
+      "id": "SC03B_D06",
+      "shot": "SC03B_SH03",
+      "speaker": "Yuna",
+      "original": "여자요? 저는 그날 거기 없었는데요.",
+      "simple": "여자요? 저는 그날 거기 안 갔어요.",
+      "ru": "С женщиной? Но меня в тот день там не было.",
+      "vocab": [
+        "그날"
+      ],
+      "grammar": [
+        "-는데요"
+      ],
+      "teacher_note": "Пока ещё пытается осмыслить.",
+      "next": "SC03B_D07"
+    },
+    {
+      "id": "SC03B_D07",
+      "shot": "SC03B_SH03",
+      "speaker": "Guard",
+      "original": "아, 저는 그분이 유나 씨인 줄 알았어요.",
+      "simple": "아, 저는 그 여자가 유나 씨라고 생각했어요.",
+      "ru": "А, я думал, что это были вы.",
+      "vocab": [
+        "그분"
+      ],
+      "grammar": [
+        "-(으)ㄴ 줄 알다",
+        "-라고 생각하다"
+      ],
+      "teacher_note": "Главное языковое упрощение. Охранник узнаёт её имя по звонку, но раньше не видел лицо; поэтому ошибся.",
+      "next": "SC03B_D08"
+    },
+    {
+      "id": "SC03B_D08",
+      "shot": "SC03B_SH03",
+      "speaker": "Yuna",
+      "original": "혹시 그냥 아는 사람 아니었을까요?",
+      "simple": "그냥 아는 사람 아니에요?",
+      "ru": "Может, это была просто знакомая?",
+      "vocab": [
+        "혹시",
+        "아는 사람"
+      ],
+      "grammar": [
+        "-(으)ㄹ까요?"
+      ],
+      "teacher_note": "Юна ищет невинное объяснение.",
+      "next": "SC03B_D09"
+    },
+    {
+      "id": "SC03B_D09",
+      "shot": "SC03B_SH03",
+      "speaker": "Guard",
+      "original": "그런데 두 사람이 입구에서 키스하는 걸 봤어요.",
+      "simple": "두 사람이 입구에서 키스했어요. 제가 봤어요.",
+      "ru": "Но я видел, как они целовались у входа.",
+      "vocab": [
+        "입구",
+        "키스하다"
+      ],
+      "grammar": [
+        "-는 걸 봤어요"
+      ],
+      "teacher_note": "!!! Ключевая реплика остаётся на SH03 (охранник). После неё РЕЗКИЙ CUT на SH04. Никакого флешбека.",
+      "next": "SC03B_D10",
+      "set_on_view": {
+        "guard_reports_kiss": true,
+        "yuna_heard_kiss_report": true
+      }
+    },
+    {
+      "id": "SC03B_D10",
+      "shot": "SC03B_SH04",
+      "speaker": "narrator",
+      "original": "유나는 아무 말도 못 해요.",
+      "simple": "유나는 말을 못 해요.",
+      "ru": "Юна не может произнести ни слова.",
+      "vocab": [
+        "아무 말도"
+      ],
+      "grammar": [
+        "못"
+      ],
+      "teacher_note": "Текст короткий; рекомендуем перед показом небольшую паузу без смены изображения. Шок на лице должен быть сильным.",
+      "next": "SC03B_D11"
+    },
+    {
+      "id": "SC03B_D11",
+      "shot": "SC03B_SH04",
+      "speaker": "Yuna",
+      "original": "…정말요? 확실하세요?",
+      "simple": "…정말요? 정말 봤어요?",
+      "ru": "…Правда? Вы уверены?",
+      "vocab": [
+        "확실하다"
+      ],
+      "grammar": [
+        "-(으)세요?"
+      ],
+      "teacher_note": "Не кричит. Голос в голове у читателя должен восприниматься как тихий, дрожащий.",
+      "next": "SC03B_D12"
+    },
+    {
+      "id": "SC03B_D12",
+      "shot": "SC03B_SH04",
+      "speaker": "Guard",
+      "original": "네. 가까이에서 봤어요.",
+      "simple": "네. 가까이에서 봤어요.",
+      "ru": "Да. Я видел их вблизи.",
+      "vocab": [
+        "가까이"
+      ],
+      "grammar": [
+        "N에서"
+      ],
+      "teacher_note": "Охранник говорит за кадром, иллюстрация Юны остаётся.",
+      "next": "SC03B_D13"
+    },
+    {
+      "id": "SC03B_D13",
+      "shot": "SC03B_SH04",
+      "speaker": "Yuna",
+      "original": "그 여자분이 누군지 아세요?",
+      "simple": "그 여자를 아세요?",
+      "ru": "Вы знаете, кто эта женщина?",
+      "vocab": [
+        "누구"
+      ],
+      "grammar": [
+        "-는지 알다"
+      ],
+      "teacher_note": "Серьёзный вопрос Юны уже после шока.",
+      "next": "SC03B_D14"
+    },
+    {
+      "id": "SC03B_D14",
+      "shot": "SC03B_SH04",
+      "speaker": "Guard",
+      "original": "아니요. 처음 보는 분이었어요.",
+      "simple": "아니요. 처음 봤어요.",
+      "ru": "Нет. Я видел её впервые.",
+      "vocab": [
+        "처음"
+      ],
+      "grammar": [
+        "-는 분"
+      ],
+      "teacher_note": "Охранник говорит за кадром. Он не знает женщину, потому что раньше не видел её; не потому, что лицо было скрыто.",
+      "next": "SC03B_D15"
+    },
+    {
+      "id": "SC03B_D15",
+      "shot": "SC03B_SH05",
+      "speaker": "narrator",
+      "original": "유나는 경비실 밖으로 나왔지만 한동안 움직이지 못해요.",
+      "simple": "유나는 밖으로 나왔어요. 잠깐 서 있어요.",
+      "ru": "Юна выходит из поста охраны, но какое-то время не может сдвинуться с места.",
+      "vocab": [
+        "한동안",
+        "움직이다"
+      ],
+      "grammar": [
+        "-지만",
+        "못"
+      ],
+      "teacher_note": "Новое пространство: тихий двор за пределами поста.",
+      "next": "SC03B_D16"
+    },
+    {
+      "id": "SC03B_D16",
+      "shot": "SC03B_SH05",
+      "speaker": "Yuna_inner",
+      "original": "민수랑 다시 이야기해야겠어요.",
+      "simple": "민수랑 다시 이야기해야 해요.",
+      "ru": "Мне нужно снова поговорить с Минсу.",
+      "vocab": [
+        "다시"
+      ],
+      "grammar": [
+        "-아/어야 하다",
+        "-아/어야겠다"
+      ],
+      "teacher_note": "Мысленная реплика; выход к различным версиям конфронтации.",
+      "next": "SC03B_EXIT"
+    }
+  ],
+  "choices": [],
+  "transitions": {
+    "entry_direct": {
+      "from_symbolic": "SC03B_START",
+      "source": "SC02_R_CHECK",
+      "if": {
+        "route": "investigate"
+      },
+      "begin": "SC03B_D01",
+      "variant_at_D04": "direct"
+    },
+    "entry_after_shelf": {
+      "from_symbolic": "SC03B_START",
+      "source": "SC03A_R_CHECK",
+      "if": {
+        "route": "talk",
+        "guard_visit_context": "after_shelf"
+      },
+      "begin": "SC03B_D01",
+      "variant_at_D04": "after_shelf"
+    },
+    "exit": {
+      "after": "SC03B_D16",
+      "when": [
+        {
+          "if": {
+            "guard_visit_context": "after_shelf"
+          },
+          "target_symbolic": "SC04B_START"
+        },
+        {
+          "if": {
+            "route": "investigate"
+          },
+          "target_symbolic": "SC04A_START"
+        }
+      ]
+    },
+    "fallback_if_unimplemented": "Do not wire to missing IDs. Keep existing functional route end/placeholder screen, preserving flags and state, with clear label and no crash. Do not author 4A/4B in this task."
+  },
+  "flags_policy": {
+    "preserve_existing": [
+      "first_question",
+      "route",
+      "shelf_visited",
+      "shelf_seen",
+      "shelf_decision",
+      "guard_visit_context"
+    ],
+    "on_D05": {
+      "guard_reports_other_woman": true
+    },
+    "on_D09": {
+      "guard_reports_kiss": true,
+      "yuna_heard_kiss_report": true
+    },
+    "do_not_set": [
+      "sora_identity_known",
+      "sora_involved",
+      "minsu_confessed",
+      "shelf_disproved"
+    ],
+    "teacher_policy": "Original and Simple, Russian translation, vocabulary, grammar, teacher notes available for every node; not auto-visible to student.",
+    "visual_policy": "No on-image Korean/Russian text; the app renders overlays."
+  },
+  "optional_shots": []
+}

@@ -1,0 +1,5 @@
+Checked 2026-11-07
+A: 20 nodes, 8 images in fixed order, no non-consecutive repeats, reaches SC02_START
+B: 20 nodes, 8 images in fixed order, no non-consecutive repeats, reaches SC02_START
+C: 20 nodes, 8 images in fixed order, no non-consecutive repeats, reaches SC02_START
+Final image assets intentionally not generated.

@@ -1,0 +1,216 @@
+[
+  {
+    "id": "arrival",
+    "scene": "platform",
+    "position": "left",
+    "text": "서울의 밤. 막차가 곧 도착합니다. 벤치 위에 작은 공책이 있습니다.",
+    "next": "notebook"
+  },
+  {
+    "id": "notebook",
+    "scene": "platform",
+    "speaker": "yuna",
+    "position": "auto",
+    "text": "혹시 제 공책을 보셨어요? 파란색이고, 안에 지도가 있어요.",
+    "choices": [
+      {
+        "id": "ask",
+        "label": "Уточнить, что внутри",
+        "task": "Спросите, есть ли в блокноте имя.",
+        "answer": "공책 안에 이름이 있어요?",
+        "reaction": "네, 첫 페이지에 제 이름이 있어요. 물어봐 주셔서 고마워요.",
+        "effects": [
+          {
+            "variable": "trust",
+            "add": 1
+          },
+          {
+            "variable": "clue",
+            "set": true
+          }
+        ],
+        "next": "detail",
+        "speaker": "yuna"
+      },
+      {
+        "id": "give",
+        "label": "Сразу отдать блокнот",
+        "task": "Скажите, что нашли его на скамейке.",
+        "answer": "벤치에서 찾았어요. 여기 있어요.",
+        "reaction": "아, 고마워요! 그런데 이건 제 공책이 아닌 것 같아요.",
+        "effects": [
+          {
+            "variable": "trust",
+            "add": 1
+          }
+        ],
+        "next": "detour",
+        "speaker": "yuna"
+      }
+    ]
+  },
+  {
+    "id": "detail",
+    "scene": "platform",
+    "speaker": "yuna",
+    "position": "left",
+    "text": "이 지도는 오래된 도서관 지도예요. 파란 별이 보이죠?",
+    "next": "office"
+  },
+  {
+    "id": "detour",
+    "scene": "city",
+    "position": "narrator",
+    "text": "공책 뒤에 분실물 센터 전화번호가 있습니다. 유나와 함께 센터로 갑니다.",
+    "next": "office"
+  },
+  {
+    "id": "office",
+    "scene": "office",
+    "speaker": "minho",
+    "position": "right",
+    "text": "어서 오세요. 어떤 물건을 찾으세요?",
+    "variants": [
+      {
+        "when": {
+          "variable": "clue",
+          "op": "eq",
+          "value": true
+        },
+        "text": "공책에 파란 별이 있나요? 아까 어떤 분도 그 별에 대해 물었어요."
+      }
+    ],
+    "choices": [
+      {
+        "id": "describe",
+        "label": "Описать находку",
+        "task": "Скажите, что в синем блокноте есть карта.",
+        "answer": "파란 공책 안에 지도가 있어요.",
+        "reaction": "자세히 설명해 주셔서 감사합니다. 기록을 확인할게요.",
+        "effects": [
+          {
+            "variable": "trust",
+            "add": 1
+          }
+        ],
+        "next": "record",
+        "speaker": "minho"
+      },
+      {
+        "id": "rush",
+        "label": "Поторопить сотрудника",
+        "task": "Объясните, что скоро последний поезд.",
+        "answer": "막차가 곧 와요. 빨리 확인해 주세요.",
+        "reaction": "알겠습니다. 하지만 확인하는 데 시간이 조금 걸려요.",
+        "effects": [],
+        "next": "record",
+        "speaker": "minho"
+      }
+    ]
+  },
+  {
+    "id": "record",
+    "scene": "office",
+    "speaker": "minho",
+    "position": "auto",
+    "text": "기록에는 이름이 없네요. 공책 주인을 확인할 다른 방법이 있을까요?",
+    "variants": [
+      {
+        "when": {
+          "variable": "clue",
+          "op": "eq",
+          "value": true
+        },
+        "text": "첫 페이지의 이름이 유나 씨 이름과 같네요. 이제 확인됐어요."
+      }
+    ],
+    "next": "decision"
+  },
+  {
+    "id": "decision",
+    "scene": "platform",
+    "speaker": "yuna",
+    "position": "left",
+    "text": "기차가 오고 있어요. 어떻게 하면 좋을까요?",
+    "choices": [
+      {
+        "id": "stay",
+        "label": "Остаться и разобраться",
+        "task": "Предложите вместе проверить первую страницу.",
+        "answer": "같이 첫 페이지를 확인해 볼까요?",
+        "reaction": "좋아요. 함께 확인하면 더 확실하겠네요.",
+        "effects": [
+          {
+            "variable": "trust",
+            "add": 1
+          },
+          {
+            "variable": "clue",
+            "set": true
+          }
+        ],
+        "next": "reveal",
+        "speaker": "yuna"
+      },
+      {
+        "id": "leave",
+        "label": "Успеть на поезд",
+        "task": "Предложите оставить блокнот сотруднику.",
+        "answer": "공책은 직원분께 맡기고 기차를 타요.",
+        "reaction": "네, 안전하게 맡기고 가요. 도와줘서 고마워요.",
+        "effects": [],
+        "next": "reveal",
+        "speaker": "yuna"
+      }
+    ]
+  },
+  {
+    "id": "reveal",
+    "scene": "city",
+    "position": "center",
+    "text": "작은 선택들이 하나의 답이 됩니다.",
+    "next": {
+      "cases": [
+        {
+          "when": {
+            "all": [
+              {
+                "variable": "trust",
+                "op": "gte",
+                "value": 2
+              },
+              {
+                "variable": "clue",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "target": "found"
+        }
+      ],
+      "fallback": "tomorrow"
+    }
+  },
+  {
+    "id": "found",
+    "scene": "city",
+    "position": "bottom",
+    "speaker": "yuna",
+    "text": "제 공책이 맞아요! 내일 이 도서관에 같이 갈래요?",
+    "ending": {
+      "title": "Встреча у синей звезды",
+      "description": "Блокнот вернулся к Юне. Внимание к деталям и доверие стали началом новой дружбы."
+    }
+  },
+  {
+    "id": "tomorrow",
+    "scene": "city",
+    "position": "narrator",
+    "text": "공책은 센터에 남았습니다. 내일 다시 확인할 수 있어요. 두 사람은 막차를 탑니다.",
+    "ending": {
+      "title": "До завтра, Сеул",
+      "description": "Блокнот остался в бюро находок. Сегодня вы успели на поезд — поиски продолжатся завтра."
+    }
+  }
+]

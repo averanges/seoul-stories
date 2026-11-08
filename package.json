@@ -1,0 +1,33 @@
+{
+  "name": "seoul-stories-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "tsx --test src/engine.test.ts src/trust.test.ts src/production.test.ts src/sc02.test.ts src/sc03a.test.ts src/sc03b.test.ts src/sc04a.test.ts src/bridge.test.ts src/confession.test.ts src/phone.test.ts src/endingb.test.ts src/reveal.test.ts src/sc06.test.ts src/endingc.test.ts src/endingCMusic.test.ts src/bgm.test.ts src/readiness.test.ts",
+    "validate": "tsx scripts/validate.ts",
+    "postbuild": "node scripts/prepare-dist.mjs",
+    "build:pages-test": "node scripts/build-pages-test.mjs",
+    "test:e2e": "playwright test",
+    "audio:compress": "node scripts/compress-music.mjs",
+    "audit:production": "node scripts/audit-production.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@breezystack/lamejs": "^1.2.7",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.0",
+    "typescript": "~5.7.3",
+    "vite": "^6.1.0"
+  }
+}

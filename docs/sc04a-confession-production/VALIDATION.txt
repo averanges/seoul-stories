@@ -1,0 +1,1 @@
+Validation passed: 6 unique shots, 14 common text nodes, 1 choice with 2 reactions, sequential D01–D14, route direct only, original/simple and ru nonempty, no internal broken node references. Real game schema and actual image outputs must be validated by Codex.

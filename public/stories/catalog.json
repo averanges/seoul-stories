@@ -1,0 +1,22 @@
+[
+  {
+    "id": "neoreul_mideo",
+    "title": "Ты мне веришь?",
+    "subtitle": "정말 믿어?",
+    "description": "Старые фотографии, покупки, полка и разговор с охранником. Учебная история с выбором маршрута и упрощением корейских реплик.",
+    "level": "1A–1B · 초급",
+    "duration": "20–30 минут",
+    "cover": "neoreul_mideo/assets/scene_01/SC01_SH04.webp",
+    "path": "neoreul_mideo/"
+  },
+  {
+    "id": "station",
+    "title": "Последний поезд",
+    "subtitle": "막차의 작은 비밀",
+    "description": "Забытый блокнот, вечерний Сеул и три решения, которые изменят встречу.",
+    "level": "A2 · 초급",
+    "duration": "10–15 минут",
+    "cover": "station/images/platform.svg",
+    "path": "station/"
+  }
+]

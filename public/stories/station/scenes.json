@@ -1,0 +1,61 @@
+{
+  "platform": {
+    "src": "images/platform.svg",
+    "label": "Вечер на станции",
+    "characters": [
+      {
+        "id": "yuna",
+        "x": 0.77,
+        "y": 0.55
+      }
+    ],
+    "faces": [
+      {
+        "x": 0.72,
+        "y": 0.2,
+        "width": 0.12,
+        "height": 0.22
+      }
+    ],
+    "safeArea": "left",
+    "focus": {
+      "x": 0.72,
+      "y": 0.45
+    }
+  },
+  "office": {
+    "src": "images/office.svg",
+    "label": "Бюро находок",
+    "characters": [
+      {
+        "id": "minho",
+        "x": 0.25,
+        "y": 0.55
+      }
+    ],
+    "faces": [
+      {
+        "x": 0.2,
+        "y": 0.2,
+        "width": 0.12,
+        "height": 0.22
+      }
+    ],
+    "safeArea": "right",
+    "focus": {
+      "x": 0.28,
+      "y": 0.45
+    }
+  },
+  "city": {
+    "src": "images/city.svg",
+    "label": "За дверями станции",
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  }
+}

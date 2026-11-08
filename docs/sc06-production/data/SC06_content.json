@@ -1,0 +1,462 @@
+{
+  "package_type": "content_contract_not_direct_engine_import",
+  "scene_id": "SC06_SORA_CONFRONT",
+  "scene_title_ru": "Лучшая подруга",
+  "scene_title_ko": "가장 친한 친구",
+  "start_id": "SC06_D01",
+  "required_entry": "After reveal addon R07/OUT-A or OUT-B, only when sora_identity_known is true",
+  "required_out": "ENDING_C_START (symbolic, verify installed project)",
+  "shots": [
+    {
+      "id": "SH01",
+      "name": "Холодная встреча",
+      "dialogue_range": "D01–D04",
+      "camera": "35mm wide side angle from café window",
+      "image_goal": "Medium-wide at a small almost-empty Seoul café on Sunday evening. Yuna at a small round table by window, untouched drink, hands clasped. Sora arrives and takes the opposite chair. Cooler outdoor dusk through windows but natural warm interior lamps. Both recognizable; Yuna is controlled and exhausted; Sora concerned, unaware of revelation. Not a dramatic villain meeting.",
+      "dramatic_goal": "Establish location and emotional distance; no smiles, no crying yet.",
+      "continuity": "Maintain relative positions: Yuna camera-left / window-side, Sora camera-right / aisle-side; two drinks, two chairs. Avoid flip/flop later.",
+      "asset": "SC06_SH01.webp"
+    },
+    {
+      "id": "SH02",
+      "name": "Подтверждение",
+      "dialogue_range": "D05–D10",
+      "camera": "85mm close-up on Sora, Yuna only soft foreground silhouette",
+      "image_goal": "Sora has sat down. The words Thursday and identity make her freeze; in one clear emotional transition her everyday concern becomes genuine dread. Camera over Yuna shoulder but not a copy of SH01. The confession \"yes\" must happen on this image.",
+      "dramatic_goal": "First shock lies in Sora losing composure, not in Yuna shouting.",
+      "continuity": "Keep the same clothing and a coherent eyeline; avoid villain smile or theatrically crying now.",
+      "asset": "SC06_SH02.webp"
+    },
+    {
+      "id": "SH03",
+      "name": "Вопрос об охраннике",
+      "dialogue_range": "D11–D15",
+      "camera": "50mm medium, Yuna from slight diagonal, table edge",
+      "image_goal": "Yuna is unnervingly calm, leaning forward slightly, asking why Sora sent her to the guard. Her gaze is fixed, fingers gripping a cold glass or touching the table. Sora seen as blur/partial in foreground. A more intimate camera than SH01.",
+      "dramatic_goal": "Question motive, sharpen conflict without explosion.",
+      "continuity": "Yuna not yet shouting, tear-free if possible; darkening expression, subtle tension in jaw.",
+      "asset": "SC06_SH03.webp"
+    },
+    {
+      "id": "SH04",
+      "name": "Признание в намерении",
+      "dialogue_range": "D16–D20",
+      "camera": "side-on 2-shot wide, camera from opposite wall (strong change from SH03)",
+      "image_goal": "Both women seated apart across the small table. Sora forced to admit she hoped for breakup but not her own exposure. Sora leans in/looks down, vulnerable yet not excused. Yuna starts to pull back as if stunned by the manipulation. Restrained posture; tension between figures.",
+      "dramatic_goal": "Revelation of Sora trying to influence Yuna, first flash of anger.",
+      "continuity": "No flashback kiss, no third person, no changed café geometry. No unexplained gestures with props.",
+      "asset": "SC06_SH04.webp"
+    },
+    {
+      "id": "SH05",
+      "name": "Срыв и третья чашка",
+      "dialogue_range": "D21–D25",
+      "camera": "35–50mm medium on standing/half-rising Yuna with Sora partly visible sitting",
+      "image_goal": "Yuna cannot hold herself back; she half-rises from chair, voice raised, hurt anger, eyes wet but not yet fully crying. She remembers their shopping trip and the third mug, no physical mug in café; do not put a third cup into this scene. Sora sits lower, devastated and silent.",
+      "dramatic_goal": "The high anger point grounded in a concrete memory; no melodrama or hysterical posing.",
+      "continuity": "Exactly two café drinks still untouched. Place chairs and window logically; prefer face and hands over full room redraw.",
+      "asset": "SC06_SH05.webp"
+    },
+    {
+      "id": "SH06",
+      "name": "Ты была моей подругой",
+      "dialogue_range": "D26–D30",
+      "camera": "85mm intimate close-up Yuna, severe background blur",
+      "image_goal": "Yuna sits back down or is seated after the outburst; voice cracks, tears now visible and natural, no grimacing or glamorous crying. Sora distant blurred at edge, also teary but no reach/embrace. Eye-level camera, let hurt dominate over anger.",
+      "dramatic_goal": "Emotional peak: loss of best friend, then exhausted silence.",
+      "continuity": "Yuna must retain exact facial identity; tears should be restrained, no changing hairstyle mid-shot.",
+      "asset": "SC06_SH06.webp"
+    },
+    {
+      "id": "SH07",
+      "name": "Не звони",
+      "dialogue_range": "D31–D34",
+      "camera": "wide from doorway looking back at table, or profile at exit",
+      "image_goal": "Yuna puts on bag and turns away / is exiting the café. Sora remains alone at table with two nearly untouched drinks; posture defeated. The empty chair / separation dominates the frame. It is not the full bleak ending yet: next scene gives Yuna alone at home.",
+      "dramatic_goal": "Cold final boundary and transition to Ending C; visual contrast with Ending B where both women stay.",
+      "continuity": "Never show Sora chasing Yuna, never reconcile, no ominous text, no sinister grin.",
+      "asset": "SC06_SH07.webp"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "SC06_D01",
+      "shot_id": "SH01",
+      "speaker": "narrator",
+      "original": "일요일 저녁, 작은 카페에서 유나는 소라를 기다려요.",
+      "simple": "일요일 저녁이에요. 유나는 카페에서 기다려요.",
+      "ru": "В воскресенье вечером Юна ждёт Сору в небольшом кафе.",
+      "vocabulary": "기다리다 — ждать; 작은 — небольшой",
+      "teacher_notes": "Визуально спокойное ожидание, без слёз; уже известно имя Соры.",
+      "next": "SC06_D02"
+    },
+    {
+      "id": "SC06_D02",
+      "shot_id": "SH01",
+      "speaker": "sora",
+      "original": "안녕. 갑자기 만나자고 해서 놀랐어요. 무슨 일이에요?",
+      "simple": "안녕. 갑자기 만나자고 했어요. 무슨 일이에요?",
+      "ru": "Привет. Ты внезапно позвала меня встретиться. Что случилось?",
+      "vocabulary": "갑자기 — внезапно; -자고 하다 — предложить сделать вместе",
+      "teacher_notes": "Сора обеспокоена, но ещё не знает, насколько всё серьёзно.",
+      "next": "SC06_D03"
+    },
+    {
+      "id": "SC06_D03",
+      "shot_id": "SH01",
+      "speaker": "yuna",
+      "original": "앉아요.",
+      "simple": "앉아요.",
+      "ru": "Садись.",
+      "vocabulary": "앉다 — садиться",
+      "teacher_notes": "Холодно, почти без взгляда в глаза.",
+      "next": "SC06_D04"
+    },
+    {
+      "id": "SC06_D04",
+      "shot_id": "SH01",
+      "speaker": "sora",
+      "original": "민수랑 이야기했어요?",
+      "simple": "민수랑 이야기했어요?",
+      "ru": "Ты говорила с Минсу?",
+      "vocabulary": "이야기하다 — разговаривать",
+      "teacher_notes": "Сора ещё пытается говорить обычно.",
+      "next": "SC06_D05"
+    },
+    {
+      "id": "SC06_D05",
+      "shot_id": "SH02",
+      "speaker": "yuna",
+      "original": "네. 민수가 목요일에 누구랑 있었는지 들었어요.",
+      "simple": "네. 민수가 그 여자 이름을 말했어요.",
+      "ru": "Да. Он наконец рассказал, с кем был в четверг.",
+      "vocabulary": "누구랑 — с кем; -는지 — косвенный вопрос",
+      "teacher_notes": "В simple сохраняем главное: Минсу назвал женщину; день четверг известен из контекста.",
+      "next": "SC06_D06"
+    },
+    {
+      "id": "SC06_D06",
+      "shot_id": "SH02",
+      "speaker": "narrator",
+      "original": "소라는 잠깐 말을 멈춰요.",
+      "simple": "소라는 잠깐 조용해져요.",
+      "ru": "Сора на мгновение замолкает.",
+      "vocabulary": "말을 멈추다 — перестать говорить",
+      "teacher_notes": "Пауза не должна приводить к смене изображения.",
+      "next": "SC06_D07"
+    },
+    {
+      "id": "SC06_D07",
+      "shot_id": "SH02",
+      "speaker": "yuna",
+      "original": "그게 사실이에요?",
+      "simple": "정말이에요?",
+      "ru": "Это правда?",
+      "vocabulary": "사실 — факт, правда",
+      "teacher_notes": "Короткий прямой вопрос.",
+      "next": "SC06_D08"
+    },
+    {
+      "id": "SC06_D08",
+      "shot_id": "SH02",
+      "speaker": "sora",
+      "original": "유나…",
+      "simple": "유나…",
+      "ru": "Юна…",
+      "vocabulary": "—",
+      "teacher_notes": "Попытка начать объяснение без содержания.",
+      "next": "SC06_D09"
+    },
+    {
+      "id": "SC06_D09",
+      "shot_id": "SH02",
+      "speaker": "yuna",
+      "original": "그 여자, 소라 씨였어요?",
+      "simple": "그 여자, 소라 씨예요?",
+      "ru": "Это была ты?",
+      "vocabulary": "-였어요 — прошедшее от 이다",
+      "teacher_notes": "Модель обращения -요 сохранена по проекту.",
+      "next": "SC06_D10"
+    },
+    {
+      "id": "SC06_D10",
+      "shot_id": "SH02",
+      "speaker": "sora",
+      "original": "…네. 저예요.",
+      "simple": "…네. 저예요.",
+      "ru": "…Да. Это была я.",
+      "vocabulary": "저 — я (вежливо)",
+      "teacher_notes": "Момент подтверждения, без театральной реакции.",
+      "next": "SC06_D11"
+    },
+    {
+      "id": "SC06_D11",
+      "shot_id": "SH03",
+      "speaker": "yuna",
+      "original": "토요일에 제가 민수 때문에 힘들다고 이야기했잖아요.",
+      "simple": "토요일에 제가 민수 이야기를 했어요. 많이 힘들었어요.",
+      "ru": "В субботу я рассказывала тебе о Минсу. Говорила, как мне тяжело.",
+      "vocabulary": "-잖아요 — ведь, же; 때문에 — из-за",
+      "teacher_notes": "Прямая связь со сценой покупок.",
+      "next": "SC06_D12"
+    },
+    {
+      "id": "SC06_D12",
+      "shot_id": "SH03",
+      "speaker": "sora",
+      "original": "기억해요.",
+      "simple": "기억해요.",
+      "ru": "Помню.",
+      "vocabulary": "기억하다 — помнить",
+      "teacher_notes": "Тихо, почти шёпотом.",
+      "next": "SC06_D13"
+    },
+    {
+      "id": "SC06_D13",
+      "shot_id": "SH03",
+      "speaker": "yuna",
+      "original": "그때도 다 알고 있었어요?",
+      "simple": "그때도 알고 있었어요?",
+      "ru": "И ты уже тогда всё знала?",
+      "vocabulary": "그때 — тогда",
+      "teacher_notes": "Без крика; Юна проверяет, как долго Сора скрывала правду.",
+      "next": "SC06_D14"
+    },
+    {
+      "id": "SC06_D14",
+      "shot_id": "SH03",
+      "speaker": "sora",
+      "original": "어떻게 말해야 할지 몰랐어요. 정말 말하려고 했는데…",
+      "simple": "말하기 어려웠어요. 말하고 싶었어요.",
+      "ru": "Я не знала, как сказать. Я правда хотела признаться…",
+      "vocabulary": "-아/어야 할지 모르다 — не знать, как; -려고 하다 — собираться",
+      "teacher_notes": "Не превращать это в искупление; это слабое оправдание Соры.",
+      "next": "SC06_D15"
+    },
+    {
+      "id": "SC06_D15",
+      "shot_id": "SH03",
+      "speaker": "yuna",
+      "original": "그럼 왜 경비 아저씨한테 물어보라고 했어요?",
+      "simple": "그런데 왜 경비 아저씨한테 가라고 했어요?",
+      "ru": "Тогда почему ты посоветовала мне обратиться к охраннику?",
+      "vocabulary": "-라고 하다 — передавать просьбу/совет; 경비 아저씨 — охранник",
+      "teacher_notes": "Это основной причинно-следственный вопрос сцены.",
+      "next": "SC06_D16"
+    },
+    {
+      "id": "SC06_D16",
+      "shot_id": "SH04",
+      "speaker": "sora",
+      "original": "민수가 거짓말했다는 걸 알았으면 했어요.",
+      "simple": "민수는 거짓말했어요. 유나 씨도 알아야 한다고 생각했어요.",
+      "ru": "Я хотела, чтобы ты узнала о лжи Минсу.",
+      "vocabulary": "-았으면 하다 — желание; 거짓말하다 — лгать",
+      "teacher_notes": "Не говорить с намёком на радость. В simple смысл упрощён, не сменён.",
+      "next": "SC06_D17"
+    },
+    {
+      "id": "SC06_D17",
+      "shot_id": "SH04",
+      "speaker": "sora",
+      "original": "하지만 아저씨가 우리가 키스한 것까지 봤을 줄은 몰랐어요.",
+      "simple": "그런데 아저씨가 우리 키스도 봤어요. 그건 몰랐어요.",
+      "ru": "Но я не знала, что охранник видел и наш поцелуй.",
+      "vocabulary": "-(으)ㄴ 줄 모르다 — не знать, что; -까지 — даже",
+      "teacher_notes": "Самопроизвольная оговорка окончательно проясняет намерение.",
+      "next": "SC06_D18"
+    },
+    {
+      "id": "SC06_D18",
+      "shot_id": "SH04",
+      "speaker": "yuna",
+      "original": "잠깐만요. 제가 민수랑 헤어지길 바랐어요? 소라 씨 이야기는 몰랐으면 했고요?",
+      "simple": "잠깐요. 제가 민수랑 헤어지면 좋겠어요? 그런데 소라 씨는 비밀로 하고 싶었어요?",
+      "ru": "Подожди. Ты хотела, чтобы мы расстались, но чтобы я не узнала о тебе?",
+      "vocabulary": "헤어지다 — расставаться; 비밀 — секрет",
+      "teacher_notes": "Осторожно с темпом: здесь впервые проступает ярость.",
+      "next": "SC06_D19"
+    },
+    {
+      "id": "SC06_D19",
+      "shot_id": "SH04",
+      "speaker": "sora",
+      "original": "네… 두 사람이 헤어졌으면 했어요. 하지만 말할 용기가 없었어요.",
+      "simple": "네… 헤어지면 좋겠다고 생각했어요. 하지만 저는 무서웠어요.",
+      "ru": "Да… Я хотела, чтобы вы расстались. Но у меня не хватило смелости сказать правду.",
+      "vocabulary": "용기 — смелость; -았으면 하다 — желание",
+      "teacher_notes": "Не добавлять причины, почему Сора хотела быть с Минсу.",
+      "next": "SC06_D20"
+    },
+    {
+      "id": "SC06_D20",
+      "shot_id": "SH04",
+      "speaker": "yuna",
+      "original": "지금 그게 말이 돼요?",
+      "simple": "정말 그렇게 생각했어요?",
+      "ru": "Ты вообще понимаешь, что говоришь?!",
+      "vocabulary": "말이 되다 — иметь смысл",
+      "teacher_notes": "Первая повышенная интонация; не прямой крик в первом такте.",
+      "next": "SC06_D21"
+    },
+    {
+      "id": "SC06_D21",
+      "shot_id": "SH05",
+      "speaker": "yuna",
+      "original": "소라 씨가 민수랑 키스했잖아요. 그런데 제 옆에서 조언까지 했어요!",
+      "simple": "소라 씨가 민수랑 키스했어요. 그리고 저한테 조언했어요!",
+      "ru": "Ты сама целовалась с Минсу! А потом сидела рядом со мной и давала советы!",
+      "vocabulary": "조언하다 — советовать; -잖아요 — ведь",
+      "teacher_notes": "Здесь разрыв с прежним холодным состоянием.",
+      "next": "SC06_D22"
+    },
+    {
+      "id": "SC06_D22",
+      "shot_id": "SH05",
+      "speaker": "sora",
+      "original": "맞아요. 정말 미안해요.",
+      "simple": "네. 정말 미안해요.",
+      "ru": "Да. Мне очень жаль.",
+      "vocabulary": "미안하다 — извиняться",
+      "teacher_notes": "Не героизировать Сору, пусть она выглядит виноватой и растерянной.",
+      "next": "SC06_D23"
+    },
+    {
+      "id": "SC06_D23",
+      "shot_id": "SH05",
+      "speaker": "yuna",
+      "original": "그날 우리가 컵 고르던 거 기억나요? 소라 씨가 세 번째 컵도 골랐잖아요.",
+      "simple": "그날 컵을 세 개 골랐어요. 세 번째는 소라 씨 컵이었어요.",
+      "ru": "Помнишь, как мы выбирали чашки? Ты даже третью выбрала — для себя.",
+      "vocabulary": "세 번째 — третий; 고르다 — выбирать",
+      "teacher_notes": "Память о третьей чашке, но чашка НЕ появляется физически в кафе.",
+      "next": "SC06_D24"
+    },
+    {
+      "id": "SC06_D24",
+      "shot_id": "SH05",
+      "speaker": "yuna",
+      "original": "저는 민수랑 살 집에 쓸 물건을 고르고 있었어요. 소라 씨는 다 알면서요!",
+      "simple": "저는 민수랑 같이 살 집 물건을 샀어요. 그런데 소라 씨는 다 알았어요!",
+      "ru": "Я выбирала вещи для нашего с Минсу дома. А ты всё знала!",
+      "vocabulary": "-면서 — одновременно; 물건 — вещь",
+      "teacher_notes": "Взрыв не должен выглядеть постановочным, болезненно и живо.",
+      "next": "SC06_D25"
+    },
+    {
+      "id": "SC06_D25",
+      "shot_id": "SH05",
+      "speaker": "sora",
+      "original": "미안해요. 정말…",
+      "simple": "미안해요…",
+      "ru": "Прости. Правда…",
+      "vocabulary": "—",
+      "teacher_notes": "Сора не говорит оправдательный монолог.",
+      "next": "SC06_D26"
+    },
+    {
+      "id": "SC06_D26",
+      "shot_id": "SH06",
+      "speaker": "yuna",
+      "original": "민수는 제 남자 친구였어요. 하지만 소라 씨는 제 가장 친한 친구였잖아요.",
+      "simple": "민수는 제 남자 친구였어요. 소라 씨는 제 가장 친한 친구였어요.",
+      "ru": "Минсу был моим парнем. Но ты… ты же была моей лучшей подругой.",
+      "vocabulary": "가장 친한 친구 — лучший друг; -잖아요 — ведь",
+      "teacher_notes": "Пик сцены: Юна теряет голос, слёзы после этой реплики.",
+      "next": "SC06_D27"
+    },
+    {
+      "id": "SC06_D27",
+      "shot_id": "SH06",
+      "speaker": "narrator",
+      "original": "유나의 목소리가 떨리고 눈물이 흘러요.",
+      "simple": "유나가 울기 시작해요.",
+      "ru": "Голос Юны дрожит, по щекам текут слёзы.",
+      "vocabulary": "목소리 — голос; 떨리다 — дрожать; 눈물 — слёзы",
+      "teacher_notes": "Не делать слёзы декоративными. Изменение эмоции — после гнева.",
+      "next": "SC06_D28"
+    },
+    {
+      "id": "SC06_D28",
+      "shot_id": "SH06",
+      "speaker": "sora",
+      "original": "저도 무서웠어요. 유나 씨를 잃을까 봐요.",
+      "simple": "저도 무서웠어요. 친구를 잃고 싶지 않았어요.",
+      "ru": "Я боялась тебя потерять.",
+      "vocabulary": "-(으)ㄹ까 봐 — бояться, что",
+      "teacher_notes": "Она может сама заплакать, но не получает прощения.",
+      "next": "SC06_D29"
+    },
+    {
+      "id": "SC06_D29",
+      "shot_id": "SH06",
+      "speaker": "yuna",
+      "original": "그래서 계속 거짓말했어요?",
+      "simple": "그래서 계속 거짓말했어요?",
+      "ru": "И поэтому продолжала мне врать?",
+      "vocabulary": "계속 — всё время, продолжать",
+      "teacher_notes": "Короткий вопрос, уже почти шёпотом.",
+      "next": "SC06_D30"
+    },
+    {
+      "id": "SC06_D30",
+      "shot_id": "SH06",
+      "speaker": "narrator",
+      "original": "소라는 아무 말도 하지 못해요.",
+      "simple": "소라는 말이 없어요.",
+      "ru": "Сора не находит ответа.",
+      "vocabulary": "아무 말도 — ни слова",
+      "teacher_notes": "Никакого нового оправдания.",
+      "next": "SC06_D31"
+    },
+    {
+      "id": "SC06_D31",
+      "shot_id": "SH07",
+      "speaker": "yuna",
+      "original": "그만해요. 이제 소라 씨를 믿을 수 없어요.",
+      "simple": "그만해요. 이제 못 믿어요.",
+      "ru": "Хватит. Я больше не могу тебе верить.",
+      "vocabulary": "믿다 — доверять; -(으)ㄹ 수 없다 — не мочь",
+      "teacher_notes": "К концу Юна снова становится холодной, но истощённой.",
+      "next": "SC06_D32"
+    },
+    {
+      "id": "SC06_D32",
+      "shot_id": "SH07",
+      "speaker": "sora",
+      "original": "유나, 제발 한 번만 더 이야기해요.",
+      "simple": "유나, 제발 조금만 더 이야기해요.",
+      "ru": "Юна, пожалуйста. Дай мне ещё немного поговорить.",
+      "vocabulary": "제발 — пожалуйста (мольба); 한 번만 — только раз",
+      "teacher_notes": "Не тянуться к Юне, не хватать за руку.",
+      "next": "SC06_D33"
+    },
+    {
+      "id": "SC06_D33",
+      "shot_id": "SH07",
+      "speaker": "yuna",
+      "original": "연락하지 마세요.",
+      "simple": "전화하지 마세요.",
+      "ru": "Не связывайся со мной.",
+      "vocabulary": "연락하다 — связываться; -지 마세요 — запрет",
+      "teacher_notes": "Ни крика, ни угроз, только граница.",
+      "next": "SC06_D34"
+    },
+    {
+      "id": "SC06_D34",
+      "shot_id": "SH07",
+      "speaker": "narrator",
+      "original": "유나는 카페를 나가요. 소라는 혼자 남아요.",
+      "simple": "유나는 나가요. 소라는 혼자 있어요.",
+      "ru": "Юна выходит из кафе. Сора остаётся одна.",
+      "vocabulary": "남다 — оставаться",
+      "teacher_notes": "Последний кадр — одиночество Соры. Финал C будет уже про Юну.",
+      "next": "ENDING_C_START"
+    }
+  ],
+  "flags": {
+    "sora_identity_known": true,
+    "sora_involved": true
+  },
+  "choices": []
+}

@@ -1,0 +1,32 @@
+{
+  "yuna": {
+    "name": "유나",
+    "role": "Юна",
+    "color": "#e9b680"
+  },
+  "minsu": {
+    "name": "민수",
+    "role": "Минсу",
+    "color": "#a8c6bc"
+  },
+  "sora": {
+    "name": "소라",
+    "role": "Сора",
+    "color": "#d3b8d5"
+  },
+  "guard": {
+    "name": "경비 아저씨",
+    "role": "Охранник жилого комплекса",
+    "color": "#b2c1cf"
+  },
+  "yuna_inner": {
+    "name": "유나 · 속마음",
+    "role": "Внутренняя реплика Юны",
+    "color": "#e9b680"
+  },
+  "minsu_phone": {
+    "name": "민수 · 전화",
+    "role": "Минсу по телефону",
+    "color": "#a8c6bc"
+  }
+}

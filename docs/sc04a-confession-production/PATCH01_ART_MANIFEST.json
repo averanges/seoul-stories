@@ -1,0 +1,50 @@
+[
+  {
+    "id": "SC04A_CONFESSION_SH01",
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\sc04a-confession-originals\\patch01\\SC04A_CONFESSION_SH01.png",
+    "width": 1672,
+    "height": 941,
+    "status": "preserved",
+    "sha256": "f2f7832be1d9fc98443f837d089a4319ba326424d96632ad9c81302c1e0e0b35"
+  },
+  {
+    "id": "SC04A_CONFESSION_SH02",
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\sc04a-confession-originals\\patch01\\SC04A_CONFESSION_SH02.png",
+    "width": 1672,
+    "height": 941,
+    "status": "reworked",
+    "sha256": "d8a95580f0db143e09e88595810437446d4fe5026b4671e92063035d6d9359e9"
+  },
+  {
+    "id": "SC04A_CONFESSION_SH03",
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\sc04a-confession-originals\\patch01\\SC04A_CONFESSION_SH03.png",
+    "width": 1672,
+    "height": 941,
+    "status": "reworked",
+    "sha256": "bfe84331b9263a89cc996733e7e295b2a57334210d96beacd26340439d31baa0"
+  },
+  {
+    "id": "SC04A_CONFESSION_SH04",
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\sc04a-confession-originals\\patch01\\SC04A_CONFESSION_SH04.png",
+    "width": 1672,
+    "height": 941,
+    "status": "new_after_patch",
+    "sha256": "47a264586782260f8436a80b79d93a99d02b76685485eed2fad4b7638eccb2b5"
+  },
+  {
+    "id": "SC04A_CONFESSION_SH05",
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\sc04a-confession-originals\\patch01\\SC04A_CONFESSION_SH05.png",
+    "width": 1672,
+    "height": 941,
+    "status": "new_after_patch",
+    "sha256": "7453ff442938cb3148b0a78b8535a6eee5a1769bd05c92eaeaab5d6fef76ff6f"
+  },
+  {
+    "id": "SC04A_CONFESSION_SH06",
+    "source": "C:\\Users\\user\\Documents\\Codex\\2026-11-06\\files-pasted-by-the-user-c\\outputs\\sc04a-confession-originals\\patch01\\SC04A_CONFESSION_SH06.png",
+    "width": 1672,
+    "height": 941,
+    "status": "new_after_patch",
+    "sha256": "c47548d4d617282b216f3af78ee172b27f66295bffd21999fdf71016d552672e"
+  }
+]

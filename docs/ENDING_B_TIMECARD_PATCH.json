@@ -1,0 +1,42 @@
+{
+  "purpose": "Approved manual time card only. Prior preservation expectations updated only for the two transitionAfter fields and modified player/type files; image hashes and other text/routes unchanged.",
+  "reactions": [
+    "SC04A_CONFESSION_R_LEAVE",
+    "SC04B_PHONE_REACT_LEAVE"
+  ],
+  "priorHashes": {
+    "outputs/novel-engine/docs/ending-b-production/PREVIOUS_BASELINE.json:src/main.tsx": "2f4e0c1c087cb990bf9108e654bd72d210cfbf00a654cc6679a78cfdbc1d1b42",
+    "outputs/novel-engine/docs/ending-c-production/PREVIOUS_BASELINE.json:src/main.tsx": "2f4e0c1c087cb990bf9108e654bd72d210cfbf00a654cc6679a78cfdbc1d1b42",
+    "outputs/novel-engine/docs/ending-c-production/PREVIOUS_BASELINE.json:src/types.ts": "fb46984378453711e2948bfd85017b73355fef37e17f31f8157131bae188d4b5",
+    "outputs/novel-engine/docs/sc02-production/SC01_BASELINE.json:src/main.tsx": "770dfcb497bd6e115c06a6de7a7f5f00a280ac4d61dc85770242dc2c2783a314",
+    "outputs/novel-engine/docs/sc03a-production/PREVIOUS_BASELINE.json:src/main.tsx": "770dfcb497bd6e115c06a6de7a7f5f00a280ac4d61dc85770242dc2c2783a314",
+    "outputs/novel-engine/docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json:src/main.tsx": "2f4e0c1c087cb990bf9108e654bd72d210cfbf00a654cc6679a78cfdbc1d1b42",
+    "outputs/novel-engine/docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json:src/types.ts": "fb46984378453711e2948bfd85017b73355fef37e17f31f8157131bae188d4b5",
+    "outputs/novel-engine/docs/sc06-production/PREVIOUS_BASELINE.json:src/main.tsx": "2f4e0c1c087cb990bf9108e654bd72d210cfbf00a654cc6679a78cfdbc1d1b42",
+    "outputs/novel-engine/docs/sc06-production/PREVIOUS_BASELINE.json:src/types.ts": "fb46984378453711e2948bfd85017b73355fef37e17f31f8157131bae188d4b5",
+    "outputs/novel-engine/docs/sora-reveal-production/PREVIOUS_BASELINE.json:src/main.tsx": "2f4e0c1c087cb990bf9108e654bd72d210cfbf00a654cc6679a78cfdbc1d1b42",
+    "outputs/novel-engine/docs/sora-reveal-production/PREVIOUS_BASELINE.json:src/types.ts": "fb46984378453711e2948bfd85017b73355fef37e17f31f8157131bae188d4b5"
+  },
+  "approvedHashes": {
+    "src/main.tsx": "4737e1f833ecb1809c75031be4b293e7e7c39d70b83eaccfa054cdb91b8aa2f7",
+    "src/types.ts": "2d4b9e057b3ee1d5be15278561e0f0da2de47b91219037198cddfe3dac710be2",
+    "src/time-transition.css": "50ad9b19b83ac36102bf8b8f27470c0fe701c1e3dd1926c4853e9a69849ab36c"
+  },
+  "baselineFiles": [
+    "outputs/novel-engine/docs/ending-b-production/PREVIOUS_BASELINE.json",
+    "outputs/novel-engine/docs/ending-c-production/PREVIOUS_BASELINE.json",
+    "outputs/novel-engine/docs/sc02-production/SC01_BASELINE.json",
+    "outputs/novel-engine/docs/sc03a-production/PREVIOUS_BASELINE.json",
+    "outputs/novel-engine/docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json",
+    "outputs/novel-engine/docs/sc06-production/PREVIOUS_BASELINE.json",
+    "outputs/novel-engine/docs/sora-reveal-production/PREVIOUS_BASELINE.json"
+  ],
+  "phoneReactionPreserved": "이제 더 듣고 싶지 않아요.",
+  "firstLinePreserved": false,
+  "firstLineOverride": {
+    "id": "ENDING_B_D01",
+    "original": "유나의 집에 초인종이 울려요.",
+    "simple": "소라가 왔어요.",
+    "ru": "В квартире Юны раздаётся звонок в дверь."
+  }
+}

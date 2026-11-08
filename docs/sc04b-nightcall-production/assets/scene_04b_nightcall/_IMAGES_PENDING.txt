@@ -1,0 +1,4 @@
+SC04B_SH01.webp
+SC04B_SH02.webp
+SC04B_SH03.webp
+These are NOT included yet. Generate as independent full-size assets according to 02_FULL_SHOT_CARDS.md.

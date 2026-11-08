@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "station",
+  "title": "Последний поезд",
+  "subtitle": "막차의 작은 비밀",
+  "description": "Забытый блокнот, вечерний Сеул и три решения, которые изменят встречу.",
+  "level": "A2 · 초급",
+  "duration": "10–15 минут",
+  "cover": "images/platform.svg",
+  "start": "arrival",
+  "variables": {
+    "trust": 0,
+    "clue": false
+  },
+  "characters": "characters.json",
+  "scenes": "scenes.json",
+  "nodes": "nodes.json"
+}

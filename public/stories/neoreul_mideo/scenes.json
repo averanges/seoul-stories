@@ -1,0 +1,858 @@
+{
+  "SC01_SH01": {
+    "src": "assets/scene_01/SC01_SH01.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Квартира перед переездом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH02": {
+    "src": "assets/scene_01/SC01_SH02.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Юна находит альбом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH03": {
+    "src": "assets/scene_01/SC01_SH03.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Фотография первого свидания",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH04": {
+    "src": "assets/scene_01/SC01_SH04.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Общее воспоминание и планы",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH05": {
+    "src": "assets/scene_01/SC01_SH05.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Юна задаёт бытовой вопрос и замечает нестыковку",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH06": {
+    "src": "assets/scene_01/SC01_SH06.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Минсу меняет ответ",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH07": {
+    "src": "assets/scene_01/SC01_SH07.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Юна решает, продолжать ли разговор",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC01_SH08": {
+    "src": "assets/scene_01/SC01_SH08.webp",
+    "label": "오래된 사진",
+    "title": "오래된 사진",
+    "teacherTitle": "SC01 · Юна остаётся с альбомом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH01": {
+    "src": "assets/scene_02/SC02_SH01.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Суббота: магазин для дома",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH02": {
+    "src": "assets/scene_02/SC02_SH02.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Диван для троих",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH03": {
+    "src": "assets/scene_02/SC02_SH03.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Две чашки для новой квартиры",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH04": {
+    "src": "assets/scene_02/SC02_SH04.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Сора добавляет третью чашку",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH05": {
+    "src": "assets/scene_02/SC02_SH05.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Юна замолкает у светильников",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH06": {
+    "src": "assets/scene_02/SC02_SH06.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Юна рассказывает о лжи Минсу",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH07": {
+    "src": "assets/scene_02/SC02_SH07.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · Совет Соры",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC02_SH08": {
+    "src": "assets/scene_02/SC02_SH08.webp",
+    "label": "소라와 쇼핑",
+    "title": "소라와 쇼핑",
+    "teacherTitle": "SC02 · У выхода: выбор направления",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03A_SH01": {
+    "src": "assets/scene_03a/SC03A_SH01.webp",
+    "label": "선반",
+    "title": "선반",
+    "teacherTitle": "SC03A · Юна перед дверью новой квартиры",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03A_SH02": {
+    "src": "assets/scene_03a/SC03A_SH02.webp",
+    "label": "선반",
+    "title": "선반",
+    "teacherTitle": "SC03A · Минсу открывает дверь — прямой разговор",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03A_SH03": {
+    "src": "assets/scene_03a/SC03A_SH03.webp",
+    "label": "선반",
+    "title": "선반",
+    "teacherTitle": "SC03A · Раскрытие: полка действительно существует",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03A_SH04": {
+    "src": "assets/scene_03a/SC03A_SH04.webp",
+    "label": "선반",
+    "title": "선반",
+    "teacherTitle": "SC03A · Юна замечает кривизну, Минсу оправдывается",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03A_SH05": {
+    "src": "assets/scene_03a/SC03A_SH05.webp",
+    "label": "선반",
+    "title": "선반",
+    "teacherTitle": "SC03A · Мысль о совместных фотографиях",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03A_SH06": {
+    "src": "assets/scene_03a/SC03A_SH06.webp",
+    "label": "선반",
+    "title": "선반",
+    "teacherTitle": "SC03A · Возвращение к вопросу доверия и выбор",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03B_SH01": {
+    "src": "assets/scene_03b/SC03B_SH01.webp",
+    "label": "경비실",
+    "title": "경비실",
+    "teacherTitle": "SC03B · У поста охраны",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03B_SH02": {
+    "src": "assets/scene_03b/SC03B_SH02.webp",
+    "label": "경비실",
+    "title": "경비실",
+    "teacherTitle": "SC03B · Вежливый разговор",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03B_SH03": {
+    "src": "assets/scene_03b/SC03B_SH03.webp",
+    "label": "경비실",
+    "title": "경비실",
+    "teacherTitle": "SC03B · Свидетельство охранника",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC03B_SH04": {
+    "src": "assets/scene_03b/SC03B_SH04.webp",
+    "label": "경비실",
+    "title": "경비실",
+    "teacherTitle": "SC03B · Юна замирает",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    },
+    "transition": "cut"
+  },
+  "SC03B_SH05": {
+    "src": "assets/scene_03b/SC03B_SH05.webp",
+    "label": "경비실",
+    "title": "경비실",
+    "teacherTitle": "SC03B · После разговора — одна",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.42
+    }
+  },
+  "SC04A_SH01": {
+    "src": "assets/scene_04a/SC04A_SH01.png",
+    "label": "우리의 새집",
+    "title": "우리의 새집",
+    "teacherTitle": "SC04A · Наш новый дом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_SH02": {
+    "src": "assets/scene_04a/SC04A_SH02.png",
+    "label": "우리의 새집",
+    "title": "우리의 새집",
+    "teacherTitle": "SC04A · Наш новый дом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_SH03": {
+    "src": "assets/scene_04a/SC04A_SH03.png",
+    "label": "우리의 새집",
+    "title": "우리의 새집",
+    "teacherTitle": "SC04A · Наш новый дом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_SH04": {
+    "src": "assets/scene_04a/SC04A_SH04.png",
+    "label": "우리의 새집",
+    "title": "우리의 새집",
+    "teacherTitle": "SC04A · Наш новый дом",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC03A_BRIDGE_SH01": {
+    "src": "assets/scene_03a/SC03A_BRIDGE_SH01.png",
+    "label": "함께 준비해요",
+    "title": "함께 준비해요",
+    "teacherTitle": "SC03A · Вместе за работу",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_CONFESSION_SH01": {
+    "src": "assets/scene_04a_confession/SC04A_CONFESSION_SH01.webp",
+    "label": "너무 조용한 저녁",
+    "title": "너무 조용한 저녁",
+    "teacherTitle": "SC04A · Ожидание в старой квартире",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_CONFESSION_SH02": {
+    "src": "assets/scene_04a_confession/SC04A_CONFESSION_SH02.webp",
+    "label": "너무 조용한 저녁",
+    "title": "너무 조용한 저녁",
+    "teacherTitle": "SC04A · Минсу возвращается",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_CONFESSION_SH03": {
+    "src": "assets/scene_04a_confession/SC04A_CONFESSION_SH03.webp",
+    "label": "너무 조용한 저녁",
+    "title": "너무 조용한 저녁",
+    "teacherTitle": "SC04A · Юна сообщает, что знает",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_CONFESSION_SH04": {
+    "src": "assets/scene_04a_confession/SC04A_CONFESSION_SH04.webp",
+    "label": "너무 조용한 저녁",
+    "title": "너무 조용한 저녁",
+    "teacherTitle": "SC04A · Признание после сообщения о поцелуе",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_CONFESSION_SH05": {
+    "src": "assets/scene_04a_confession/SC04A_CONFESSION_SH05.webp",
+    "label": "너무 조용한 저녁",
+    "title": "너무 조용한 저녁",
+    "teacherTitle": "SC04A · Место общего будущего",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_CONFESSION_SH06": {
+    "src": "assets/scene_04a_confession/SC04A_CONFESSION_SH06.webp",
+    "label": "너무 조용한 저녁",
+    "title": "너무 조용한 저녁",
+    "teacherTitle": "SC04A · Кто она? — выбор",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04B_PHONE_SH01": {
+    "src": "assets/scene_04b_nightcall/SC04B_SH01.webp",
+    "label": "밤늦은 전화",
+    "title": "밤늦은 전화",
+    "teacherTitle": "SC04B · Одна после охранника",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04B_PHONE_SH02": {
+    "src": "assets/scene_04b_nightcall/SC04B_SH02.webp",
+    "label": "밤늦은 전화",
+    "title": "밤늦은 전화",
+    "teacherTitle": "SC04B · Звонок и короткое признание",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04B_PHONE_SH03": {
+    "src": "assets/scene_04b_nightcall/SC04B_SH03.webp",
+    "label": "밤늦은 전화",
+    "title": "밤늦은 전화",
+    "teacherTitle": "SC04B · «А я ведь поверила» / ответ и выбор",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "ENDING_B_SH01": {
+    "src": "assets/ending_b/ENDING_B_SH01.webp",
+    "label": "혼자가 아니에요",
+    "title": "혼자가 아니에요",
+    "teacherTitle": "Финал B · Не одна",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "ENDING_B_SH02": {
+    "src": "assets/ending_b/ENDING_B_SH02.webp",
+    "label": "혼자가 아니에요",
+    "title": "혼자가 아니에요",
+    "teacherTitle": "Финал B · Не одна",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "ENDING_B_SH03": {
+    "src": "assets/ending_b/ENDING_B_SH03.webp",
+    "label": "혼자가 아니에요",
+    "title": "혼자가 아니에요",
+    "teacherTitle": "Финал B · Не одна",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_REVEAL_SH07": {
+    "src": "assets/sora_reveal/SC04A_REVEAL_SH07.webp",
+    "label": "이름",
+    "title": "이름",
+    "teacherTitle": "4A · Продолжение разговора",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04A_REVEAL_SH08": {
+    "src": "assets/sora_reveal/SC04A_REVEAL_SH08.webp",
+    "label": "이름",
+    "title": "이름",
+    "teacherTitle": "4A · Продолжение разговора",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC04B_REVEAL_SH04": {
+    "src": "assets/sora_reveal/SC04B_REVEAL_SH04.webp",
+    "label": "이름",
+    "title": "이름",
+    "teacherTitle": "4B · Продолжение разговора",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH01": {
+    "src": "assets/SC06/SC06_SH01.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Холодная встреча",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH02": {
+    "src": "assets/SC06/SC06_SH02.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Подтверждение",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH03": {
+    "src": "assets/SC06/SC06_SH03.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Вопрос об охраннике",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH04": {
+    "src": "assets/SC06/SC06_SH04.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Признание в намерении",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH05": {
+    "src": "assets/SC06/SC06_SH05.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Срыв и третья чашка",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH06": {
+    "src": "assets/SC06/SC06_SH06.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Ты была моей подругой",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "SC06_SH07": {
+    "src": "assets/SC06/SC06_SH07.webp",
+    "label": "가장 친한 친구",
+    "title": "가장 친한 친구",
+    "teacherTitle": "SC06 · Не звони",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "ENDING_C_SH01": {
+    "src": "assets/ending_c/ENDING_C_SH01.webp",
+    "label": "혼자",
+    "title": "혼자",
+    "teacherTitle": "Ending C · Вернулась домой",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "ENDING_C_SH02": {
+    "src": "assets/ending_c/ENDING_C_SH02.webp",
+    "label": "혼자",
+    "title": "혼자",
+    "teacherTitle": "Ending C · Предметы, которые остались",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  },
+  "ENDING_C_SH03": {
+    "src": "assets/ending_c/ENDING_C_SH03.webp",
+    "label": "혼자",
+    "title": "혼자",
+    "teacherTitle": "Ending C · Одна",
+    "fit": "contain",
+    "temporary": false,
+    "characters": [],
+    "faces": [],
+    "safeArea": "bottom",
+    "focus": {
+      "x": 0.5,
+      "y": 0.4
+    }
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "piano",
+    "source": "Intimate emotional piano background music for a quiet visual.wav",
+    "duration": 60,
+    "sha256": "bf491ebc5316eefe1cb78f7e10d5cec19de34f44f5bf51608a9e1263d6f34aad",
+    "cuts": {
+      "intro": [
+        0,
+        5.333333333333333
+      ],
+      "loop": [
+        15,
+        21.333333333333332
+      ],
+      "outro": [
+        32,
+        60
+      ]
+    }
+  },
+  {
+    "id": "confrontation",
+    "source": "Intimate psychological drama soundtrack for a confrontation.wav",
+    "duration": 90,
+    "sha256": "3afc054aad05ebcdc3f18b975ff10ff87739360f4dd5b6883a628d23f34896a0",
+    "cuts": {
+      "intro": [
+        0,
+        6.4
+      ],
+      "loop": [
+        15,
+        25.6
+      ],
+      "outro": [
+        64,
+        90
+      ]
+    }
+  },
+  {
+    "id": "warm",
+    "source": "Warm intimate slice-of-life visual novel soundtrack. A young.wav",
+    "duration": 60,
+    "sha256": "85477e98bae38324104ac2af3a57c7763e1a26a302feb38f874033dc25f276cc",
+    "cuts": null
+  }
+]
