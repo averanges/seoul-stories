@@ -3729,9 +3729,9 @@
     "assets/scene_04b_nightcall/SC04B_SH01.webp": "2158c5ba7b88d6a7b39282b14c3a8ecc9d704a242b6001fb8208c028f1bb7e3e",
     "assets/scene_04b_nightcall/SC04B_SH02.webp": "aeab17ee888ca2fea63b8d0f8a03c63975fccdfea646415ace8cc588b935b32e",
     "assets/scene_04b_nightcall/SC04B_SH03.webp": "9338db0d8307b331cdce69c56d2319a2ceb7f26dee0e3a7b48f598b87782ab36",
-    "src/main.tsx": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+    "src/main.tsx": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a",
     "src/engine.ts": "09b5addd15bdaa2919c834cae36af424ee31cce04247e0d9e27d40299b4be859",
-    "src/SceneImage.tsx": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
-    "src/cinematic.css": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418"
+    "src/SceneImage.tsx": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15",
+    "src/cinematic.css": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
   }
 }

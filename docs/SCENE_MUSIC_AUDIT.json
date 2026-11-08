@@ -7,7 +7,7 @@
     "public/stories/neoreul_mideo/scenes.json": "1657a0ceaea4a4af983c70ddb00cb52b64f87c3a92e4419d8b97c81cf07a3273",
     "public/stories/neoreul_mideo/story.json": "2cef9a957a1f174685153c33c8c3b01ca6483f411548acf3ef36d429397de2d0",
     "src/engine.ts": "09b5addd15bdaa2919c834cae36af424ee31cce04247e0d9e27d40299b4be859",
-    "src/SceneImage.tsx": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+    "src/SceneImage.tsx": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15",
     "src/types.ts": "2d4b9e057b3ee1d5be15278561e0f0da2de47b91219037198cddfe3dac710be2"
   },
   "baselines": [

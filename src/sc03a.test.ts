@@ -1,3 +1,4 @@
+import {integrityHash} from './integrity';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -22,7 +23,7 @@ test('previous scenes and art preserved except talk connector and generic demo l
  const previous=structuredClone(baseline.nodes);const talk=previous.find((n:any)=>n.id==='SC02_R_TALK');delete talk.ending;talk.next='SC03A_D01';
  delete previous.find((n:any)=>n.id==='SC02_R_CHECK').ending;previous.find((n:any)=>n.id==='SC02_R_CHECK').next='SC03B_D01';assert.deepEqual(story.nodes.filter(n=>n.id.startsWith('SC01_')||n.id.startsWith('SC02_')),previous);
  for(const [id,scene]of Object.entries(baseline.scenes))assert.deepEqual(story.scenes[id],scene);
- for(const [file,digest]of Object.entries(baseline.hashes)){if(['src/main.tsx','src/engine.ts','src/SceneImage.tsx'].includes(file))continue;const bytes=file==='src/main.tsx'?Buffer.from(fs.readFileSync(file,'utf8').replace("'ДЕМО · ПРОДОЛЖЕНИЕ'","'ДЕМО · ПЕРВЫЕ ДВЕ СЦЕНЫ'")):fs.readFileSync(file);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),digest,file);}
+ for(const [file,digest]of Object.entries(baseline.hashes)){if(['src/main.tsx','src/engine.ts','src/SceneImage.tsx'].includes(file))continue;const bytes=file==='src/main.tsx'?Buffer.from(fs.readFileSync(file,'utf8').replace("'ДЕМО · ПРОДОЛЖЕНИЕ'","'ДЕМО · ПЕРВЫЕ ДВЕ СЦЕНЫ'")):fs.readFileSync(file);assert.equal(integrityHash(file,bytes),digest,file);}
 });
 test('each branch visits sixteen steps and six shots in order without symbolic missing targets',()=>{
  for(const choice of ['trust','check']){let s=start();const shots:string[]=[];

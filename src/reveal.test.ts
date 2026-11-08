@@ -1,3 +1,4 @@
+import {fileHash} from './integrity';
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';
 import {advance,back,choose,enter,fresh,nodeText,parseSave} from './engine';import {validateStory} from './validate';import type {Save,Story} from './types';
 const root='public/stories/neoreul_mideo/',story=JSON.parse(fs.readFileSync(root+'story.json','utf8')) as Story;for(const k of ['nodes','scenes','characters'] as const)(story as any)[k]=JSON.parse(fs.readFileSync(root+k+'.json','utf8'));
@@ -7,8 +8,8 @@ const id=(s:Save)=>s.entries.at(-1)!.nodeId;
 const start=(r:typeof routes[number]):Save=>({...fresh(story),entries:[enter(story,r.shelf?'SC04B_PHONE_D11':'SC04A_CONFESSION_D13',{...story.variables,minsu_confessed:true,guard_reports_kiss:true,shelf_seen:r.shelf,route:r.shelf?'talk':'investigate'}),enter(story,r.choice,{...story.variables,minsu_confessed:true,guard_reports_kiss:true,shelf_seen:r.shelf,route:r.shelf?'talk':'investigate'})]});
 test('reveal keeps all previous art/UI and leave/ending nodes; changes only five documented KNOW nodes',()=>{
  assert.deepEqual(validateStory(story),[]);const allowed=new Set(['SC04A_CONFESSION_R_KNOW','SC04B_PHONE_REACT_KNOW','SC04A_CONFESSION_TO_IDENTITY','SC04B_PHONE_TO_IDENTITY','SC04B_PHONE_D12']);const changed=[];for(const old of base.nodes){const actual=story.nodes.find(n=>n.id===old.id)!;assert.ok(actual);if(allowed.has(old.id)){if(JSON.stringify(actual)!==JSON.stringify(old))changed.push(old.id);}else assert.deepEqual(actual,old,old.id);}assert.equal(changed.length,5);
- const oldChoice=base.nodes.find((n:any)=>n.id==='SC04B_PHONE_D12'),current=story.nodes.find(n=>n.id===oldChoice.id)!;assert.deepEqual(current.choices![1],oldChoice.choices[1]);for(const [id,s]of Object.entries(base.scenes))assert.deepEqual(story.scenes[id],s);for(const [file,hash]of Object.entries(base.hashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file.startsWith('src/')?file:root+file)).digest('hex'),hash,file);
- const ids=['SC04A_REVEAL_SH07','SC04A_REVEAL_SH08','SC04B_REVEAL_SH04'];for(const id of ids)assert.ok(fs.existsSync(root+story.scenes[id].src));assert.equal(new Set(ids.map(id=>crypto.createHash('sha256').update(fs.readFileSync(root+story.scenes[id].src)).digest('hex'))).size,3);
+ const oldChoice=base.nodes.find((n:any)=>n.id==='SC04B_PHONE_D12'),current=story.nodes.find(n=>n.id===oldChoice.id)!;assert.deepEqual(current.choices![1],oldChoice.choices[1]);for(const [id,s]of Object.entries(base.scenes))assert.deepEqual(story.scenes[id],s);for(const [file,hash]of Object.entries(base.hashes))assert.equal(fileHash(file.startsWith('src/')?file:root+file),hash,file);
+ const ids=['SC04A_REVEAL_SH07','SC04A_REVEAL_SH08','SC04B_REVEAL_SH04'];for(const id of ids)assert.ok(fs.existsSync(root+story.scenes[id].src));assert.equal(new Set(ids.map(id=>fileHash(root+story.scenes[id].src))).size,3);
 });
 test('both KNOW routes use R01 once, exact shared bilingual dialogue, flags only on R04 and cut only R05',()=>{
  for(const r of routes){let s=choose(story,start(r),r.know);const source=pack.routes[r.key],shots=[];

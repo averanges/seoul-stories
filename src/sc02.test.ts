@@ -1,3 +1,4 @@
+import {integrityHash} from './integrity';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -23,7 +24,7 @@ test('SC01 nodes, scenes, eight images and shared UI/engine have not changed',()
  const expected=structuredClone(baseline.nodes);expected.find((n:any)=>n.id==='SC01_D19').next='SC02_D01';
  assert.deepEqual(story.nodes.filter(n=>n.id.startsWith('SC01_')),expected);
  assert.deepEqual(Object.fromEntries(Object.entries(story.scenes).filter(([id])=>id.startsWith('SC01_'))),baseline.scenes);
- for(const [file,digest] of Object.entries(baseline.hashes)){if(['src/main.tsx','src/engine.ts','src/SceneImage.tsx'].includes(file))continue;const content=file==='src/main.tsx'?Buffer.from(fs.readFileSync(file,'utf8').replace("'ДЕМО · ПРОДОЛЖЕНИЕ'","'ДЕМО · ПЕРВЫЕ ДВЕ СЦЕНЫ'")):fs.readFileSync(file);assert.equal(crypto.createHash('sha256').update(content).digest('hex'),digest,file);}
+ for(const [file,digest] of Object.entries(baseline.hashes)){if(['src/main.tsx','src/engine.ts','src/SceneImage.tsx'].includes(file))continue;const content=file==='src/main.tsx'?Buffer.from(fs.readFileSync(file,'utf8').replace("'ДЕМО · ПРОДОЛЖЕНИЕ'","'ДЕМО · ПЕРВЫЕ ДВЕ СЦЕНЫ'")):fs.readFileSync(file);assert.equal(integrityHash(file,content),digest,file);}
 });
 test('each route has 27 steps, eight monotonic shots and preserves first_question',()=>{
  for(const [choice,flag,end]of [['direct','talk','SC02_R_TALK'],['check','investigate','SC02_R_CHECK']]){

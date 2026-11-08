@@ -1,3 +1,4 @@
+import {fileHash} from './integrity';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -13,7 +14,7 @@ test('SC04A preserves approved dialogue, teacher materials and original PNG byte
  assert.deepEqual(validateStory(story),[]);
  assert.equal(story.nodes.filter(n=>/^SC04A_D/.test(n.id)).length,10);
  for(const d of pack){const n=story.nodes.find(n=>n.id===d.id)!;assert.equal(nodeText(n,story.variables),d.original);assert.equal(nodeText(n,story.variables,true),d.simple);assert.equal(n.teacher?.translation,d.ru);assert.deepEqual(n.teacher?.vocab,d.vocabulary);assert.ok(n.teacher?.note);assert.equal(n.choices,undefined);}
- const art=JSON.parse(fs.readFileSync('docs/sc04a-production/APPROVED_ART_HASHES.json','utf8'));for(let i=1;i<=4;i++)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(dir+story.scenes['SC04A_SH0'+i].src)).digest('hex'),art['SC04A_SH0'+i]);
+ const art=JSON.parse(fs.readFileSync('docs/sc04a-production/APPROVED_ART_HASHES.json','utf8'));for(let i=1;i<=4;i++)assert.equal(fileHash(dir+story.scenes['SC04A_SH0'+i].src),art['SC04A_SH0'+i]);
 });
 test('trust ending walks 2/3/3/2 frames to false peace; back and reload preserve variables',()=>{
  let s={...fresh(story),entries:[enter(story,'SC03A_R_TRUST',{...story.variables,route:'talk',shelf_decision:'trust',shelf_seen:true,shelf_visited:true})]};

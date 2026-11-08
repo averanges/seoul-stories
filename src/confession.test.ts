@@ -1,3 +1,4 @@
+import {fileHash} from './integrity';
 import {applyRevealBaseline,isRevealNode,revealR01} from './reveal-test-compat';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -23,7 +24,7 @@ test('confession imports fourteen canonical bilingual steps, six shots and exact
 test('only guard connector changed; happy ending, bridge, prior nodes/scenes and all prior image bytes preserved',()=>{
  const old=structuredClone(baseline.nodes),connector=old.find((n:any)=>n.id==='SC03B_TO_SC04A');delete connector.ending;connector.next='SC04A_CONFESSION_D01';const call=old.find((n:any)=>n.id==='SC03B_TO_SC04B');delete call.ending;call.next='SC04B_PHONE_D01';for(const id of ['SC04A_CONFESSION_TO_ENDING_B','SC04B_PHONE_TO_ENDING_B']){const n=old.find((n:any)=>n.id===id);if(n){delete n.ending;n.next='ENDING_B_D01';n.when={variable:'yuna_declines_identity',op:'eq',value:false};n.skipTo='ENDING_B_D01';}}applyRevealBaseline(old);assert.deepEqual(story.nodes.filter(n=>!isRevealNode(n.id)&&!n.id.startsWith('SC04A_CONFESSION_')&&!n.id.startsWith('SC04B_PHONE_')&&!n.id.startsWith('ENDING_B_')),old);
  for(const [id,s]of Object.entries(baseline.scenes))assert.deepEqual(story.scenes[id],s);
- for(const [file,hash]of Object.entries(baseline.hashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(dir+file)).digest('hex'),hash,file);
+ for(const [file,hash]of Object.entries(baseline.hashes))assert.equal(fileHash(dir+file),hash,file);
 });
 test('direct entrance only, fourteen sequential steps and six monotone shots, confession starts on D08',()=>{
  assert.equal(enter(story,'SC04A_CONFESSION_D01',{...vars,shelf_seen:true}).nodeId,'SC02_D26');assert.equal(enter(story,'SC04A_CONFESSION_D01',{...vars,guard_reports_kiss:false}).nodeId,'SC02_D26');assert.equal(enter(story,'SC04A_CONFESSION_D01',{...vars,route:'talk'}).nodeId,'SC02_D26');

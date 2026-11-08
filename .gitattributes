@@ -1,0 +1,12 @@
+# Stable text checkouts on Windows and Linux; media must stay byte-identical.
+* text=auto eol=lf
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.webp -text
+*.gif -text
+*.wav -text
+*.mp3 -text
+*.woff -text
+*.woff2 -text
+*.zip -text

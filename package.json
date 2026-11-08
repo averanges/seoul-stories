@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "tsx --test src/engine.test.ts src/trust.test.ts src/production.test.ts src/sc02.test.ts src/sc03a.test.ts src/sc03b.test.ts src/sc04a.test.ts src/bridge.test.ts src/confession.test.ts src/phone.test.ts src/endingb.test.ts src/reveal.test.ts src/sc06.test.ts src/endingc.test.ts src/endingCMusic.test.ts src/bgm.test.ts src/readiness.test.ts",
+    "test": "tsx --test src/engine.test.ts src/trust.test.ts src/production.test.ts src/sc02.test.ts src/sc03a.test.ts src/sc03b.test.ts src/sc04a.test.ts src/bridge.test.ts src/confession.test.ts src/phone.test.ts src/endingb.test.ts src/reveal.test.ts src/sc06.test.ts src/endingc.test.ts src/endingCMusic.test.ts src/bgm.test.ts src/readiness.test.ts src/integrity.test.ts",
     "validate": "tsx scripts/validate.ts",
     "postbuild": "node scripts/prepare-dist.mjs",
     "build:pages-test": "node scripts/build-pages-test.mjs",

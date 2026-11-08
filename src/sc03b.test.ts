@@ -1,3 +1,4 @@
+import {fileHash} from './integrity';
 import {applyRevealBaseline,isRevealNode,revealR01} from './reveal-test-compat';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -22,7 +23,7 @@ test('SC03B sixteen canonical bilingual nodes, five standalone shots, no choices
 test('only two connector edges changed in previous scenes; original media and design preserved',()=>{
  const previous=structuredClone(baseline.nodes);for(const target of ['SC02_R_CHECK','SC03A_R_CHECK']){const n=previous.find((n:any)=>n.id===target);delete n.ending;n.next='SC03B_D01';}
  const trust=previous.find((n:any)=>n.id==='SC03A_R_TRUST');delete trust.ending;trust.next='SC03A_BRIDGE_D01';applyRevealBaseline(previous);assert.deepEqual(story.nodes.filter(n=>!isRevealNode(n.id)&&!n.id.startsWith('SC03B_')&&!n.id.startsWith('SC03A_BRIDGE_')&&!n.id.startsWith('SC04A_')&&!n.id.startsWith('SC04B_PHONE_')&&!n.id.startsWith('ENDING_B_')&&n.id!=='ENDING_A_FALSE_PEACE'),previous);for(const [id,s]of Object.entries(baseline.scenes))assert.deepEqual(story.scenes[id],s);
- for(const [file,digest]of Object.entries(baseline.hashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),digest,file);
+ for(const [file,digest]of Object.entries(baseline.hashes))assert.equal(fileHash(file),digest,file);
 });
 test('D04 variant resolves original/simple/translation/note together without mutating data',()=>{
  const n=story.nodes.find(n=>n.id==='SC03B_D04')!;const original=structuredClone(n);const source=pack.dialogue_nodes.find((n:any)=>n.id==='SC03B_D04');

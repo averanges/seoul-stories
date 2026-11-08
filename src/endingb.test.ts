@@ -1,3 +1,4 @@
+import {fileHash} from './integrity';
 import {applyRevealBaseline,isRevealNode,revealR01} from './reveal-test-compat';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -16,7 +17,7 @@ test('Ending B fourteen exact canonical bilingual nodes, teacher notes and three
  for(const s of pack.shots){assert.equal(story.scenes[s.id].src,'assets/ending_b/'+s.image);assert.ok(fs.existsSync(root+story.scenes[s.id].src));}
 });
 test('only two compatibility connectors changed; previous content, happy ending and all images/engine preserved',()=>{
- const old=structuredClone(baseline.nodes);for(const id of ['SC04A_CONFESSION_TO_ENDING_B','SC04B_PHONE_TO_ENDING_B']){const n=old.find((n:any)=>n.id===id);delete n.ending;n.next='ENDING_B_D01';n.when={variable:'yuna_declines_identity',op:'eq',value:false};n.skipTo='ENDING_B_D01';}applyRevealBaseline(old);assert.deepEqual(story.nodes.filter(n=>!isRevealNode(n.id)&&!n.id.startsWith('ENDING_B_')),old);for(const [id,s]of Object.entries(baseline.scenes))assert.deepEqual(story.scenes[id],s);for(const [file,hash]of Object.entries(baseline.hashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file.startsWith('src/')?file:root+file)).digest('hex'),hash,file);
+ const old=structuredClone(baseline.nodes);for(const id of ['SC04A_CONFESSION_TO_ENDING_B','SC04B_PHONE_TO_ENDING_B']){const n=old.find((n:any)=>n.id===id);delete n.ending;n.next='ENDING_B_D01';n.when={variable:'yuna_declines_identity',op:'eq',value:false};n.skipTo='ENDING_B_D01';}applyRevealBaseline(old);assert.deepEqual(story.nodes.filter(n=>!isRevealNode(n.id)&&!n.id.startsWith('ENDING_B_')),old);for(const [id,s]of Object.entries(baseline.scenes))assert.deepEqual(story.scenes[id],s);for(const [file,hash]of Object.entries(baseline.hashes))assert.equal(fileHash(file.startsWith('src/')?file:root+file),hash,file);
 });
 test('both refusal reactions enter shared ending immediately; know routes never enter Ending B',()=>{
  for(const [source,leave,know,extra] of [['SC04A_CONFESSION_D14','SC04A_CONFESSION_R_LEAVE','SC04A_CONFESSION_R_KNOW',{route:'investigate',shelf_seen:false}],['SC04B_PHONE_D12','SC04B_PHONE_R_LEAVE','SC04B_PHONE_R_KNOW',{route:'talk',shelf_seen:true}]] as const){const start={...fresh(story),entries:[enter(story,source,{...vars,...extra,yuna_declines_identity:false})]};const r=choose(story,start,leave),end=advance(story,r);assert.equal(id(end),'ENDING_B_D01');assert.equal(id(back(story,end)),id(r));assert.deepEqual(end.entries.at(-1)!.variables,r.entries.at(-1)!.variables);assert.ok(!id(advance(story,choose(story,start,know))).startsWith('ENDING_B_'));}

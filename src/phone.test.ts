@@ -1,3 +1,4 @@
+import {fileHash} from './integrity';
 import {applyRevealBaseline,isRevealNode,revealR01} from './reveal-test-compat';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
@@ -21,7 +22,7 @@ test('phone scene preserves canonical twelve texts, teacher content and three st
 test('phone addition only opens after-shelf connector and preserves all previous art, dialogue and UI/engine',()=>{
  const old=structuredClone(baseline.nodes),c=old.find((n:any)=>n.id==='SC03B_TO_SC04B');delete c.ending;c.next='SC04B_PHONE_D01';for(const id of ['SC04A_CONFESSION_TO_ENDING_B','SC04B_PHONE_TO_ENDING_B']){const n=old.find((n:any)=>n.id===id);if(n){delete n.ending;n.next='ENDING_B_D01';n.when={variable:'yuna_declines_identity',op:'eq',value:false};n.skipTo='ENDING_B_D01';}}applyRevealBaseline(old);assert.deepEqual(story.nodes.filter(n=>!isRevealNode(n.id)&&!n.id.startsWith('SC04B_PHONE_')&&!n.id.startsWith('ENDING_B_')),old);
  for(const [id,s]of Object.entries(baseline.scenes))assert.deepEqual(story.scenes[id],s);for(const [id,c]of Object.entries(baseline.characters))assert.deepEqual(story.characters[id],c);
- for(const [file,hash]of Object.entries(baseline.hashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file.startsWith('src/')?file:root+file)).digest('hex'),hash,file);
+ for(const [file,hash]of Object.entries(baseline.hashes))assert.equal(fileHash(file.startsWith('src/')?file:root+file),hash,file);
 });
 test('phone entrance requires shelf and kiss; confession flag on D06, monotone 2/4/6 shot sequence',()=>{
  for(const extra of [{shelf_seen:false},{guard_reports_kiss:false}])assert.equal(enter(story,'SC04B_PHONE_D01',{...vars,...extra}).nodeId,'SC02_D26');

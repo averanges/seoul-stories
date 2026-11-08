@@ -1,0 +1,215 @@
+{
+  "reason": "CRLF/LF text hashing portability. Only hashes matching the unchanged current bytes are migrated; historical unmatched hashes and all binary digests remain unchanged.",
+  "migrations": [
+    {
+      "manifest": "docs/ending-b-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/ending-b-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/ending-b-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/ending-c-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/ending-c-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/ending-c-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/style.css",
+      "previous": "7e17254112d2bd7c20941b65494294f7b74d565566e867f0b724098d4ecd3253",
+      "canonical": "f1c076c6c9b7af9e1b633cb648d157d67c9925a4f168a7d355fa1122ac60772e"
+    },
+    {
+      "manifest": "docs/ending-c-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/ENDING_C_MUSIC_AUDIT.json",
+      "field": "untouched",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/READINESS_AUDIT.json",
+      "field": "untouched",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/sc02-production/SC01_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/sc02-production/SC01_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/sc03a-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/sc03a-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/sc03b-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/sc03b-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/style.css",
+      "previous": "7e17254112d2bd7c20941b65494294f7b74d565566e867f0b724098d4ecd3253",
+      "canonical": "f1c076c6c9b7af9e1b633cb648d157d67c9925a4f168a7d355fa1122ac60772e"
+    },
+    {
+      "manifest": "docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/style.css",
+      "previous": "7e17254112d2bd7c20941b65494294f7b74d565566e867f0b724098d4ecd3253",
+      "canonical": "f1c076c6c9b7af9e1b633cb648d157d67c9925a4f168a7d355fa1122ac60772e"
+    },
+    {
+      "manifest": "docs/sc04b-nightcall-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/sc06-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/sc06-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/sc06-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/style.css",
+      "previous": "7e17254112d2bd7c20941b65494294f7b74d565566e867f0b724098d4ecd3253",
+      "canonical": "f1c076c6c9b7af9e1b633cb648d157d67c9925a4f168a7d355fa1122ac60772e"
+    },
+    {
+      "manifest": "docs/sc06-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    },
+    {
+      "manifest": "docs/SCENE_MUSIC_AUDIT.json",
+      "field": "untouched",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/sora-reveal-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/main.tsx",
+      "previous": "8c45aae41c4f844289cda3824b1e47734f6f54f3f0c6ea085b9ce6715d6e9644",
+      "canonical": "b606a1ba6dc94c472c2ffc16e0f4feebd6f4b5ff53abedcfed1648647cbbcd2a"
+    },
+    {
+      "manifest": "docs/sora-reveal-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/SceneImage.tsx",
+      "previous": "e4b7ba245a0674c74101e6daacfd88b791a959041148c92b0ac7924a67667d05",
+      "canonical": "c611982c844f0af57affdfcee52bad716e8b65ebe43c0da2743b1bd8ccb34f15"
+    },
+    {
+      "manifest": "docs/sora-reveal-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/style.css",
+      "previous": "7e17254112d2bd7c20941b65494294f7b74d565566e867f0b724098d4ecd3253",
+      "canonical": "f1c076c6c9b7af9e1b633cb648d157d67c9925a4f168a7d355fa1122ac60772e"
+    },
+    {
+      "manifest": "docs/sora-reveal-production/PREVIOUS_BASELINE.json",
+      "field": "hashes",
+      "file": "src/cinematic.css",
+      "previous": "b2b4811607bb850fe89f9558cc9edee73ce8f7424f61479898efb2b46b563418",
+      "canonical": "aff2364c731bbda9fc619d88f4c818efe2e7159633dbe7415b0cd3fb5a2bf616"
+    }
+  ],
+  "tests": [
+    "bgm.test.ts",
+    "confession.test.ts",
+    "endingb.test.ts",
+    "endingc.test.ts",
+    "endingCMusic.test.ts",
+    "phone.test.ts",
+    "reveal.test.ts",
+    "sc02.test.ts",
+    "sc03a.test.ts",
+    "sc03b.test.ts",
+    "sc04a.test.ts",
+    "sc06.test.ts"
+  ]
+}
